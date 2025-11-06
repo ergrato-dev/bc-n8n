@@ -33,6 +33,10 @@ La instalación correcta de n8n es el primer paso crítico para comenzar a crear
 - **Portabilidad:** Fácil de mover entre servidores
 - **Mantenimiento:** Actualizaciones y rollbacks simples
 
+![Árbol de decisión de métodos de instalación](../../../assets/diagrams/modulo-01/metodos-instalacion.svg)
+
+> **💡 Guía de decisión:** El diagrama anterior te ayuda a elegir el método más adecuado según tus necesidades y recursos disponibles. Para este bootcamp, recomendamos Docker Compose ya que simula mejor un entorno de producción real.
+
 ---
 
 ## 🐳 Método 1: Docker Compose (Recomendado)
@@ -88,6 +92,10 @@ n8n-bootcamp/
 ├── credentials/          # Respaldo de credenciales (cuidado con seguridad)
 └── backups/             # Backups automáticos
 ```
+
+![Estructura de directorios de n8n](../../../assets/diagrams/modulo-01/estructura-directorios.svg)
+
+> **💡 Organización clave:** La estructura de directorios mostrada separa claramente archivos de configuración, workflows versionables en Git, y datos sensibles que deben mantenerse fuera del control de versiones. El volumen Docker interno persiste la base de datos y configuración crítica.
 
 ### Paso 2: Crear archivo `docker-compose.yml`
 

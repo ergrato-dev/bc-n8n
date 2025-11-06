@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <!-- Fondo -->
+  <rect width="1000" height="700" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Estructura de Directorios de n8n
+  </text>
+  
+  <!-- Árbol de directorios -->
+  <g transform="translate(100, 80)">
+    <!-- Root -->
+    <text x="0" y="20" font-family="Courier New, monospace" font-size="14" fill="#00D4FF" font-weight="bold">
+      📁 n8n-bootcamp/
+    </text>
+    
+    <!-- Nivel 1 -->
+    <line x1="20" y1="30" x2="20" y2="350" stroke="#555" stroke-width="2"/>
+    
+    <!-- docker-compose.yml -->
+    <g transform="translate(0, 40)">
+      <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="2"/>
+      <text x="45" y="5" font-family="Courier New, monospace" font-size="13" fill="#00A86B">
+        📄 docker-compose.yml
+      </text>
+      <text x="250" y="5" font-family="Arial, sans-serif" font-size="12" fill="#888">
+        → Configuración de servicios Docker
+      </text>
+    </g>
+    
+    <!-- .env -->
+    <g transform="translate(0, 70)">
+      <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="2"/>
+      <text x="45" y="5" font-family="Courier New, monospace" font-size="13" fill="#FFA500">
+        🔒 .env
+      </text>
+      <text x="250" y="5" font-family="Arial, sans-serif" font-size="12" fill="#888">
+        → Variables de entorno (¡no subir a Git!)
+      </text>
+    </g>
+    
+    <!-- .gitignore -->
+    <g transform="translate(0, 100)">
+      <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="2"/>
+      <text x="45" y="5" font-family="Courier New, monospace" font-size="13" fill="#E0E0E0">
+        📄 .gitignore
+      </text>
+      <text x="250" y="5" font-family="Arial, sans-serif" font-size="12" fill="#888">
+        → Archivos excluidos de Git
+      </text>
+    </g>
+    
+    <!-- workflows/ -->
+    <g transform="translate(0, 130)">
+      <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="2"/>
+      <text x="45" y="5" font-family="Courier New, monospace" font-size="13" fill="#00D4FF" font-weight="bold">
+        📁 workflows/
+      </text>
+      <text x="250" y="5" font-family="Arial, sans-serif" font-size="12" fill="#888">
+        → Workflows exportados (versionado Git)
+      </text>
+      
+      <!-- Subnivel workflows -->
+      <line x1="60" y1="10" x2="60" y2="70" stroke="#555" stroke-width="1"/>
+      
+      <g transform="translate(40, 20)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+          📄 marketing-automation.json
+        </text>
+      </g>
+      
+      <g transform="translate(40, 40)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+          📄 data-sync.json
+        </text>
+      </g>
+      
+      <g transform="translate(40, 60)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+          📄 email-processor.json
+        </text>
+      </g>
+    </g>
+    
+    <!-- credentials/ -->
+    <g transform="translate(0, 230)">
+      <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="2"/>
+      <text x="45" y="5" font-family="Courier New, monospace" font-size="13" fill="#FFA500" font-weight="bold">
+        📁 credentials/
+      </text>
+      <text x="250" y="5" font-family="Arial, sans-serif" font-size="12" fill="#FF6D5A">
+        → ⚠️ Backups (¡excluir de Git!)
+      </text>
+      
+      <g transform="translate(40, 20)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#888">
+          📄 .gitkeep
+        </text>
+      </g>
+    </g>
+    
+    <!-- backups/ -->
+    <g transform="translate(0, 280)">
+      <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="2"/>
+      <text x="45" y="5" font-family="Courier New, monospace" font-size="13" fill="#00D4FF" font-weight="bold">
+        📁 backups/
+      </text>
+      <text x="250" y="5" font-family="Arial, sans-serif" font-size="12" fill="#888">
+        → Backups automatizados periódicos
+      </text>
+      
+      <!-- Subnivel backups -->
+      <line x1="60" y1="10" x2="60" y2="50" stroke="#555" stroke-width="1"/>
+      
+      <g transform="translate(40, 20)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#888">
+          📦 n8n-backup-20241106.tar.gz
+        </text>
+      </g>
+      
+      <g transform="translate(40, 40)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#888">
+          📦 n8n-backup-20241105.tar.gz
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Volumen Docker (separado) -->
+  <g transform="translate(550, 80)">
+    <rect x="0" y="0" width="400" height="300" rx="10" fill="#2d2d2d" stroke="#00D4FF" stroke-width="2"/>
+    
+    <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+      🐳 Volumen Docker (n8n_bootcamp_data)
+    </text>
+    
+    <text x="200" y="55" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">
+      Persistencia interna del contenedor
+    </text>
+    
+    <!-- Árbol interno -->
+    <g transform="translate(30, 80)">
+      <text x="0" y="0" font-family="Courier New, monospace" font-size="13" fill="#00D4FF" font-weight="bold">
+        /home/node/.n8n/
+      </text>
+      
+      <line x1="20" y1="10" x2="20" y2="170" stroke="#555" stroke-width="2"/>
+      
+      <!-- database.sqlite -->
+      <g transform="translate(0, 20)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#FFD700">
+          💾 database.sqlite
+        </text>
+      </g>
+      
+      <g transform="translate(0, 40)">
+        <text x="45" y="5" font-family="Arial, sans-serif" font-size="11" fill="#888">
+          Todos los workflows y ejecuciones
+        </text>
+      </g>
+      
+      <!-- config -->
+      <g transform="translate(0, 65)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+          📄 config
+        </text>
+      </g>
+      
+      <g transform="translate(0, 85)">
+        <text x="45" y="5" font-family="Arial, sans-serif" font-size="11" fill="#888">
+          Configuración general
+        </text>
+      </g>
+      
+      <!-- nodes/ -->
+      <g transform="translate(0, 110)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#00D4FF">
+          📁 nodes/
+        </text>
+      </g>
+      
+      <g transform="translate(0, 130)">
+        <text x="45" y="5" font-family="Arial, sans-serif" font-size="11" fill="#888">
+          Nodos personalizados instalados
+        </text>
+      </g>
+      
+      <!-- .encryptionKey -->
+      <g transform="translate(0, 155)">
+        <line x1="20" y1="0" x2="40" y2="0" stroke="#555" stroke-width="1"/>
+        <text x="45" y="5" font-family="Courier New, monospace" font-size="12" fill="#FF6D5A">
+          🔑 .encryptionKey
+        </text>
+      </g>
+      
+      <g transform="translate(0, 175)">
+        <text x="45" y="5" font-family="Arial, sans-serif" font-size="11" fill="#FF6D5A">
+          ⚠️ ¡Crítico! Nunca perder este archivo
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Importante: Seguridad -->
+  <g transform="translate(50, 420)">
+    <rect x="0" y="0" width="900" height="120" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    
+    <text x="450" y="30" font-family="Arial, sans-serif" font-size="18" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      ⚠️ Importante: Seguridad y Versionado
+    </text>
+    
+    <!-- Columna 1: Git -->
+    <g transform="translate(30, 50)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" font-weight="bold">
+        ✅ Sí incluir en Git:
+      </text>
+      <text x="10" y="25" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • docker-compose.yml
+      </text>
+      <text x="10" y="45" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • .gitignore
+      </text>
+      <text x="10" y="65" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • workflows/*.json
+      </text>
+    </g>
+    
+    <!-- Columna 2: No Git -->
+    <g transform="translate(300, 50)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#FF6D5A" font-weight="bold">
+        ❌ NO incluir en Git:
+      </text>
+      <text x="10" y="25" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • .env (credenciales)
+      </text>
+      <text x="10" y="45" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • credentials/ (datos sensibles)
+      </text>
+      <text x="10" y="65" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • backups/*.tar.gz
+      </text>
+    </g>
+    
+    <!-- Columna 3: Backup -->
+    <g transform="translate(600, 50)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" font-weight="bold">
+        💾 Backups externos:
+      </text>
+      <text x="10" y="25" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • Volumen Docker completo
+      </text>
+      <text x="10" y="45" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • .encryptionKey
+      </text>
+      <text x="10" y="65" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        • database.sqlite
+      </text>
+    </g>
+  </g>
+  
+  <!-- Comandos útiles -->
+  <g transform="translate(50, 560)">
+    <rect x="0" y="0" width="900" height="110" rx="10" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+    
+    <text x="450" y="25" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+      💻 Comandos Útiles para Gestión de Estructura
+    </text>
+    
+    <g transform="translate(20, 40)">
+      <!-- Comando 1 -->
+      <text x="0" y="0" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+        $ docker compose logs -f n8n
+      </text>
+      <text x="350" y="0" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Ver logs en tiempo real
+      </text>
+      
+      <!-- Comando 2 -->
+      <text x="0" y="25" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+        $ docker volume inspect n8n_bootcamp_data
+      </text>
+      <text x="350" y="25" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Ver ubicación del volumen
+      </text>
+      
+      <!-- Comando 3 -->
+      <text x="0" y="50" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+        $ docker compose exec n8n sh
+      </text>
+      <text x="350" y="50" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Acceder al contenedor (debugging)
+      </text>
+      
+      <!-- Comando 4 -->
+      <text x="0" y="75" font-family="Courier New, monospace" font-size="12" fill="#00A86B">
+        $ git add workflows/ && git commit -m "..."
+      </text>
+      <text x="350" y="75" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Versionar workflows
+      </text>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <text x="500" y="690" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle" font-style="italic">
+    💡 Mantén workflows en Git, credenciales fuera, y haz backups del volumen Docker regularmente
+  </text>
+</svg>

@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800">
+  <!-- Fondo -->
+  <rect width="1000" height="800" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    ¿Qué Método de Instalación Elegir?
+  </text>
+  
+  <!-- Pregunta Inicial -->
+  <g transform="translate(350, 80)">
+    <rect x="0" y="0" width="300" height="80" rx="40" fill="#2d2d2d" stroke="#00D4FF" stroke-width="3"/>
+    <text x="150" y="45" font-family="Arial, sans-serif" font-size="18" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      ¿Tienes Docker instalado
+    </text>
+    <text x="150" y="65" font-family="Arial, sans-serif" font-size="18" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      o puedes instalarlo?
+    </text>
+  </g>
+  
+  <!-- Rama SÍ -->
+  <g transform="translate(150, 190)">
+    <line x1="350" y1="-30" x2="150" y2="30" stroke="#00A86B" stroke-width="3"/>
+    <text x="180" y="0" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" font-weight="bold">SÍ</text>
+    
+    <rect x="0" y="30" width="300" height="70" rx="10" fill="#2d2d2d" stroke="#00A86B" stroke-width="3"/>
+    <text x="150" y="60" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      ✅ Docker Compose
+    </text>
+    <text x="150" y="85" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">
+      (Recomendado)
+    </text>
+    
+    <!-- Ventajas Docker -->
+    <g transform="translate(0, 120)">
+      <text x="10" y="0" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" font-weight="bold">
+        Ventajas:
+      </text>
+      <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        ✓ Aislamiento completo
+      </text>
+      <text x="20" y="45" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        ✓ Fácil actualización
+      </text>
+      <text x="20" y="65" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        ✓ Reproducible
+      </text>
+      <text x="20" y="85" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        ✓ Multi-plataforma
+      </text>
+      <text x="20" y="105" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+        ✓ Ideal producción
+      </text>
+    </g>
+    
+    <!-- Casos de uso Docker -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="300" height="80" rx="8" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="150" y="25" font-family="Arial, sans-serif" font-size="13" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        💼 Ideal para:
+      </text>
+      <text x="150" y="45" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Producción • Equipos • Proyectos serios
+      </text>
+      <text x="150" y="65" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Datos sensibles • Escalabilidad
+      </text>
+    </g>
+  </g>
+  
+  <!-- Rama NO - Pregunta 2 -->
+  <g transform="translate(550, 190)">
+    <line x1="0" y1="-30" x2="200" y2="30" stroke="#FFA500" stroke-width="3"/>
+    <text x="180" y="0" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" font-weight="bold">NO</text>
+    
+    <rect x="50" y="30" width="300" height="80" rx="10" fill="#2d2d2d" stroke="#FFA500" stroke-width="3"/>
+    <text x="200" y="60" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      ¿Quieres instalar algo
+    </text>
+    <text x="200" y="85" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      en tu máquina?
+    </text>
+    
+    <!-- Sub-rama: SÍ - pnpm -->
+    <g transform="translate(-100, 140)">
+      <line x1="200" y1="-30" x2="100" y2="30" stroke="#00A86B" stroke-width="2"/>
+      <text x="120" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" font-weight="bold">SÍ</text>
+      
+      <rect x="0" y="30" width="200" height="60" rx="8" fill="#2d2d2d" stroke="#00A86B" stroke-width="2"/>
+      <text x="100" y="55" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        📦 pnpm
+      </text>
+      <text x="100" y="75" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        (Instalación local)
+      </text>
+      
+      <g transform="translate(0, 100)">
+        <text x="10" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" font-weight="bold">
+          Ventajas:
+        </text>
+        <text x="15" y="20" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✓ Sin Docker
+        </text>
+        <text x="15" y="38" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✓ Más rápido (pnpm)
+        </text>
+        <text x="15" y="56" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✓ Desarrollo nodos
+        </text>
+      </g>
+      
+      <rect x="0" y="200" width="200" height="70" rx="6" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="100" y="225" font-family="Arial, sans-serif" font-size="11" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        💼 Ideal para:
+      </text>
+      <text x="100" y="245" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+        Desarrollo local
+      </text>
+      <text x="100" y="260" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+        Testing rápido
+      </text>
+    </g>
+    
+    <!-- Sub-rama: NO - n8n Cloud -->
+    <g transform="translate(230, 140)">
+      <line x1="-30" y1="-30" x2="70" y2="30" stroke="#FF6D5A" stroke-width="2"/>
+      <text x="50" y="0" font-family="Arial, sans-serif" font-size="12" fill="#FF6D5A" font-weight="bold">NO</text>
+      
+      <rect x="0" y="30" width="200" height="60" rx="8" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+      <text x="100" y="55" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        ☁️ n8n Cloud
+      </text>
+      <text x="100" y="75" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        (SaaS)
+      </text>
+      
+      <g transform="translate(0, 100)">
+        <text x="10" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" font-weight="bold">
+          Ventajas:
+        </text>
+        <text x="15" y="20" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✓ Sin instalación
+        </text>
+        <text x="15" y="38" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✓ Listo en 2 min
+        </text>
+        <text x="15" y="56" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✓ Managed
+        </text>
+      </g>
+      
+      <g transform="translate(0, 170)">
+        <text x="10" y="0" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" font-weight="bold">
+          Limitaciones:
+        </text>
+        <text x="15" y="20" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✗ Límite ejecuciones
+        </text>
+        <text x="15" y="38" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+          ✗ Datos en cloud
+        </text>
+      </g>
+      
+      <rect x="0" y="270" width="200" height="70" rx="6" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="100" y="295" font-family="Arial, sans-serif" font-size="11" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        💼 Ideal para:
+      </text>
+      <text x="100" y="315" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+        Pruebas rápidas
+      </text>
+      <text x="100" y="330" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+        Proyectos pequeños
+      </text>
+    </g>
+  </g>
+  
+  <!-- Comparativa de Características -->
+  <g transform="translate(50, 600)">
+    <rect x="0" y="0" width="900" height="170" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+    
+    <text x="450" y="30" font-family="Arial, sans-serif" font-size="18" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      📊 Comparativa Rápida
+    </text>
+    
+    <!-- Headers -->
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="13" fill="#888" text-anchor="middle" font-weight="bold">Característica</text>
+    <text x="300" y="60" font-family="Arial, sans-serif" font-size="13" fill="#00A86B" text-anchor="middle" font-weight="bold">Docker Compose</text>
+    <text x="530" y="60" font-family="Arial, sans-serif" font-size="13" fill="#00A86B" text-anchor="middle" font-weight="bold">pnpm</text>
+    <text x="750" y="60" font-family="Arial, sans-serif" font-size="13" fill="#FF6D5A" text-anchor="middle" font-weight="bold">n8n Cloud</text>
+    
+    <!-- Fila 1: Dificultad -->
+    <text x="20" y="90" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">Dificultad setup</text>
+    <text x="300" y="90" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle">Media</text>
+    <text x="530" y="90" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle">Baja</text>
+    <text x="750" y="90" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">Muy Baja</text>
+    
+    <!-- Fila 2: Control -->
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">Control datos</text>
+    <text x="300" y="115" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">Total</text>
+    <text x="530" y="115" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">Total</text>
+    <text x="750" y="115" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" text-anchor="middle">Limitado</text>
+    
+    <!-- Fila 3: Costo -->
+    <text x="20" y="140" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">Costo</text>
+    <text x="300" y="140" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">Gratis*</text>
+    <text x="530" y="140" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">Gratis*</text>
+    <text x="750" y="140" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" text-anchor="middle">Desde $20/mes</text>
+    
+    <text x="450" y="160" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle" font-style="italic">
+      *Requiere servidor propio o local
+    </text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="500" y="790" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle" font-style="italic">
+    💡 Recomendación del bootcamp: Docker Compose para aprendizaje serio y futuro en producción
+  </text>
+</svg>
