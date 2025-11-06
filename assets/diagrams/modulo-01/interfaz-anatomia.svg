@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- Fondo -->
+  <rect width="1200" height="800" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="600" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Anatomia de la Interfaz de n8n
+  </text>
+  
+  <!-- Mockup de la interfaz -->
+  <g transform="translate(50, 60)">
+    <!-- Header -->
+    <rect x="0" y="0" width="1100" height="60" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    <text x="20" y="38" font-family="Arial, sans-serif" font-size="18" fill="#FF6D5A" font-weight="bold">
+      n8n
+    </text>
+    <text x="100" y="38" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0">
+      Workflows
+    </text>
+    <text x="220" y="38" font-family="Arial, sans-serif" font-size="14" fill="#888">
+      Credentials
+    </text>
+    <text x="360" y="38" font-family="Arial, sans-serif" font-size="14" fill="#888">
+      Executions
+    </text>
+    
+    <circle cx="1050" cy="30" r="18" fill="#00D4FF" opacity="0.3"/>
+    <text x="1050" y="36" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle">
+      USER
+    </text>
+    
+    <!-- Anotación Header -->
+    <text x="550" y="-10" font-family="Arial, sans-serif" font-size="12" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      1. HEADER - Navegacion Principal
+    </text>
+    
+    <!-- Sidebar Izquierdo -->
+    <rect x="0" y="60" width="220" height="500" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+    
+    <!-- Lista de workflows -->
+    <g transform="translate(10, 80)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#888" font-weight="bold">
+        MY WORKFLOWS
+      </text>
+      
+      <rect x="0" y="15" width="200" height="50" rx="5" fill="#2d2d2d"/>
+      <text x="10" y="35" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        Marketing Automation
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        Active - 3 nodes
+      </text>
+      <circle cx="185" cy="35" r="6" fill="#00A86B"/>
+      
+      <rect x="0" y="75" width="200" height="50" rx="5" fill="#2d2d2d"/>
+      <text x="10" y="95" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        Data Sync
+      </text>
+      <text x="10" y="110" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        Inactive - 5 nodes
+      </text>
+      <circle cx="185" cy="95" r="6" fill="#888"/>
+      
+      <rect x="0" y="135" width="200" height="50" rx="5" fill="#2d2d2d"/>
+      <text x="10" y="155" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        Email Processor
+      </text>
+      <text x="10" y="170" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        Active - 8 nodes
+      </text>
+      <circle cx="185" cy="155" r="6" fill="#00A86B"/>
+      
+      <rect x="60" y="200" width="80" height="30" rx="5" fill="#00D4FF" opacity="0.3" stroke="#00D4FF" stroke-width="1"/>
+      <text x="100" y="220" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        + New
+      </text>
+    </g>
+    
+    <!-- Menu inferior sidebar -->
+    <g transform="translate(10, 480)">
+      <line x1="0" y1="0" x2="200" y2="0" stroke="#555" stroke-width="1"/>
+      <text x="10" y="25" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Templates
+      </text>
+      <text x="10" y="50" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Help
+      </text>
+      <text x="10" y="75" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Community
+      </text>
+    </g>
+    
+    <!-- Anotación Sidebar -->
+    <text x="110" y="580" font-family="Arial, sans-serif" font-size="11" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+      2. SIDEBAR
+    </text>
+    <text x="110" y="595" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">
+      Workflows &amp; Resources
+    </text>
+    
+    <!-- Canvas Central -->
+    <rect x="220" y="60" width="660" height="500" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+    
+    <!-- Toolbar del canvas -->
+    <rect x="220" y="60" width="660" height="45" fill="#2d2d2d" stroke="#555" stroke-width="1"/>
+    <rect x="235" y="73" width="90" height="22" rx="4" fill="#00A86B" opacity="0.3" stroke="#00A86B" stroke-width="1"/>
+    <text x="280" y="88" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+      + Add Node
+    </text>
+    
+    <rect x="340" y="73" width="70" height="22" rx="4" fill="#00D4FF" opacity="0.2" stroke="#00D4FF" stroke-width="1"/>
+    <text x="375" y="88" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+      Execute
+    </text>
+    
+    <text x="450" y="88" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      My First Workflow
+    </text>
+    
+    <!-- Toggle Active -->
+    <g transform="translate(800, 73)">
+      <rect x="0" y="0" width="50" height="22" rx="11" fill="#00A86B" opacity="0.3"/>
+      <circle cx="35" cy="11" r="8" fill="#00A86B"/>
+      <text x="65" y="16" font-family="Arial, sans-serif" font-size="10" fill="#00A86B">
+        Active
+      </text>
+    </g>
+    
+    <!-- Nodos en el canvas -->
+    
+    <!-- Nodo 1: Trigger -->
+    <g transform="translate(280, 200)">
+      <rect x="0" y="0" width="120" height="70" rx="8" fill="#2d2d2d" stroke="#00D4FF" stroke-width="2"/>
+      <text x="60" y="28" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        Webhook
+      </text>
+      <text x="60" y="45" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Trigger
+      </text>
+      <circle cx="120" cy="35" r="5" fill="#00A86B"/>
+    </g>
+    
+    <!-- Conexion -->
+    <line x1="400" y1="235" x2="470" y2="235" stroke="#00A86B" stroke-width="2"/>
+    <polygon points="470,235 462,231 462,239" fill="#00A86B"/>
+    
+    <!-- Nodo 2: Procesamiento -->
+    <g transform="translate(470, 200)">
+      <rect x="0" y="0" width="120" height="70" rx="8" fill="#2d2d2d" stroke="#FFA500" stroke-width="2"/>
+      <text x="60" y="28" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        Set
+      </text>
+      <text x="60" y="45" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Transform
+      </text>
+      <circle cx="0" cy="35" r="5" fill="#FFA500"/>
+      <circle cx="120" cy="35" r="5" fill="#FFA500"/>
+    </g>
+    
+    <!-- Conexion -->
+    <line x1="590" y1="235" x2="660" y2="235" stroke="#FFA500" stroke-width="2"/>
+    <polygon points="660,235 652,231 652,239" fill="#FFA500"/>
+    
+    <!-- Nodo 3: Accion -->
+    <g transform="translate(660, 200)">
+      <rect x="0" y="0" width="120" height="70" rx="8" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+      <text x="60" y="28" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        Email
+      </text>
+      <text x="60" y="45" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Send
+      </text>
+      <circle cx="0" cy="35" r="5" fill="#FF6D5A"/>
+    </g>
+    
+    <!-- Grid pattern (sutil) -->
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <circle cx="0" cy="0" r="0.5" fill="#555"/>
+      </pattern>
+    </defs>
+    <rect x="220" y="105" width="660" height="455" fill="url(#grid)"/>
+    
+    <!-- Mini-mapa -->
+    <rect x="800" y="480" width="70" height="70" rx="4" fill="#2d2d2d" stroke="#555" stroke-width="1"/>
+    <rect x="805" y="485" width="20" height="10" rx="1" fill="#00D4FF" opacity="0.5"/>
+    <rect x="830" y="485" width="15" height="10" rx="1" fill="#FFA500" opacity="0.5"/>
+    <rect x="850" y="485" width="15" height="10" rx="1" fill="#FF6D5A" opacity="0.5"/>
+    <text x="835" y="540" font-family="Arial, sans-serif" font-size="8" fill="#888" text-anchor="middle">
+      Mini-map
+    </text>
+    
+    <!-- Zoom controls -->
+    <g transform="translate(800, 400)">
+      <rect x="0" y="0" width="70" height="30" rx="4" fill="#2d2d2d" stroke="#555" stroke-width="1"/>
+      <text x="15" y="20" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0">
+        -
+      </text>
+      <line x1="35" y1="5" x2="35" y2="25" stroke="#555" stroke-width="1"/>
+      <text x="52" y="20" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0">
+        +
+      </text>
+    </g>
+    
+    <!-- Anotación Canvas -->
+    <text x="550" y="580" font-family="Arial, sans-serif" font-size="11" fill="#FFA500" text-anchor="middle" font-weight="bold">
+      3. CANVAS - Editor Visual
+    </text>
+    <text x="550" y="595" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">
+      Drag &amp; drop - Connect - Execute
+    </text>
+    
+    <!-- Panel lateral derecho (configuracion de nodo) -->
+    <rect x="880" y="60" width="220" height="500" fill="#2d2d2d" stroke="#00A86B" stroke-width="2"/>
+    
+    <g transform="translate(890, 75)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0" font-weight="bold">
+        Send Email
+      </text>
+      <line x1="0" y1="10" x2="200" y2="10" stroke="#555" stroke-width="1"/>
+      
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="11" fill="#888">
+        Parameters
+      </text>
+      
+      <text x="0" y="60" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+        From Email:
+      </text>
+      <rect x="0" y="65" width="200" height="25" rx="3" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="8" y="82" font-family="Arial, sans-serif" font-size="10" fill="#888">
+        noreply@example.com
+      </text>
+      
+      <text x="0" y="110" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+        To Email:
+      </text>
+      <rect x="0" y="115" width="200" height="25" rx="3" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="8" y="132" font-family="Arial, sans-serif" font-size="10" fill="#00D4FF">
+        {{ $json.email }}
+      </text>
+      
+      <text x="0" y="160" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+        Subject:
+      </text>
+      <rect x="0" y="165" width="200" height="25" rx="3" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="8" y="182" font-family="Arial, sans-serif" font-size="10" fill="#888">
+        Welcome!
+      </text>
+      
+      <text x="0" y="210" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+        Body:
+      </text>
+      <rect x="0" y="215" width="200" height="50" rx="3" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="8" y="235" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        Hello, welcome!
+      </text>
+      
+      <rect x="40" y="290" width="120" height="25" rx="5" fill="#00A86B" opacity="0.3" stroke="#00A86B" stroke-width="1"/>
+      <text x="100" y="307" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        Execute Node
+      </text>
+    </g>
+    
+    <!-- Anotación Panel -->
+    <text x="990" y="580" font-family="Arial, sans-serif" font-size="11" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      4. PANEL
+    </text>
+    <text x="990" y="595" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">
+      Configuration
+    </text>
+    
+    <!-- Footer/Status Bar -->
+    <rect x="0" y="560" width="1100" height="40" fill="#2d2d2d" stroke="#555" stroke-width="1"/>
+    <circle cx="20" cy="580" r="6" fill="#00A86B"/>
+    <text x="35" y="585" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+      Saved
+    </text>
+    <text x="120" y="585" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      Last execution: 2 minutes ago
+    </text>
+    <text x="400" y="585" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      Version 1.58.0
+    </text>
+    
+    <!-- Anotación Footer -->
+    <text x="550" y="620" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle" font-weight="bold">
+      5. STATUS BAR - Estado e Informacion
+    </text>
+  </g>
+  
+  <!-- Leyenda de Colores -->
+  <g transform="translate(50, 720)">
+    <rect x="0" y="0" width="1100" height="60" rx="8" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+    
+    <text x="550" y="25" font-family="Arial, sans-serif" font-size="14" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      Codigo de Colores de Nodos
+    </text>
+    
+    <g transform="translate(150, 35)">
+      <rect x="0" y="0" width="15" height="15" rx="2" fill="#00D4FF" opacity="0.5"/>
+      <text x="22" y="12" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        Triggers (inicio)
+      </text>
+    </g>
+    
+    <g transform="translate(350, 35)">
+      <rect x="0" y="0" width="15" height="15" rx="2" fill="#FFA500" opacity="0.5"/>
+      <text x="22" y="12" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        Transform/Logic
+      </text>
+    </g>
+    
+    <g transform="translate(550, 35)">
+      <rect x="0" y="0" width="15" height="15" rx="2" fill="#FF6D5A" opacity="0.5"/>
+      <text x="22" y="12" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        Actions (externas)
+      </text>
+    </g>
+    
+    <g transform="translate(750, 35)">
+      <rect x="0" y="0" width="15" height="15" rx="2" fill="#00A86B" opacity="0.5"/>
+      <text x="22" y="12" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        Success/Active
+      </text>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <text x="600" y="795" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle" font-style="italic">
+    Tip: Tab (add node), Ctrl+Enter (execute), F (fit zoom)
+  </text>
+</svg>
