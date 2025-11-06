@@ -111,11 +111,9 @@ Para este bootcamp, **usamos Docker Compose como método principal de instalaci�
 **Archivo `docker-compose.yml`:**
 
 ```yaml
-version: '3.8'
-
 services:
   n8n:
-    image: n8nio/n8n:latest-alpine
+    image: n8nio/n8n:latest
     container_name: n8n
     restart: unless-stopped
     ports:
@@ -134,6 +132,8 @@ services:
 volumes:
   n8n_data:
 ```
+
+**Nota:** La imagen `n8nio/n8n:latest` ya está basada en Alpine Linux por defecto, por lo que es ligera y optimizada.
 
 **Comandos básicos:**
 
@@ -154,7 +154,7 @@ docker compose up -d
 
 ### Docker Run (Alternativa)
 
-**Con imagen Alpine:**
+**Comando básico:**
 
 ```bash
 docker run -d \
@@ -162,7 +162,7 @@ docker run -d \
   --restart unless-stopped \
   -p 5678:5678 \
   -v ~/.n8n:/home/node/.n8n \
-  n8nio/n8n:latest-alpine
+  n8nio/n8n:latest
 ```
 
 ### Instalación con pnpm (Opcional)
@@ -182,18 +182,20 @@ n8n start
 
 ### Métodos de Instalación (Orden de Prioridad)
 
-1. **Docker Compose** (recomendado) - Alpine image
+1. **Docker Compose** (recomendado) - imagen basada en Alpine
 2. **n8n Cloud** (para empezar sin instalación)
 3. **pnpm global** (alternativa sin Docker)
 4. **npm global** (última opción)
 
 ### Al Crear Contenido de Instalación
 
-- Siempre priorizar **Docker Compose con imágenes Alpine**
+- Siempre priorizar **Docker Compose**
+- Usar imagen `n8nio/n8n:latest` (ya basada en Alpine por defecto)
+- **No usar** el tag `latest-alpine` (no existe)
 - Proporcionar ejemplo de `docker-compose.yml` completo
 - Mencionar **pnpm** como gestor de paquetes preferido
 - Incluir n8n Cloud como alternativa válida para comenzar
-- Explicar ventajas de Alpine sobre imágenes estándar
+- Explicar que las imágenes oficiales de n8n ya están optimizadas
 
 ## Estructura del Bootcamp
 
