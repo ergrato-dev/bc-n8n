@@ -4,13 +4,27 @@
 # ============================================
 # Videos y contenido multimedia pesado
 # ============================================
+# Los videos del bootcamp son demasiado grandes para Git
+# Se recomienda almacenarlos en Google Drive, YouTube, Vimeo, etc.
 videos/
+!videos/README.md
+
+# Formatos de video
 *.mp4
 *.mov
 *.avi
 *.mkv
 *.webm
 *.flv
+*.wmv
+*.m4v
+
+# Formatos de audio
+*.mp3
+*.wav
+*.aac
+*.ogg
+*.flac
 
 # ============================================
 # Archivos del sistema operativo
@@ -52,7 +66,7 @@ $RECYCLE.BIN/
 *.sublime-workspace
 
 # ============================================
-# Node.js (si usas n8n localmente)
+# Node.js y gestores de paquetes
 # ============================================
 node_modules/
 npm-debug.log*
@@ -60,7 +74,11 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 yarn.lock
+
+# pnpm específico
 .pnpm-debug.log*
+.pnpm-store/
+pnpm-lock.yaml
 
 # ============================================
 # n8n específico
@@ -79,6 +97,15 @@ credentials.json
 # Base de datos local de n8n
 database.sqlite
 *.sqlite
+
+# Workflows de prueba local (no versionados)
+# Los workflows de ejemplo del bootcamp SÍ se versionan en modulos/
+workflows/test/
+workflows/draft/
+workflows/personal/
+*_draft.json
+*_test.json
+*_local.json
 
 # ============================================
 # Archivos temporales y de respaldo
@@ -116,3 +143,14 @@ _site/
 *.tar.gz
 *.rar
 .DS_Store?
+
+# ============================================
+# Docker
+# ============================================
+# Volúmenes de Docker que puedan crearse localmente
+# (los volúmenes nombrados ya están gestionados por Docker)
+docker-compose.override.yml
+.docker/
+
+# Archivos de backup de Docker
+*.dockerignore.bak
