@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <!-- Fondo -->
+  <rect width="1200" height="600" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Arquitectura: Tu Primer Workflow
+  </text>
+  
+  <text x="600" y="70" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle">
+    Flujo de datos desde el trigger hasta la transformacion final
+  </text>
+  
+  <!-- Workflow principal -->
+  <g transform="translate(150, 120)">
+    
+    <!-- Nodo 1: Manual Trigger -->
+    <g id="node1">
+      <rect x="0" y="0" width="180" height="100" rx="12" fill="#2d2d2d" stroke="#00D4FF" stroke-width="3"/>
+      <text x="90" y="35" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        Manual Trigger
+      </text>
+      <text x="90" y="55" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">
+        Start Node
+      </text>
+      <text x="90" y="78" font-family="Arial, sans-serif" font-size="11" fill="#00D4FF" text-anchor="middle">
+        Execute manually
+      </text>
+      
+      <!-- Conector salida -->
+      <circle cx="180" cy="50" r="8" fill="#00D4FF"/>
+      <circle cx="180" cy="50" r="4" fill="#1a1a1a"/>
+    </g>
+    
+    <!-- Anotación Trigger -->
+    <g transform="translate(90, -40)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        TRIGGER
+      </text>
+      <text x="0" y="18" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Inicia el workflow
+      </text>
+    </g>
+    
+    <!-- Output info Trigger -->
+    <g transform="translate(20, 115)">
+      <rect x="0" y="0" width="140" height="40" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="1" opacity="0.7"/>
+      <text x="70" y="16" font-family="Arial, sans-serif" font-size="10" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        Output: 0 items
+      </text>
+      <text x="70" y="30" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">
+        No data yet
+      </text>
+    </g>
+    
+    <!-- Conexión 1 -->
+    <g>
+      <line x1="188" y1="170" x2="290" y2="170" stroke="#00D4FF" stroke-width="3"/>
+      <polygon points="290,170 278,165 278,175" fill="#00D4FF"/>
+      
+      <!-- Label de conexión -->
+      <text x="239" y="160" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Trigger event
+      </text>
+    </g>
+    
+    <!-- Nodo 2: HTTP Request -->
+    <g id="node2" transform="translate(290, 120)">
+      <rect x="0" y="0" width="180" height="100" rx="12" fill="#2d2d2d" stroke="#FFA500" stroke-width="3"/>
+      <text x="90" y="35" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        HTTP Request
+      </text>
+      <text x="90" y="55" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">
+        GET Request
+      </text>
+      <text x="90" y="78" font-family="Arial, sans-serif" font-size="10" fill="#FFA500" text-anchor="middle">
+        /users API
+      </text>
+      
+      <!-- Conector entrada -->
+      <circle cx="0" cy="50" r="8" fill="#00D4FF"/>
+      <circle cx="0" cy="50" r="4" fill="#1a1a1a"/>
+      
+      <!-- Conector salida -->
+      <circle cx="180" cy="50" r="8" fill="#FFA500"/>
+      <circle cx="180" cy="50" r="4" fill="#1a1a1a"/>
+    </g>
+    
+    <!-- Anotación HTTP Request -->
+    <g transform="translate(380, 80)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" text-anchor="middle" font-weight="bold">
+        DATA SOURCE
+      </text>
+      <text x="0" y="18" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Consume external API
+      </text>
+    </g>
+    
+    <!-- Output info HTTP Request -->
+    <g transform="translate(310, 235)">
+      <rect x="0" y="0" width="140" height="60" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="1" opacity="0.7"/>
+      <text x="70" y="16" font-family="Arial, sans-serif" font-size="10" fill="#FFA500" text-anchor="middle" font-weight="bold">
+        Output: 10 items
+      </text>
+      <text x="70" y="32" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">
+        Full user objects
+      </text>
+      <text x="70" y="48" font-family="Arial, sans-serif" font-size="9" fill="#00D4FF" text-anchor="middle">
+        id, name, email, etc.
+      </text>
+    </g>
+    
+    <!-- Conexión 2 -->
+    <g transform="translate(290, 0)">
+      <line x1="188" y1="170" x2="290" y2="170" stroke="#FFA500" stroke-width="3"/>
+      <polygon points="290,170 278,165 278,175" fill="#FFA500"/>
+      
+      <!-- Label de conexión -->
+      <text x="239" y="160" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Raw JSON data
+      </text>
+    </g>
+    
+    <!-- Nodo 3: Set -->
+    <g id="node3" transform="translate(580, 120)">
+      <rect x="0" y="0" width="180" height="100" rx="12" fill="#2d2d2d" stroke="#00A86B" stroke-width="3"/>
+      <text x="90" y="35" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+        Set
+      </text>
+      <text x="90" y="55" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">
+        Transform Data
+      </text>
+      <text x="90" y="78" font-family="Arial, sans-serif" font-size="10" fill="#00A86B" text-anchor="middle">
+        Extract 4 fields
+      </text>
+      
+      <!-- Conector entrada -->
+      <circle cx="0" cy="50" r="8" fill="#FFA500"/>
+      <circle cx="0" cy="50" r="4" fill="#1a1a1a"/>
+      
+      <!-- Conector salida -->
+      <circle cx="180" cy="50" r="8" fill="#00A86B"/>
+      <circle cx="180" cy="50" r="4" fill="#1a1a1a"/>
+    </g>
+    
+    <!-- Anotación Set -->
+    <g transform="translate(670, 80)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">
+        TRANSFORM
+      </text>
+      <text x="0" y="18" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+        Clean and format data
+      </text>
+    </g>
+    
+    <!-- Output info Set -->
+    <g transform="translate(600, 235)">
+      <rect x="0" y="0" width="140" height="75" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="1" opacity="0.7"/>
+      <text x="70" y="16" font-family="Arial, sans-serif" font-size="10" fill="#00A86B" text-anchor="middle" font-weight="bold">
+        Output: 10 items
+      </text>
+      <text x="70" y="32" font-family="Arial, sans-serif" font-size="9" fill="#888" text-anchor="middle">
+        Transformed objects
+      </text>
+      <text x="70" y="48" font-family="Arial, sans-serif" font-size="9" fill="#00D4FF" text-anchor="middle">
+        id, nombre, email,
+      </text>
+      <text x="70" y="63" font-family="Arial, sans-serif" font-size="9" fill="#00D4FF" text-anchor="middle">
+        empresa
+      </text>
+    </g>
+    
+    <!-- Icono de check final -->
+    <g transform="translate(790, 150)">
+      <circle cx="0" cy="0" r="30" fill="#00A86B" opacity="0.2"/>
+      <circle cx="0" cy="0" r="20" fill="#00A86B" opacity="0.4"/>
+      <path d="M -8,-2 L -3,5 L 10,-8" stroke="#00A86B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Success label -->
+    <text x="790" y="210" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      SUCCESS
+    </text>
+  </g>
+  
+  <!-- Ejemplo de datos -->
+  <g transform="translate(100, 400)">
+    <rect x="0" y="0" width="1000" height="170" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+    
+    <text x="500" y="30" font-family="Arial, sans-serif" font-size="16" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      Ejemplo de Transformacion de Datos
+    </text>
+    
+    <!-- Input data -->
+    <g transform="translate(40, 50)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" font-weight="bold">
+        Input (HTTP Request):
+      </text>
+      <rect x="0" y="10" width="380" height="90" rx="6" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="10" y="30" font-family="Courier New, monospace" font-size="10" fill="#E0E0E0">
+        {
+      </text>
+      <text x="20" y="45" font-family="Courier New, monospace" font-size="10" fill="#888">
+        "id": 1,
+      </text>
+      <text x="20" y="60" font-family="Courier New, monospace" font-size="10" fill="#888">
+        "name": "Leanne Graham",
+      </text>
+      <text x="20" y="75" font-family="Courier New, monospace" font-size="10" fill="#888">
+        "email": "Sincere@april.biz",
+      </text>
+      <text x="20" y="90" font-family="Courier New, monospace" font-size="10" fill="#888">
+        "company": { "name": "Romaguera" }
+      </text>
+      <text x="10" y="105" font-family="Courier New, monospace" font-size="10" fill="#E0E0E0">
+        }
+      </text>
+    </g>
+    
+    <!-- Flecha transformación -->
+    <g transform="translate(450, 90)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#00A86B" stroke-width="2"/>
+      <polygon points="50,0 42,-4 42,4" fill="#00A86B"/>
+      <text x="25" y="-10" font-family="Arial, sans-serif" font-size="10" fill="#00A86B" text-anchor="middle">
+        Set Node
+      </text>
+    </g>
+    
+    <!-- Output data -->
+    <g transform="translate(530, 50)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" font-weight="bold">
+        Output (Set):
+      </text>
+      <rect x="0" y="10" width="380" height="90" rx="6" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+      <text x="10" y="30" font-family="Courier New, monospace" font-size="10" fill="#E0E0E0">
+        {
+      </text>
+      <text x="20" y="45" font-family="Courier New, monospace" font-size="10" fill="#00A86B">
+        "id": 1,
+      </text>
+      <text x="20" y="60" font-family="Courier New, monospace" font-size="10" fill="#00A86B">
+        "nombre": "Leanne Graham",
+      </text>
+      <text x="20" y="75" font-family="Courier New, monospace" font-size="10" fill="#00A86B">
+        "email": "Sincere@april.biz",
+      </text>
+      <text x="20" y="90" font-family="Courier New, monospace" font-size="10" fill="#00A86B">
+        "empresa": "Romaguera"
+      </text>
+      <text x="10" y="105" font-family="Courier New, monospace" font-size="10" fill="#E0E0E0">
+        }
+      </text>
+    </g>
+    
+    <text x="930" y="105" font-family="Arial, sans-serif" font-size="20" fill="#00A86B">
+      ✓
+    </text>
+  </g>
+  
+  <!-- Leyenda inferior -->
+  <g transform="translate(300, 580)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="11" fill="#888" font-style="italic">
+      Cada nodo procesa los 10 items automaticamente - El flujo es de izquierda a derecha
+    </text>
+  </g>
+</svg>
