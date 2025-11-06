@@ -1,5 +1,21 @@
 # ¿Qué es n8n y por qué usarlo?
 
+## 🎯 Objetivos de Aprendizaje
+
+Al completar este documento, serás capaz de:
+
+1. **Comprender** qué es n8n y cómo funciona la automatización de workflows
+2. **Identificar** los conceptos fundamentales: nodos, triggers, acciones y conexiones
+3. **Reconocer** las características que hacen único a n8n (open source, self-hosted, fair-code)
+4. **Evaluar** cuándo usar n8n vs otras alternativas (Zapier, Make, código manual)
+5. **Visualizar** casos de uso reales aplicables a diferentes industrias
+6. **Calcular** el ROI y beneficios de implementar automatizaciones
+
+**⏱️ Tiempo estimado de lectura:** 25-30 minutos  
+**📚 Nivel:** Principiante (no requiere conocimientos previos)
+
+---
+
 ## 📋 Introducción
 
 **n8n** (n-eight-n) es una plataforma de automatización de workflows de código abierto y "fair-code" que permite conectar diferentes aplicaciones y servicios entre sí sin necesidad de escribir código complejo.
