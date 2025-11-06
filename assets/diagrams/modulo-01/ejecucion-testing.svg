@@ -1,0 +1,527 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <!-- Fondo -->
+  <rect width="1400" height="900" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Ejecución y Testing de Workflows
+  </text>
+  
+  <text x="700" y="70" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle">
+    Modos de ejecución, técnicas de testing y debugging
+  </text>
+  
+  <!-- SECCIÓN 1: MODOS DE EJECUCIÓN -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="1300" height="220" rx="12" fill="#2d2d2d" stroke="#00D4FF" stroke-width="3"/>
+    
+    <text x="650" y="35" font-family="Arial, sans-serif" font-size="20" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+      Modos de Ejecución
+    </text>
+    
+    <line x1="30" y1="50" x2="1270" y2="50" stroke="#555" stroke-width="1"/>
+    
+    <!-- Modo 1: Manual -->
+    <g transform="translate(50, 70)">
+      <rect x="0" y="0" width="360" height="120" rx="8" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+      
+      <circle cx="30" cy="25" r="12" fill="#00D4FF"/>
+      <text x="50" y="32" font-family="Arial, sans-serif" font-size="14" fill="#00D4FF" font-weight="bold">
+        1. MANUAL
+      </text>
+      
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Click en "Execute Workflow"
+      </text>
+      <text x="20" y="73" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Ejecución inmediata bajo demanda
+      </text>
+      <text x="20" y="91" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Ideal para: Testing y desarrollo
+      </text>
+      <text x="20" y="109" font-family="Arial, sans-serif" font-size="10" fill="#00A86B" font-style="italic">
+        ✓ Control total, resultados inmediatos
+      </text>
+    </g>
+    
+    <!-- Modo 2: Automático (Triggers) -->
+    <g transform="translate(470, 70)">
+      <rect x="0" y="0" width="360" height="120" rx="8" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+      
+      <circle cx="30" cy="25" r="12" fill="#FFA500"/>
+      <text x="50" y="32" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" font-weight="bold">
+        2. AUTOMÁTICO (Triggers)
+      </text>
+      
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Webhook, Schedule, Email Trigger
+      </text>
+      <text x="20" y="73" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Responde a eventos externos
+      </text>
+      <text x="20" y="91" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Ideal para: Integraciones tiempo real
+      </text>
+      <text x="20" y="109" font-family="Arial, sans-serif" font-size="10" fill="#00A86B" font-style="italic">
+        ✓ Sin intervención humana, escalable
+      </text>
+    </g>
+    
+    <!-- Modo 3: Polling -->
+    <g transform="translate(890, 70)">
+      <rect x="0" y="0" width="360" height="120" rx="8" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+      
+      <circle cx="30" cy="25" r="12" fill="#00A86B"/>
+      <text x="50" y="32" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" font-weight="bold">
+        3. POLLING
+      </text>
+      
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Consulta periódica a servicio externo
+      </text>
+      <text x="20" y="73" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Detecta cambios automáticamente
+      </text>
+      <text x="20" y="91" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0">
+        • Ideal para: RSS, Google Sheets, APIs
+      </text>
+      <text x="20" y="109" font-family="Arial, sans-serif" font-size="10" fill="#00A86B" font-style="italic">
+        ✓ Monitoreo continuo, sin webhooks
+      </text>
+    </g>
+  </g>
+  
+  <!-- SECCIÓN 2: FLUJO DE TESTING -->
+  <g transform="translate(50, 350)">
+    <rect x="0" y="0" width="1300" height="250" rx="12" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    
+    <text x="650" y="35" font-family="Arial, sans-serif" font-size="20" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      Flujo de Testing Recomendado
+    </text>
+    
+    <line x1="30" y1="50" x2="1270" y2="50" stroke="#555" stroke-width="1"/>
+    
+    <!-- Paso 1 -->
+    <g transform="translate(70, 75)">
+      <rect x="0" y="0" width="130" height="140" rx="8" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+      
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="12" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        PASO 1
+      </text>
+      <text x="65" y="43" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Datos de Prueba
+      </text>
+      
+      <line x1="15" y1="55" x2="115" y2="55" stroke="#555" stroke-width="1"/>
+      
+      <text x="10" y="73" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Crear dataset fijo
+      </text>
+      <text x="10" y="89" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Casos válidos
+      </text>
+      <text x="10" y="105" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Casos inválidos
+      </text>
+      <text x="10" y="121" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Edge cases
+      </text>
+    </g>
+    
+    <!-- Flecha 1 -->
+    <g transform="translate(205, 140)">
+      <line x1="0" y1="0" x2="35" y2="0" stroke="#00D4FF" stroke-width="2"/>
+      <polygon points="35,0 31,-3 31,3" fill="#00D4FF"/>
+    </g>
+    
+    <!-- Paso 2 -->
+    <g transform="translate(245, 75)">
+      <rect x="0" y="0" width="130" height="140" rx="8" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+      
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" text-anchor="middle" font-weight="bold">
+        PASO 2
+      </text>
+      <text x="65" y="43" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Ejecutar Nodo
+      </text>
+      
+      <line x1="15" y1="55" x2="115" y2="55" stroke="#555" stroke-width="1"/>
+      
+      <text x="10" y="73" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Run nodo por nodo
+      </text>
+      <text x="10" y="89" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • No todo de una vez
+      </text>
+      <text x="10" y="105" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Verificar output
+      </text>
+      <text x="10" y="121" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Ajustar si necesario
+      </text>
+    </g>
+    
+    <!-- Flecha 2 -->
+    <g transform="translate(380, 140)">
+      <line x1="0" y1="0" x2="35" y2="0" stroke="#FFA500" stroke-width="2"/>
+      <polygon points="35,0 31,-3 31,3" fill="#FFA500"/>
+    </g>
+    
+    <!-- Paso 3 -->
+    <g transform="translate(420, 75)">
+      <rect x="0" y="0" width="130" height="140" rx="8" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+      
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">
+        PASO 3
+      </text>
+      <text x="65" y="43" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Validar Branches
+      </text>
+      
+      <line x1="15" y1="55" x2="115" y2="55" stroke="#555" stroke-width="1"/>
+      
+      <text x="10" y="73" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Probar rama true
+      </text>
+      <text x="10" y="89" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Probar rama false
+      </text>
+      <text x="10" y="105" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Todas las rutas
+      </text>
+      <text x="10" y="121" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Switch outputs
+      </text>
+    </g>
+    
+    <!-- Flecha 3 -->
+    <g transform="translate(555, 140)">
+      <line x1="0" y1="0" x2="35" y2="0" stroke="#00A86B" stroke-width="2"/>
+      <polygon points="35,0 31,-3 31,3" fill="#00A86B"/>
+    </g>
+    
+    <!-- Paso 4 -->
+    <g transform="translate(595, 75)">
+      <rect x="0" y="0" width="130" height="140" rx="8" fill="#1a1a1a" stroke="#FF6D5A" stroke-width="2"/>
+      
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="12" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+        PASO 4
+      </text>
+      <text x="65" y="43" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Error Handling
+      </text>
+      
+      <line x1="15" y1="55" x2="115" y2="55" stroke="#555" stroke-width="1"/>
+      
+      <text x="10" y="73" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Forzar errores
+      </text>
+      <text x="10" y="89" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Validar captura
+      </text>
+      <text x="10" y="105" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Verificar retry
+      </text>
+      <text x="10" y="121" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Notificaciones
+      </text>
+    </g>
+    
+    <!-- Flecha 4 -->
+    <g transform="translate(730, 140)">
+      <line x1="0" y1="0" x2="35" y2="0" stroke="#FF6D5A" stroke-width="2"/>
+      <polygon points="35,0 31,-3 31,3" fill="#FF6D5A"/>
+    </g>
+    
+    <!-- Paso 5 -->
+    <g transform="translate(770, 75)">
+      <rect x="0" y="0" width="130" height="140" rx="8" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+      
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="12" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        PASO 5
+      </text>
+      <text x="65" y="43" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Performance
+      </text>
+      
+      <line x1="15" y1="55" x2="115" y2="55" stroke="#555" stroke-width="1"/>
+      
+      <text x="10" y="73" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Medir tiempos
+      </text>
+      <text x="10" y="89" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Optimizar lento
+      </text>
+      <text x="10" y="105" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Test con volumen
+      </text>
+      <text x="10" y="121" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Uso de memoria
+      </text>
+    </g>
+    
+    <!-- Flecha 5 -->
+    <g transform="translate(905, 140)">
+      <line x1="0" y1="0" x2="35" y2="0" stroke="#00D4FF" stroke-width="2"/>
+      <polygon points="35,0 31,-3 31,3" fill="#00D4FF"/>
+    </g>
+    
+    <!-- Paso 6 -->
+    <g transform="translate(945, 75)">
+      <rect x="0" y="0" width="130" height="140" rx="8" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+      
+      <text x="65" y="25" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">
+        PASO 6
+      </text>
+      <text x="65" y="43" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Producción ✓
+      </text>
+      
+      <line x1="15" y1="55" x2="115" y2="55" stroke="#555" stroke-width="1"/>
+      
+      <text x="10" y="73" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Activar workflow
+      </text>
+      <text x="10" y="89" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Configurar alertas
+      </text>
+      <text x="10" y="105" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Monitorear logs
+      </text>
+      <text x="10" y="121" font-family="Arial, sans-serif" font-size="9" fill="#888">
+        • Backup y version
+      </text>
+    </g>
+  </g>
+  
+  <!-- SECCIÓN 3: TÉCNICAS DE DEBUGGING -->
+  <g transform="translate(50, 630)">
+    <rect x="0" y="0" width="630" height="220" rx="12" fill="#2d2d2d" stroke="#FFA500" stroke-width="3"/>
+    
+    <text x="315" y="35" font-family="Arial, sans-serif" font-size="18" fill="#FFA500" text-anchor="middle" font-weight="bold">
+      Técnicas de Debugging
+    </text>
+    
+    <line x1="30" y1="50" x2="600" y2="50" stroke="#555" stroke-width="1"/>
+    
+    <g transform="translate(40, 65)">
+      <!-- Técnica 1 -->
+      <g>
+        <rect x="0" y="0" width="22" height="22" rx="4" fill="#00D4FF"/>
+        <text x="11" y="16" font-family="Arial, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="bold">
+          1
+        </text>
+        
+        <text x="32" y="16" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" font-weight="bold">
+          NoOp Breakpoints
+        </text>
+        <text x="32" y="30" font-family="Arial, sans-serif" font-size="9" fill="#888">
+          Añade NoOp para pausar y ver datos
+        </text>
+      </g>
+      
+      <!-- Técnica 2 -->
+      <g transform="translate(0, 42)">
+        <rect x="0" y="0" width="22" height="22" rx="4" fill="#FFA500"/>
+        <text x="11" y="16" font-family="Arial, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="bold">
+          2
+        </text>
+        
+        <text x="32" y="16" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" font-weight="bold">
+          Logging Manual
+        </text>
+        <text x="32" y="30" font-family="Arial, sans-serif" font-size="9" fill="#888">
+          console.log() en nodos Code
+        </text>
+      </g>
+      
+      <!-- Técnica 3 -->
+      <g transform="translate(0, 84)">
+        <rect x="0" y="0" width="22" height="22" rx="4" fill="#00A86B"/>
+        <text x="11" y="16" font-family="Arial, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="bold">
+          3
+        </text>
+        
+        <text x="32" y="16" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" font-weight="bold">
+          Bisección (Binary Search)
+        </text>
+        <text x="32" y="30" font-family="Arial, sans-serif" font-size="9" fill="#888">
+          Divide workflow por mitad
+        </text>
+      </g>
+      
+      <!-- Técnica 4 -->
+      <g transform="translate(0, 126)">
+        <rect x="0" y="0" width="22" height="22" rx="4" fill="#FF6D5A"/>
+        <text x="11" y="16" font-family="Arial, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="bold">
+          4
+        </text>
+        
+        <text x="32" y="16" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" font-weight="bold">
+          Inspección de Datos
+        </text>
+        <text x="32" y="30" font-family="Arial, sans-serif" font-size="9" fill="#888">
+          Ver estructura completa con Set
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- SECCIÓN 4: CHECKLIST DE PRODUCCIÓN -->
+  <g transform="translate(720, 630)">
+    <rect x="0" y="0" width="630" height="220" rx="12" fill="#2d2d2d" stroke="#00A86B" stroke-width="3"/>
+    
+    <text x="315" y="35" font-family="Arial, sans-serif" font-size="18" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      Checklist Pre-Producción
+    </text>
+    
+    <line x1="30" y1="50" x2="600" y2="50" stroke="#555" stroke-width="1"/>
+    
+    <g transform="translate(40, 70)">
+      <!-- Columna 1 -->
+      <g>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" fill="#00D4FF" font-weight="bold">
+          FUNCIONALIDAD
+        </text>
+        
+        <g transform="translate(0, 12)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Workflow ejecuta correctamente
+          </text>
+        </g>
+        
+        <g transform="translate(0, 26)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Testeado con datos reales
+          </text>
+        </g>
+        
+        <g transform="translate(0, 40)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Todas las ramas validadas
+          </text>
+        </g>
+        
+        <g transform="translate(0, 54)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Error handling implementado
+          </text>
+        </g>
+      </g>
+      
+      <!-- Columna 2 -->
+      <g transform="translate(290, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" fill="#FFA500" font-weight="bold">
+          SEGURIDAD
+        </text>
+        
+        <g transform="translate(0, 12)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Credenciales configuradas
+          </text>
+        </g>
+        
+        <g transform="translate(0, 26)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Webhooks autenticados
+          </text>
+        </g>
+        
+        <g transform="translate(0, 40)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Datos sensibles protegidos
+          </text>
+        </g>
+        
+        <g transform="translate(0, 54)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Permisos mínimos necesarios
+          </text>
+        </g>
+      </g>
+      
+      <!-- Columna 3 -->
+      <g transform="translate(0, 85)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" fill="#00A86B" font-weight="bold">
+          PERFORMANCE
+        </text>
+        
+        <g transform="translate(0, 12)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Tiempo de ejecución aceptable
+          </text>
+        </g>
+        
+        <g transform="translate(0, 26)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Sin memory leaks
+          </text>
+        </g>
+        
+        <g transform="translate(0, 40)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Rate limits respetados
+          </text>
+        </g>
+        
+        <g transform="translate(0, 54)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Queries optimizadas
+          </text>
+        </g>
+      </g>
+      
+      <!-- Columna 4 -->
+      <g transform="translate(290, 85)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" fill="#FF6D5A" font-weight="bold">
+          MONITOREO
+        </text>
+        
+        <g transform="translate(0, 12)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Alertas de error configuradas
+          </text>
+        </g>
+        
+        <g transform="translate(0, 26)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Logs habilitados
+          </text>
+        </g>
+        
+        <g transform="translate(0, 40)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Métricas definidas
+          </text>
+        </g>
+        
+        <g transform="translate(0, 54)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="14" y="4" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0">
+            Backup configurado
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <text x="700" y="885" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle" font-style="italic">
+    Testea temprano y frecuentemente - La mejor práctica es prevenir errores antes de producción
+  </text>
+</svg>
