@@ -100,7 +100,9 @@ Toda la documentación auxiliar está organizada en el directorio [`_docs/`](./_
 - 🧠 [Conceptos Fundamentales](./_docs/conceptos-fundamentales.md)
 - 🔧 [Expresiones y Variables](./_docs/expresiones-y-variables.md)
 - ⭐ [Mejores Prácticas](./_docs/mejores-practicas.md)
-- 🔍 [Troubleshooting](./_docs/troubleshooting.md)
+- � [Comandos Útiles](./_docs/comandos-utiles.md) - **¡Guía rápida de comandos!**
+- 📝 [Conventional Commits](./_docs/conventional-commits.md)
+- �🔍 [Troubleshooting](./_docs/troubleshooting.md)
 - 🌐 [Recursos Externos](./_docs/recursos-externos.md)
 
 ## 🚀 Inicio Rápido
