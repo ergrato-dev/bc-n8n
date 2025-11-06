@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800">
+  <!-- Fondo -->
+  <rect width="1000" height="800" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Casos de Uso de n8n por Industria
+  </text>
+  
+  <!-- Marketing -->
+  <g transform="translate(50, 90)">
+    <rect x="0" y="0" width="280" height="200" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    
+    <!-- Icono y título -->
+    <text x="140" y="35" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">📢</text>
+    <text x="140" y="65" font-family="Arial, sans-serif" font-size="18" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      Marketing
+    </text>
+    
+    <!-- Casos de uso -->
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Lead scoring automático
+    </text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Campañas multicanal
+    </text>
+    <text x="20" y="135" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Email drip campaigns
+    </text>
+    <text x="20" y="155" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Social media posting
+    </text>
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Analytics dashboards
+    </text>
+  </g>
+  
+  <!-- Ventas -->
+  <g transform="translate(360, 90)">
+    <rect x="0" y="0" width="280" height="200" rx="10" fill="#2d2d2d" stroke="#00A86B" stroke-width="3"/>
+    
+    <!-- Icono y título -->
+    <text x="140" y="35" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">💼</text>
+    <text x="140" y="65" font-family="Arial, sans-serif" font-size="18" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      Ventas
+    </text>
+    
+    <!-- Casos de uso -->
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Calificación de leads
+    </text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Sincronización CRM
+    </text>
+    <text x="20" y="135" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Seguimiento post-venta
+    </text>
+    <text x="20" y="155" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Reportes automáticos
+    </text>
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Notificaciones de equipo
+    </text>
+  </g>
+  
+  <!-- IT/DevOps -->
+  <g transform="translate(670, 90)">
+    <rect x="0" y="0" width="280" height="200" rx="10" fill="#2d2d2d" stroke="#00D4FF" stroke-width="3"/>
+    
+    <!-- Icono y título -->
+    <text x="140" y="35" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">⚙️</text>
+    <text x="140" y="65" font-family="Arial, sans-serif" font-size="18" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+      IT/DevOps
+    </text>
+    
+    <!-- Casos de uso -->
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Monitoreo de sistemas
+    </text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Incident management
+    </text>
+    <text x="20" y="135" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Deploy automation
+    </text>
+    <text x="20" y="155" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Backup schedules
+    </text>
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Log aggregation
+    </text>
+  </g>
+  
+  <!-- Recursos Humanos -->
+  <g transform="translate(50, 320)">
+    <rect x="0" y="0" width="280" height="200" rx="10" fill="#2d2d2d" stroke="#FFA500" stroke-width="3"/>
+    
+    <!-- Icono y título -->
+    <text x="140" y="35" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">👥</text>
+    <text x="140" y="65" font-family="Arial, sans-serif" font-size="18" fill="#FFA500" text-anchor="middle" font-weight="bold">
+      Recursos Humanos
+    </text>
+    
+    <!-- Casos de uso -->
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Onboarding empleados
+    </text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Gestión de vacaciones
+    </text>
+    <text x="20" y="135" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Encuestas periódicas
+    </text>
+    <text x="20" y="155" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Recordatorios de tareas
+    </text>
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Recopilación de datos
+    </text>
+  </g>
+  
+  <!-- Finanzas -->
+  <g transform="translate(360, 320)">
+    <rect x="0" y="0" width="280" height="200" rx="10" fill="#2d2d2d" stroke="#FFD700" stroke-width="3"/>
+    
+    <!-- Icono y título -->
+    <text x="140" y="35" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">💰</text>
+    <text x="140" y="65" font-family="Arial, sans-serif" font-size="18" fill="#FFD700" text-anchor="middle" font-weight="bold">
+      Finanzas
+    </text>
+    
+    <!-- Casos de uso -->
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Conciliación bancaria
+    </text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Facturación automática
+    </text>
+    <text x="20" y="135" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Reportes financieros
+    </text>
+    <text x="20" y="155" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Control de gastos
+    </text>
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Alertas de cobro
+    </text>
+  </g>
+  
+  <!-- E-commerce -->
+  <g transform="translate(670, 320)">
+    <rect x="0" y="0" width="280" height="200" rx="10" fill="#2d2d2d" stroke="#9B59B6" stroke-width="3"/>
+    
+    <!-- Icono y título -->
+    <text x="140" y="35" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🛒</text>
+    <text x="140" y="65" font-family="Arial, sans-serif" font-size="18" fill="#9B59B6" text-anchor="middle" font-weight="bold">
+      E-commerce
+    </text>
+    
+    <!-- Casos de uso -->
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Sincronización inventario
+    </text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Notificaciones pedidos
+    </text>
+    <text x="20" y="135" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Gestión devoluciones
+    </text>
+    <text x="20" y="155" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Emails transaccionales
+    </text>
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0">
+      • Análisis de ventas
+    </text>
+  </g>
+  
+  <!-- Ejemplo Real Destacado -->
+  <g transform="translate(50, 550)">
+    <rect x="0" y="0" width="900" height="180" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    
+    <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      🎯 Caso Real: Automatización de Captación de Leads
+    </text>
+    
+    <!-- Timeline -->
+    <g transform="translate(50, 60)">
+      <!-- Paso 1 -->
+      <circle cx="0" cy="20" r="15" fill="#00D4FF" opacity="0.3" stroke="#00D4FF" stroke-width="2"/>
+      <text x="0" y="26" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle" font-weight="bold">1</text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Usuario llena
+      </text>
+      <text x="0" y="70" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        formulario web
+      </text>
+      
+      <!-- Flecha -->
+      <line x1="20" y1="20" x2="125" y2="20" stroke="#FF6D5A" stroke-width="2"/>
+      <polygon points="125,20 115,15 115,25" fill="#FF6D5A"/>
+      
+      <!-- Paso 2 -->
+      <circle cx="150" cy="20" r="15" fill="#FFA500" opacity="0.3" stroke="#FFA500" stroke-width="2"/>
+      <text x="150" y="26" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle" font-weight="bold">2</text>
+      <text x="150" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        n8n recibe
+      </text>
+      <text x="150" y="70" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        webhook
+      </text>
+      
+      <!-- Flecha -->
+      <line x1="170" y1="20" x2="275" y2="20" stroke="#FF6D5A" stroke-width="2"/>
+      <polygon points="275,20 265,15 265,25" fill="#FF6D5A"/>
+      
+      <!-- Paso 3 -->
+      <circle cx="300" cy="20" r="15" fill="#FFA500" opacity="0.3" stroke="#FFA500" stroke-width="2"/>
+      <text x="300" y="26" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle" font-weight="bold">3</text>
+      <text x="300" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Valida datos
+      </text>
+      <text x="300" y="70" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        y enriquece
+      </text>
+      
+      <!-- Flecha -->
+      <line x1="320" y1="20" x2="425" y2="20" stroke="#FF6D5A" stroke-width="2"/>
+      <polygon points="425,20 415,15 415,25" fill="#FF6D5A"/>
+      
+      <!-- Paso 4 -->
+      <circle cx="450" cy="20" r="15" fill="#FFA500" opacity="0.3" stroke="#FFA500" stroke-width="2"/>
+      <text x="450" y="26" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle" font-weight="bold">4</text>
+      <text x="450" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Guarda en
+      </text>
+      <text x="450" y="70" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        CRM/Sheets
+      </text>
+      
+      <!-- Flecha -->
+      <line x1="470" y1="20" x2="575" y2="20" stroke="#FF6D5A" stroke-width="2"/>
+      <polygon points="575,20 565,15 565,25" fill="#FF6D5A"/>
+      
+      <!-- Paso 5 -->
+      <circle cx="600" cy="20" r="15" fill="#FFA500" opacity="0.3" stroke="#FFA500" stroke-width="2"/>
+      <text x="600" y="26" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle" font-weight="bold">5</text>
+      <text x="600" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Notifica
+      </text>
+      <text x="600" y="70" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        equipo
+      </text>
+      
+      <!-- Flecha -->
+      <line x1="620" y1="20" x2="725" y2="20" stroke="#FF6D5A" stroke-width="2"/>
+      <polygon points="725,20 715,15 715,25" fill="#FF6D5A"/>
+      
+      <!-- Paso 6 -->
+      <circle cx="750" cy="20" r="15" fill="#00A86B" opacity="0.3" stroke="#00A86B" stroke-width="2"/>
+      <text x="750" y="26" font-family="Arial, sans-serif" font-size="12" fill="#E0E0E0" text-anchor="middle" font-weight="bold">6</text>
+      <text x="750" y="55" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        Email de
+      </text>
+      <text x="750" y="70" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+        bienvenida
+      </text>
+    </g>
+    
+    <!-- Resultados -->
+    <text x="450" y="155" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      ✨ Resultado: 95% de leads capturados sin pérdidas • Tiempo de respuesta &lt;30 segundos • Equipo notificado 24/7
+    </text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="500" y="770" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle" font-style="italic">
+    💡 n8n se adapta a cualquier industria y proceso de negocio
+  </text>
+</svg>

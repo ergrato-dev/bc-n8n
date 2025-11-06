@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <!-- Fondo -->
+  <rect width="1000" height="600" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Comparativa: n8n vs Otras Herramientas
+  </text>
+  
+  <!-- Tabla de comparación -->
+  
+  <!-- Encabezados de columnas -->
+  <g transform="translate(50, 80)">
+    <!-- Columna característica -->
+    <rect x="0" y="0" width="200" height="50" fill="#2d2d2d" stroke="#555" stroke-width="2"/>
+    <text x="100" y="32" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      Característica
+    </text>
+    
+    <!-- Columna n8n -->
+    <rect x="200" y="0" width="180" height="50" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+    <text x="290" y="25" font-family="Arial, sans-serif" font-size="16" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      n8n
+    </text>
+    <text x="290" y="42" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+      Fair-Code
+    </text>
+    
+    <!-- Columna Zapier -->
+    <rect x="380" y="0" width="180" height="50" fill="#2d2d2d" stroke="#555" stroke-width="2"/>
+    <text x="470" y="25" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      Zapier
+    </text>
+    <text x="470" y="42" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+      SaaS
+    </text>
+    
+    <!-- Columna Make -->
+    <rect x="560" y="0" width="180" height="50" fill="#2d2d2d" stroke="#555" stroke-width="2"/>
+    <text x="650" y="25" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      Make
+    </text>
+    <text x="650" y="42" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+      SaaS
+    </text>
+    
+    <!-- Columna Código Manual -->
+    <rect x="740" y="0" width="180" height="50" fill="#2d2d2d" stroke="#555" stroke-width="2"/>
+    <text x="830" y="25" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      Código Manual
+    </text>
+    <text x="830" y="42" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">
+      Custom
+    </text>
+  </g>
+  
+  <!-- Fila 1: Costo -->
+  <g transform="translate(50, 130)">
+    <rect x="0" y="0" width="200" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0">💰 Costo</text>
+    
+    <rect x="200" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="290" y="25" font-family="Arial, sans-serif" font-size="16" fill="#00A86B" text-anchor="middle" font-weight="bold">Gratis*</text>
+    <text x="290" y="43" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">*self-hosted</text>
+    
+    <rect x="380" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="470" y="25" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" text-anchor="middle">$29-599/mes</text>
+    <text x="470" y="43" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">según plan</text>
+    
+    <rect x="560" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="650" y="25" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" text-anchor="middle">$10-299/mes</text>
+    <text x="650" y="43" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">según plan</text>
+    
+    <rect x="740" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="830" y="25" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" text-anchor="middle">Servidor</text>
+    <text x="830" y="43" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">+ tiempo dev</text>
+  </g>
+  
+  <!-- Fila 2: Control de datos -->
+  <g transform="translate(50, 190)">
+    <rect x="0" y="0" width="200" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0">🔒 Control de datos</text>
+    
+    <rect x="200" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="290" y="35" font-family="Arial, sans-serif" font-size="24" fill="#00A86B" text-anchor="middle">✓</text>
+    
+    <rect x="380" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="470" y="35" font-family="Arial, sans-serif" font-size="24" fill="#FF6D5A" text-anchor="middle">✗</text>
+    
+    <rect x="560" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="650" y="35" font-family="Arial, sans-serif" font-size="24" fill="#FF6D5A" text-anchor="middle">✗</text>
+    
+    <rect x="740" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="830" y="35" font-family="Arial, sans-serif" font-size="24" fill="#00A86B" text-anchor="middle">✓</text>
+  </g>
+  
+  <!-- Fila 3: Límite de ejecuciones -->
+  <g transform="translate(50, 250)">
+    <rect x="0" y="0" width="200" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0">🔄 Ejecuciones</text>
+    
+    <rect x="200" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="290" y="35" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" text-anchor="middle" font-weight="bold">Ilimitadas</text>
+    
+    <rect x="380" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="470" y="25" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">750-50K</text>
+    <text x="470" y="43" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">según plan</text>
+    
+    <rect x="560" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="650" y="25" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">1K-10K+</text>
+    <text x="650" y="43" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">según plan</text>
+    
+    <rect x="740" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="830" y="35" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" text-anchor="middle" font-weight="bold">Ilimitadas</text>
+  </g>
+  
+  <!-- Fila 4: Curva de aprendizaje -->
+  <g transform="translate(50, 310)">
+    <rect x="0" y="0" width="200" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0">📚 Aprendizaje</text>
+    
+    <rect x="200" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="290" y="35" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">Media</text>
+    
+    <rect x="380" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="470" y="35" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" text-anchor="middle">Baja</text>
+    
+    <rect x="560" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="650" y="35" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">Media</text>
+    
+    <rect x="740" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="830" y="35" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" text-anchor="middle">Alta</text>
+  </g>
+  
+  <!-- Fila 5: Flexibilidad -->
+  <g transform="translate(50, 370)">
+    <rect x="0" y="0" width="200" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0">🎨 Flexibilidad</text>
+    
+    <rect x="200" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="290" y="35" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" text-anchor="middle" font-weight="bold">Alta</text>
+    
+    <rect x="380" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="470" y="35" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">Media</text>
+    
+    <rect x="560" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="650" y="35" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">Media-Alta</text>
+    
+    <rect x="740" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="830" y="35" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" text-anchor="middle" font-weight="bold">Máxima</text>
+  </g>
+  
+  <!-- Fila 6: Código requerido -->
+  <g transform="translate(50, 430)">
+    <rect x="0" y="0" width="200" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="13" fill="#E0E0E0">💻 Código</text>
+    
+    <rect x="200" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="290" y="35" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">Opcional</text>
+    
+    <rect x="380" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="470" y="35" font-family="Arial, sans-serif" font-size="14" fill="#00A86B" text-anchor="middle">No</text>
+    
+    <rect x="560" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="650" y="35" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">Opcional</text>
+    
+    <rect x="740" y="0" width="180" height="60" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+    <text x="830" y="35" font-family="Arial, sans-serif" font-size="14" fill="#FFA500" text-anchor="middle">100%</text>
+  </g>
+  
+  <!-- Conclusión -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="870" height="60" rx="8" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+    <text x="435" y="25" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      🏆 n8n es ideal cuando necesitas:
+    </text>
+    <text x="435" y="48" font-family="Arial, sans-serif" font-size="13" fill="#888" text-anchor="middle">
+      Control total • Privacidad de datos • Ejecuciones ilimitadas • Flexibilidad máxima • Sin costos recurrentes
+    </text>
+  </g>
+</svg>
