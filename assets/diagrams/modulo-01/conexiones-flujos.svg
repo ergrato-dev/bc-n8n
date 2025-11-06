@@ -1,0 +1,545 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000">
+  <!-- Fondo -->
+  <rect width="1400" height="1000" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Tipos de Conexiones y Flujos de Datos
+  </text>
+  
+  <text x="700" y="70" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle">
+    Patrones fundamentales para disenar workflows en n8n
+  </text>
+  
+  <!-- FILA 1: CONEXIONES BÁSICAS -->
+  <g transform="translate(80, 110)">
+    
+    <!-- 1. Conexión Simple -->
+    <g>
+      <rect x="0" y="0" width="400" height="180" rx="10" fill="#2d2d2d" stroke="#00D4FF" stroke-width="2"/>
+      
+      <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        1. CONEXION SIMPLE (Linear)
+      </text>
+      
+      <!-- Diagrama -->
+      <g transform="translate(50, 60)">
+        <rect x="0" y="0" width="70" height="35" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+        <text x="35" y="22" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+          Nodo A
+        </text>
+        
+        <line x1="70" y1="17" x2="100" y2="17" stroke="#00D4FF" stroke-width="2"/>
+        <polygon points="100,17 96,15 96,19" fill="#00D4FF"/>
+        
+        <rect x="100" y="0" width="70" height="35" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+        <text x="135" y="22" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+          Nodo B
+        </text>
+        
+        <line x1="170" y1="17" x2="200" y2="17" stroke="#00D4FF" stroke-width="2"/>
+        <polygon points="200,17 196,15 196,19" fill="#00D4FF"/>
+        
+        <rect x="200" y="0" width="70" height="35" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+        <text x="235" y="22" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" text-anchor="middle">
+          Nodo C
+        </text>
+      </g>
+      
+      <text x="200" y="130" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        Flujo predecible de izquierda a derecha
+      </text>
+      <text x="200" y="150" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle" font-style="italic">
+        Ideal para: Transformaciones secuenciales
+      </text>
+    </g>
+    
+    <!-- 2. Conexión Condicional -->
+    <g transform="translate(450, 0)">
+      <rect x="0" y="0" width="400" height="180" rx="10" fill="#2d2d2d" stroke="#FFA500" stroke-width="2"/>
+      
+      <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#FFA500" text-anchor="middle" font-weight="bold">
+        2. CONEXION CONDICIONAL (Branching)
+      </text>
+      
+      <!-- Diagrama -->
+      <g transform="translate(90, 48)">
+        <rect x="0" y="15" width="65" height="32" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+        <text x="32.5" y="35" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          IF
+        </text>
+        
+        <!-- Rama true -->
+        <line x1="65" y1="23" x2="90" y2="5" stroke="#00A86B" stroke-width="2"/>
+        <polygon points="90,5 86,6 88,10" fill="#00A86B"/>
+        <text x="77" y="10" font-family="Arial, sans-serif" font-size="8" fill="#00A86B">
+          true
+        </text>
+        
+        <rect x="90" y="-5" width="75" height="28" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+        <text x="127.5" y="12" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Process A
+        </text>
+        
+        <!-- Rama false -->
+        <line x1="65" y1="39" x2="90" y2="57" stroke="#FF6D5A" stroke-width="2"/>
+        <polygon points="90,57 86,56 88,52" fill="#FF6D5A"/>
+        <text x="77" y="55" font-family="Arial, sans-serif" font-size="8" fill="#FF6D5A">
+          false
+        </text>
+        
+        <rect x="90" y="47" width="75" height="28" rx="6" fill="#1a1a1a" stroke="#FF6D5A" stroke-width="2"/>
+        <text x="127.5" y="64" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Process B
+        </text>
+      </g>
+      
+      <text x="200" y="148" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        Divide en 2 caminos segun condicion
+      </text>
+      <text x="200" y="165" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle" font-style="italic">
+        Ideal para: Validaciones y filtros
+      </text>
+    </g>
+    
+    <!-- 3. Conexión Múltiple -->
+    <g transform="translate(900, 0)">
+      <rect x="0" y="0" width="400" height="180" rx="10" fill="#2d2d2d" stroke="#00A86B" stroke-width="2"/>
+      
+      <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#00A86B" text-anchor="middle" font-weight="bold">
+        3. CONEXION MULTIPLE (Multi-Branch)
+      </text>
+      
+      <!-- Diagrama -->
+      <g transform="translate(85, 45)">
+        <rect x="0" y="20" width="65" height="32" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+        <text x="32.5" y="40" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          Switch
+        </text>
+        
+        <!-- Output 0 -->
+        <line x1="65" y1="25" x2="90" y2="5" stroke="#00D4FF" stroke-width="2"/>
+        <polygon points="90,5 86,6 88,10" fill="#00D4FF"/>
+        <rect x="90" y="-3" width="72" height="22" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+        <text x="126" y="11" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0" text-anchor="middle">
+          Output 0
+        </text>
+        
+        <!-- Output 1 -->
+        <line x1="65" y1="36" x2="90" y2="36" stroke="#FFA500" stroke-width="2"/>
+        <polygon points="90,36 86,34 86,38" fill="#FFA500"/>
+        <rect x="90" y="25" width="72" height="22" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+        <text x="126" y="39" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0" text-anchor="middle">
+          Output 1
+        </text>
+        
+        <!-- Output 2 -->
+        <line x1="65" y1="47" x2="90" y2="67" stroke="#00A86B" stroke-width="2"/>
+        <polygon points="90,67 86,66 88,62" fill="#00A86B"/>
+        <rect x="90" y="56" width="72" height="22" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+        <text x="126" y="70" font-family="Arial, sans-serif" font-size="8" fill="#E0E0E0" text-anchor="middle">
+          Output 2
+        </text>
+      </g>
+      
+      <text x="200" y="148" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        Divide en 3+ caminos independientes
+      </text>
+      <text x="200" y="165" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle" font-style="italic">
+        Ideal para: Clasificacion y routing
+      </text>
+    </g>
+    
+  </g>
+  
+  <!-- FILA 2: PATRONES AVANZADOS -->
+  <g transform="translate(80, 330)">
+    
+    <!-- 4. Convergencia (Merge) -->
+    <g>
+      <rect x="0" y="0" width="400" height="180" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="2"/>
+      
+      <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+        4. CONVERGENCIA (Merge)
+      </text>
+      
+      <!-- Diagrama -->
+      <g transform="translate(70, 45)">
+        <!-- Source 1 -->
+        <rect x="0" y="0" width="75" height="28" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+        <text x="37.5" y="18" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Source 1
+        </text>
+        
+        <line x1="75" y1="14" x2="120" y2="32" stroke="#00D4FF" stroke-width="2"/>
+        <polygon points="120,32 116,30 118,26" fill="#00D4FF"/>
+        
+        <!-- Source 2 -->
+        <rect x="0" y="48" width="75" height="28" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+        <text x="37.5" y="66" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Source 2
+        </text>
+        
+        <line x1="75" y1="62" x2="120" y2="44" stroke="#FFA500" stroke-width="2"/>
+        <polygon points="120,44 116,45 118,49" fill="#FFA500"/>
+        
+        <!-- Merge -->
+        <rect x="120" y="22" width="65" height="32" rx="6" fill="#1a1a1a" stroke="#FF6D5A" stroke-width="2"/>
+        <text x="152.5" y="42" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          Merge
+        </text>
+        
+        <line x1="185" y1="38" x2="212" y2="38" stroke="#FF6D5A" stroke-width="2"/>
+        <polygon points="212,38 208,36 208,40" fill="#FF6D5A"/>
+        
+        <!-- Output -->
+        <rect x="212" y="22" width="65" height="32" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+        <text x="244.5" y="42" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          Output
+        </text>
+      </g>
+      
+      <text x="200" y="148" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        Combina datos de multiples fuentes
+      </text>
+      <text x="200" y="165" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle" font-style="italic">
+        Ideal para: Enriquecer datos (SQL JOIN)
+      </text>
+    </g>
+    
+    <!-- 5. Loop (Circular) -->
+    <g transform="translate(450, 0)">
+      <rect x="0" y="0" width="400" height="180" rx="10" fill="#2d2d2d" stroke="#00A86B" stroke-width="2"/>
+      
+      <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#00A86B" text-anchor="middle" font-weight="bold">
+        5. LOOP (Circular)
+      </text>
+      
+      <!-- Diagrama -->
+      <g transform="translate(50, 60)">
+        <rect x="0" y="0" width="90" height="35" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+        <text x="45" y="14" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Split In
+        </text>
+        <text x="45" y="26" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Batches
+        </text>
+        
+        <line x1="90" y1="17" x2="120" y2="17" stroke="#00A86B" stroke-width="2"/>
+        <polygon points="120,17 116,15 116,19" fill="#00A86B"/>
+        
+        <rect x="120" y="0" width="80" height="35" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+        <text x="160" y="22" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          Process
+        </text>
+        
+        <!-- Loop back -->
+        <line x1="160" y1="35" x2="160" y2="55" stroke="#00A86B" stroke-width="2"/>
+        <line x1="160" y1="55" x2="45" y2="55" stroke="#00A86B" stroke-width="2"/>
+        <line x1="45" y1="55" x2="45" y2="35" stroke="#00A86B" stroke-width="2"/>
+        <polygon points="45,35 43,39 47,39" fill="#00A86B"/>
+        
+        <text x="105" y="70" font-family="Arial, sans-serif" font-size="9" fill="#00A86B">
+          loop back
+        </text>
+      </g>
+      
+      <text x="200" y="130" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        Flujo regresa para procesar siguiente lote
+      </text>
+      <text x="200" y="150" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle" font-style="italic">
+        Ideal para: Procesar grandes volumenes
+      </text>
+    </g>
+    
+    <!-- 6. Fan-Out / Fan-In -->
+    <g transform="translate(900, 0)">
+      <rect x="0" y="0" width="400" height="180" rx="10" fill="#2d2d2d" stroke="#00D4FF" stroke-width="2"/>
+      
+      <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+        6. FAN-OUT / FAN-IN (Parallel)
+      </text>
+      
+      <!-- Diagrama -->
+      <g transform="translate(60, 43)">
+        <rect x="0" y="20" width="65" height="32" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="2"/>
+        <text x="32.5" y="40" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          Trigger
+        </text>
+        
+        <!-- Process A -->
+        <line x1="65" y1="27" x2="90" y2="10" stroke="#00D4FF" stroke-width="2"/>
+        <polygon points="90,10 86,11 88,15" fill="#00D4FF"/>
+        
+        <rect x="90" y="-2" width="65" height="28" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+        <text x="122.5" y="16" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Process A
+        </text>
+        
+        <!-- Process B -->
+        <line x1="65" y1="45" x2="90" y2="62" stroke="#00D4FF" stroke-width="2"/>
+        <polygon points="90,62 86,61 88,57" fill="#00D4FF"/>
+        
+        <rect x="90" y="50" width="65" height="28" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+        <text x="122.5" y="68" font-family="Arial, sans-serif" font-size="9" fill="#E0E0E0" text-anchor="middle">
+          Process B
+        </text>
+        
+        <!-- Merge -->
+        <line x1="155" y1="12" x2="180" y2="30" stroke="#FFA500" stroke-width="2"/>
+        <polygon points="180,30 176,29 178,25" fill="#FFA500"/>
+        
+        <line x1="155" y1="64" x2="180" y2="46" stroke="#FFA500" stroke-width="2"/>
+        <polygon points="180,46 176,47 178,51" fill="#FFA500"/>
+        
+        <rect x="180" y="22" width="65" height="32" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="2"/>
+        <text x="212.5" y="42" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          Merge
+        </text>
+      </g>
+      
+      <text x="200" y="148" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+        Procesa en paralelo y combina resultados
+      </text>
+      <text x="200" y="165" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle" font-style="italic">
+        Ideal para: Validaciones independientes
+      </text>
+    </g>
+    
+  </g>
+  
+  <!-- SECCIÓN: FLUJO DE ITEMS -->
+  <g transform="translate(80, 550)">
+    <rect x="0" y="0" width="1240" height="180" rx="12" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    
+    <text x="620" y="35" font-family="Arial, sans-serif" font-size="20" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      Como Fluyen los Items a Traves de los Nodos
+    </text>
+    
+    <line x1="50" y1="50" x2="1190" y2="50" stroke="#555" stroke-width="1"/>
+    
+    <!-- Ejemplo visual -->
+    <g transform="translate(100, 70)">
+      <!-- Input -->
+      <g>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#888" font-weight="bold">
+          Input: 3 items
+        </text>
+        <rect x="0" y="10" width="130" height="60" rx="6" fill="#1a1a1a" stroke="#00D4FF" stroke-width="1"/>
+        <text x="10" y="28" font-family="Courier New, monospace" font-size="9" fill="#00D4FF">
+          { id: 1, name: "A" }
+        </text>
+        <text x="10" y="43" font-family="Courier New, monospace" font-size="9" fill="#00D4FF">
+          { id: 2, name: "B" }
+        </text>
+        <text x="10" y="58" font-family="Courier New, monospace" font-size="9" fill="#00D4FF">
+          { id: 3, name: "C" }
+        </text>
+      </g>
+      
+      <!-- Arrow 1 -->
+      <g transform="translate(135, 35)">
+        <line x1="0" y1="0" x2="30" y2="0" stroke="#00D4FF" stroke-width="2"/>
+        <polygon points="30,0 26,-2 26,2" fill="#00D4FF"/>
+      </g>
+      
+      <!-- Process -->
+      <g transform="translate(170, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#888" font-weight="bold">
+          IF (id &gt; 1)
+        </text>
+        <rect x="0" y="10" width="80" height="30" rx="6" fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
+        <text x="40" y="30" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0" text-anchor="middle">
+          Filtra
+        </text>
+        
+        <text x="40" y="55" font-family="Arial, sans-serif" font-size="9" fill="#666" text-anchor="middle" font-style="italic">
+          procesa los 3
+        </text>
+      </g>
+      
+      <!-- Arrow 2 true -->
+      <g transform="translate(255, 20)">
+        <line x1="0" y1="0" x2="30" y2="0" stroke="#00A86B" stroke-width="2"/>
+        <polygon points="30,0 26,-2 26,2" fill="#00A86B"/>
+        <text x="15" y="-5" font-family="Arial, sans-serif" font-size="8" fill="#00A86B" text-anchor="middle">
+          true
+        </text>
+      </g>
+      
+      <!-- Output true -->
+      <g transform="translate(290, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#888" font-weight="bold">
+          Output: 2 items
+        </text>
+        <rect x="0" y="10" width="130" height="45" rx="6" fill="#1a1a1a" stroke="#00A86B" stroke-width="1"/>
+        <text x="10" y="28" font-family="Courier New, monospace" font-size="9" fill="#00A86B">
+          { id: 2, name: "B" }
+        </text>
+        <text x="10" y="43" font-family="Courier New, monospace" font-size="9" fill="#00A86B">
+          { id: 3, name: "C" }
+        </text>
+      </g>
+      
+      <!-- Arrow 2 false -->
+      <g transform="translate(255, 50)">
+        <line x1="0" y1="0" x2="30" y2="0" stroke="#FF6D5A" stroke-width="2"/>
+        <polygon points="30,0 26,-2 26,2" fill="#FF6D5A"/>
+        <text x="15" y="-5" font-family="Arial, sans-serif" font-size="8" fill="#FF6D5A" text-anchor="middle">
+          false
+        </text>
+      </g>
+      
+      <!-- Output false -->
+      <g transform="translate(290, 50)">
+        <rect x="0" y="0" width="130" height="25" rx="6" fill="#1a1a1a" stroke="#FF6D5A" stroke-width="1"/>
+        <text x="10" y="17" font-family="Courier New, monospace" font-size="9" fill="#FF6D5A">
+          { id: 1, name: "A" }
+        </text>
+      </g>
+      
+      <!-- Explicación -->
+      <g transform="translate(470, 20)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="11" fill="#E0E0E0" font-weight="bold">
+          Procesamiento automatico:
+        </text>
+        <text x="0" y="20" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          • n8n procesa TODOS los items automaticamente
+        </text>
+        <text x="0" y="38" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          • No necesitas escribir loops manualmente
+        </text>
+        <text x="0" y="56" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          • Cada rama recibe solo los items que cumplen
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- SECCIÓN: GUÍA RÁPIDA -->
+  <g transform="translate(80, 770)">
+    <rect x="0" y="0" width="1240" height="180" rx="12" fill="#2d2d2d" stroke="#00A86B" stroke-width="3"/>
+    
+    <text x="620" y="35" font-family="Arial, sans-serif" font-size="20" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      Guia Rapida: ¿Que Patron Usar?
+    </text>
+    
+    <line x1="50" y1="50" x2="1190" y2="50" stroke="#555" stroke-width="1"/>
+    
+    <!-- Columnas de guía -->
+    <g transform="translate(50, 70)">
+      <!-- Col 1 -->
+      <g>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00D4FF" font-weight="bold">
+          NECESITO...
+        </text>
+        <text x="0" y="22" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+          Transformar datos A → B → C
+        </text>
+        <text x="0" y="40" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+          Validar antes de procesar
+        </text>
+        <text x="0" y="58" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+          Clasificar en multiples tipos
+        </text>
+        <text x="0" y="76" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+          Combinar datos de 2 APIs
+        </text>
+        <text x="0" y="94" font-family="Arial, sans-serif" font-size="10" fill="#E0E0E0">
+          Procesar 10,000 items
+        </text>
+      </g>
+      
+      <!-- Col 2 -->
+      <g transform="translate(270, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" font-weight="bold">
+          USA PATRON...
+        </text>
+        <text x="0" y="22" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → Pipeline Linear
+        </text>
+        <text x="0" y="40" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → Validacion con Bifurcacion
+        </text>
+        <text x="0" y="58" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → Clasificacion Multi-Ruta
+        </text>
+        <text x="0" y="76" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → Enriquecimiento (Merge)
+        </text>
+        <text x="0" y="94" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → Procesamiento en Lotes
+        </text>
+      </g>
+      
+      <!-- Col 3 -->
+      <g transform="translate(550, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" font-weight="bold">
+          NODOS CLAVE
+        </text>
+        <text x="0" y="22" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → HTTP Request + Set
+        </text>
+        <text x="0" y="40" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → IF + Set + Error
+        </text>
+        <text x="0" y="58" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → Switch + Set (multiples)
+        </text>
+        <text x="0" y="76" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → HTTP Request + Merge
+        </text>
+        <text x="0" y="94" font-family="Arial, sans-serif" font-size="10" fill="#888">
+          → Split In Batches + Loop
+        </text>
+      </g>
+      
+      <!-- Col 4: Tips -->
+      <g transform="translate(850, 0)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#FF6D5A" font-weight="bold">
+          MEJORES PRACTICAS
+        </text>
+        
+        <g transform="translate(0, 18)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="15" y="4" font-family="Arial, sans-serif" font-size="9" fill="#888">
+            Filtra temprano para reducir volumen
+          </text>
+        </g>
+        
+        <g transform="translate(0, 36)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="15" y="4" font-family="Arial, sans-serif" font-size="9" fill="#888">
+            Nombra nodos descriptivamente
+          </text>
+        </g>
+        
+        <g transform="translate(0, 54)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="15" y="4" font-family="Arial, sans-serif" font-size="9" fill="#888">
+            Ejecuta nodo por nodo al desarrollar
+          </text>
+        </g>
+        
+        <g transform="translate(0, 72)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="15" y="4" font-family="Arial, sans-serif" font-size="9" fill="#888">
+            Documenta logica compleja con notas
+          </text>
+        </g>
+        
+        <g transform="translate(0, 90)">
+          <circle cx="4" cy="0" r="3" fill="#00A86B"/>
+          <text x="15" y="4" font-family="Arial, sans-serif" font-size="9" fill="#888">
+            Maneja errores explicitamente
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <text x="700" y="985" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle" font-style="italic">
+    Los datos fluyen de izquierda a derecha - Cada nodo procesa todos los items automaticamente
+  </text>
+</svg>
