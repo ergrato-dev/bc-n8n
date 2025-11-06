@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <!-- Fondo -->
+  <rect width="1000" height="600" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Los 4 Módulos del Bootcamp
+  </text>
+  
+  <!-- Módulo 1 -->
+  <g transform="translate(120, 120)">
+    <rect x="0" y="0" width="180" height="200" rx="10" fill="#2d2d2d" stroke="#00D4FF" stroke-width="3"/>
+    <text x="90" y="35" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+      MÓDULO 1
+    </text>
+    <text x="90" y="60" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">
+      Fundamentos
+    </text>
+    <line x1="20" y1="75" x2="160" y2="75" stroke="#00D4FF" stroke-width="1" opacity="0.3"/>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Qué es n8n
+    </text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Instalación
+    </text>
+    <text x="20" y="131" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Interfaz
+    </text>
+    <text x="20" y="149" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Primeros workflows
+    </text>
+    <rect x="20" y="165" width="140" height="25" rx="5" fill="#00D4FF" opacity="0.2"/>
+    <text x="90" y="182" font-family="Arial, sans-serif" font-size="12" fill="#00D4FF" text-anchor="middle" font-weight="bold">
+      Semanas 1-2.5
+    </text>
+  </g>
+  
+  <!-- Flecha 1 -->
+  <line x1="300" y1="220" x2="330" y2="220" stroke="#FF6D5A" stroke-width="2"/>
+  <polygon points="330,220 320,215 320,225" fill="#FF6D5A"/>
+  
+  <!-- Módulo 2 -->
+  <g transform="translate(350, 120)">
+    <rect x="0" y="0" width="180" height="200" rx="10" fill="#2d2d2d" stroke="#FFA500" stroke-width="3"/>
+    <text x="90" y="35" font-family="Arial, sans-serif" font-size="16" fill="#FFA500" text-anchor="middle" font-weight="bold">
+      MÓDULO 2
+    </text>
+    <text x="90" y="60" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">
+      Nodos y Datos
+    </text>
+    <line x1="20" y1="75" x2="160" y2="75" stroke="#FFA500" stroke-width="1" opacity="0.3"/>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Nodos core
+    </text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Triggers
+    </text>
+    <text x="20" y="131" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Expresiones
+    </text>
+    <text x="20" y="149" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Transformaciones
+    </text>
+    <rect x="20" y="165" width="140" height="25" rx="5" fill="#FFA500" opacity="0.2"/>
+    <text x="90" y="182" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" text-anchor="middle" font-weight="bold">
+      Semanas 2.5-5
+    </text>
+  </g>
+  
+  <!-- Flecha 2 -->
+  <line x1="530" y1="220" x2="560" y2="220" stroke="#FF6D5A" stroke-width="2"/>
+  <polygon points="560,220 550,215 550,225" fill="#FF6D5A"/>
+  
+  <!-- Módulo 3 -->
+  <g transform="translate(580, 120)">
+    <rect x="0" y="0" width="180" height="200" rx="10" fill="#2d2d2d" stroke="#00A86B" stroke-width="3"/>
+    <text x="90" y="35" font-family="Arial, sans-serif" font-size="16" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      MÓDULO 3
+    </text>
+    <text x="90" y="60" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">
+      Intermedio
+    </text>
+    <line x1="20" y1="75" x2="160" y2="75" stroke="#00A86B" stroke-width="1" opacity="0.3"/>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Lógica compleja
+    </text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Loops y arrays
+    </text>
+    <text x="20" y="131" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Integraciones
+    </text>
+    <text x="20" y="149" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Error handling
+    </text>
+    <rect x="20" y="165" width="140" height="25" rx="5" fill="#00A86B" opacity="0.2"/>
+    <text x="90" y="182" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle" font-weight="bold">
+      Semanas 5-7.5
+    </text>
+  </g>
+  
+  <!-- Flecha hacia abajo -->
+  <line x1="670" y1="320" x2="670" y2="350" stroke="#FF6D5A" stroke-width="2"/>
+  <polygon points="670,350 665,340 675,340" fill="#FF6D5A"/>
+  
+  <!-- Módulo 4 -->
+  <g transform="translate(580, 370)">
+    <rect x="0" y="0" width="180" height="200" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    <text x="90" y="35" font-family="Arial, sans-serif" font-size="16" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      MÓDULO 4
+    </text>
+    <text x="90" y="60" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle">
+      Avanzado
+    </text>
+    <line x1="20" y1="75" x2="160" y2="75" stroke="#FF6D5A" stroke-width="1" opacity="0.3"/>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Code nodes
+    </text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • JavaScript
+    </text>
+    <text x="20" y="131" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Optimización
+    </text>
+    <text x="20" y="149" font-family="Arial, sans-serif" font-size="11" fill="#888">
+      • Proyecto final
+    </text>
+    <rect x="20" y="165" width="140" height="25" rx="5" fill="#FF6D5A" opacity="0.2"/>
+    <text x="90" y="182" font-family="Arial, sans-serif" font-size="12" fill="#FF6D5A" text-anchor="middle" font-weight="bold">
+      Semanas 7.5-10
+    </text>
+  </g>
+  
+  <!-- Panel de progresión -->
+  <g transform="translate(120, 400)">
+    <rect x="0" y="0" width="400" height="140" rx="10" fill="#2d2d2d" opacity="0.6"/>
+    <text x="200" y="30" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      📊 Progresión del Aprendizaje
+    </text>
+    <line x1="30" y1="50" x2="370" y2="50" stroke="#888" stroke-width="1"/>
+    
+    <!-- Barra de progreso -->
+    <rect x="30" y="65" width="85" height="20" rx="3" fill="#00D4FF" opacity="0.7"/>
+    <rect x="115" y="65" width="85" height="20" rx="3" fill="#FFA500" opacity="0.7"/>
+    <rect x="200" y="65" width="85" height="20" rx="3" fill="#00A86B" opacity="0.7"/>
+    <rect x="285" y="65" width="85" height="20" rx="3" fill="#FF6D5A" opacity="0.7"/>
+    
+    <text x="200" y="108" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">
+      Básico → Intermedio → Avanzado → Experto
+    </text>
+    <text x="200" y="128" font-family="Arial, sans-serif" font-size="11" fill="#00D4FF" text-anchor="middle" font-style="italic">
+      🎯 15 horas por módulo | 60 horas totales
+    </text>
+  </g>
+</svg>

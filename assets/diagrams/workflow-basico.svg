@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Fondo -->
+  <rect width="800" height="400" fill="#1a1a1a"/>
+  
+  <!-- Título -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Flujo básico de un Workflow en n8n
+  </text>
+  
+  <!-- Trigger Node -->
+  <g transform="translate(100, 150)">
+    <rect x="-60" y="-40" width="120" height="80" rx="10" fill="#2d2d2d" stroke="#00D4FF" stroke-width="3"/>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      TRIGGER
+    </text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#00D4FF" text-anchor="middle">
+      Webhook
+    </text>
+    <text x="0" y="28" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+      Inicia el flujo
+    </text>
+  </g>
+  
+  <!-- Flecha 1 -->
+  <line x1="160" y1="150" x2="240" y2="150" stroke="#FF6D5A" stroke-width="2"/>
+  <polygon points="240,150 230,145 230,155" fill="#FF6D5A"/>
+  
+  <!-- Process Node -->
+  <g transform="translate(320, 150)">
+    <rect x="-70" y="-40" width="140" height="80" rx="10" fill="#2d2d2d" stroke="#FFA500" stroke-width="3"/>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      PROCESAR
+    </text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#FFA500" text-anchor="middle">
+      HTTP Request
+    </text>
+    <text x="0" y="28" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+      Obtiene datos
+    </text>
+  </g>
+  
+  <!-- Flecha 2 -->
+  <line x1="390" y1="150" x2="470" y2="150" stroke="#FF6D5A" stroke-width="2"/>
+  <polygon points="470,150 460,145 460,155" fill="#FF6D5A"/>
+  
+  <!-- Transform Node -->
+  <g transform="translate(560, 150)">
+    <rect x="-70" y="-40" width="140" height="80" rx="10" fill="#2d2d2d" stroke="#00A86B" stroke-width="3"/>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      TRANSFORMAR
+    </text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#00A86B" text-anchor="middle">
+      Set Node
+    </text>
+    <text x="0" y="28" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+      Modifica datos
+    </text>
+  </g>
+  
+  <!-- Flecha 3 hacia abajo -->
+  <line x1="560" y1="190" x2="560" y2="250" stroke="#FF6D5A" stroke-width="2"/>
+  <polygon points="560,250 555,240 565,240" fill="#FF6D5A"/>
+  
+  <!-- Output Node -->
+  <g transform="translate(560, 310)">
+    <rect x="-70" y="-40" width="140" height="80" rx="10" fill="#2d2d2d" stroke="#FF6D5A" stroke-width="3"/>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="14" fill="#E0E0E0" text-anchor="middle" font-weight="bold">
+      SALIDA
+    </text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#FF6D5A" text-anchor="middle">
+      Email / Slack
+    </text>
+    <text x="0" y="28" font-family="Arial, sans-serif" font-size="11" fill="#888" text-anchor="middle">
+      Envía resultado
+    </text>
+  </g>
+  
+  <!-- Leyenda -->
+  <g transform="translate(100, 320)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#888" font-style="italic">
+      💡 Los datos fluyen de nodo en nodo
+    </text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="12" fill="#888" font-style="italic">
+      siguiendo las conexiones definidas
+    </text>
+  </g>
+</svg>

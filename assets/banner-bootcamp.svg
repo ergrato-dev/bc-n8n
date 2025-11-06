@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <!-- Fondo oscuro -->
+  <rect width="1200" height="300" fill="#1a1a1a"/>
+  
+  <!-- Patrón de fondo con nodos conectados -->
+  <defs>
+    <pattern id="nodes-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="50" cy="50" r="2" fill="#2d2d2d" opacity="0.5"/>
+      <line x1="50" y1="50" x2="100" y2="50" stroke="#2d2d2d" stroke-width="1" opacity="0.3"/>
+      <line x1="50" y1="50" x2="50" y2="100" stroke="#2d2d2d" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" fill="url(#nodes-pattern)"/>
+  
+  <!-- Círculo decorativo izquierda -->
+  <circle cx="100" cy="150" r="60" fill="none" stroke="#FF6D5A" stroke-width="3" opacity="0.3"/>
+  <circle cx="100" cy="150" r="40" fill="none" stroke="#FF6D5A" stroke-width="2" opacity="0.5"/>
+  <circle cx="100" cy="150" r="20" fill="#FF6D5A" opacity="0.8"/>
+  
+  <!-- Círculo decorativo derecha -->
+  <circle cx="1100" cy="150" r="60" fill="none" stroke="#00D4FF" stroke-width="3" opacity="0.3"/>
+  <circle cx="1100" cy="150" r="40" fill="none" stroke="#00D4FF" stroke-width="2" opacity="0.5"/>
+  <circle cx="1100" cy="150" r="20" fill="#00D4FF" opacity="0.8"/>
+  
+  <!-- Líneas de conexión -->
+  <line x1="160" y1="150" x2="350" y2="150" stroke="#FF6D5A" stroke-width="2" opacity="0.4"/>
+  <line x1="850" y1="150" x2="1040" y2="150" stroke="#00D4FF" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Texto principal -->
+  <text x="600" y="110" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#E0E0E0" text-anchor="middle">
+    Bootcamp n8n
+  </text>
+  
+  <!-- Subtítulo -->
+  <text x="600" y="155" font-family="Arial, sans-serif" font-size="36" fill="#FF6D5A" text-anchor="middle">
+    Zero to Hero
+  </text>
+  
+  <!-- Detalles del bootcamp -->
+  <g transform="translate(600, 195)">
+    <!-- Duración -->
+    <g transform="translate(-180, 0)">
+      <rect x="-60" y="-15" width="120" height="35" rx="5" fill="#2d2d2d"/>
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="18" fill="#00D4FF" text-anchor="middle">10 semanas</text>
+    </g>
+    
+    <!-- Horas -->
+    <g transform="translate(0, 0)">
+      <rect x="-55" y="-15" width="110" height="35" rx="5" fill="#2d2d2d"/>
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="18" fill="#00A86B" text-anchor="middle">60 horas</text>
+    </g>
+    
+    <!-- Dedicación -->
+    <g transform="translate(180, 0)">
+      <rect x="-70" y="-15" width="140" height="35" rx="5" fill="#2d2d2d"/>
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="18" fill="#FFA500" text-anchor="middle">6h semanales</text>
+    </g>
+  </g>
+  
+  <!-- Línea decorativa inferior -->
+  <line x1="300" y1="260" x2="900" y2="260" stroke="#FF6D5A" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Tagline -->
+  <text x="600" y="285" font-family="Arial, sans-serif" font-size="16" fill="#E0E0E0" text-anchor="middle" opacity="0.7">
+    Automatiza procesos y conecta aplicaciones sin límites
+  </text>
+</svg>
