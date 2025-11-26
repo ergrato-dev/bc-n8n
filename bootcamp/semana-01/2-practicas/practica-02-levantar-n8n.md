@@ -8,12 +8,12 @@
 
 ## 📋 Información General
 
-| Campo | Valor |
-|-------|-------|
-| **Dificultad** | ⭐ Principiante |
-| **Tiempo estimado** | 25 minutos |
-| **Conceptos** | Docker Compose, Contenedores, Puertos, Volúmenes |
-| **Prerrequisitos** | Práctica 01 completada (Docker instalado) |
+| Campo               | Valor                                            |
+| ------------------- | ------------------------------------------------ |
+| **Dificultad**      | ⭐ Principiante                                  |
+| **Tiempo estimado** | 25 minutos                                       |
+| **Conceptos**       | Docker Compose, Contenedores, Puertos, Volúmenes |
+| **Prerrequisitos**  | Práctica 01 completada (Docker instalado)        |
 
 ---
 
@@ -82,7 +82,7 @@ services:
     container_name: n8n-bootcamp
     restart: unless-stopped
     ports:
-      - "5678:5678"
+      - '5678:5678'
     environment:
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=admin
@@ -254,10 +254,12 @@ Al finalizar esta práctica:
 <summary>Pista 1: Puerto 5678 ocupado</summary>
 
 Si el puerto está ocupado, cambia el puerto en `docker-compose.yml`:
+
 ```yaml
 ports:
-  - "5679:5678"  # Usa puerto 5679
+  - '5679:5678' # Usa puerto 5679
 ```
+
 Y accede a: http://localhost:5679
 
 </details>
@@ -276,6 +278,7 @@ sudo chown -R 1000:1000 workflows
 <summary>Pista 3: Imagen no descarga</summary>
 
 Verifica tu conexión a internet y ejecuta:
+
 ```bash
 docker compose pull
 docker compose up -d
@@ -296,23 +299,25 @@ docker compose up -d
 
 ## ✅ Criterios de Evaluación
 
-| Criterio | Puntos |
-|----------|--------|
-| docker-compose.yml configurado | 1 |
-| Contenedor levantado correctamente | 2 |
-| Acceso a interfaz web | 2 |
-| Login exitoso | 1 |
-| **Total** | **6** |
+| Criterio                           | Puntos |
+| ---------------------------------- | ------ |
+| docker-compose.yml configurado     | 1      |
+| Contenedor levantado correctamente | 2      |
+| Acceso a interfaz web              | 2      |
+| Login exitoso                      | 1      |
+| **Total**                          | **6**  |
 
 ---
 
 ## 🚀 Desafío Extra (Opcional)
 
 1. **Personaliza las credenciales:**
+
    - Cambia `N8N_BASIC_AUTH_USER` y `N8N_BASIC_AUTH_PASSWORD`
    - Reinicia n8n y verifica el nuevo login
 
 2. **Cambia la zona horaria:**
+
    - Modifica `GENERIC_TIMEZONE` a tu zona
    - Encuentra tu zona en: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -334,8 +339,8 @@ docker compose up -d
 
 <div align="center">
 
-| ◀️ Anterior | 🏠 Volver | Siguiente ▶️ |
-|-------------|-----------|--------------|
+| ◀️ Anterior                                      | 🏠 Volver                     | Siguiente ▶️                                                       |
+| ------------------------------------------------ | ----------------------------- | ------------------------------------------------------------------ |
 | [Práctica 01](practica-01-instalacion-docker.md) | [Índice Prácticas](README.md) | [Práctica 03: Explorar Interfaz](practica-03-explorar-interfaz.md) |
 
 </div>

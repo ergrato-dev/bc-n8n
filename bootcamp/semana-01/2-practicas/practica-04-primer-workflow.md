@@ -8,12 +8,12 @@
 
 ## 📋 Información General
 
-| Campo | Valor |
-|-------|-------|
-| **Dificultad** | ⭐⭐ Principiante-Intermedio |
-| **Tiempo estimado** | 30 minutos |
-| **Conceptos** | Nodos, Conexiones, Ejecución, Debug |
-| **Prerrequisitos** | Práctica 03 completada |
+| Campo               | Valor                               |
+| ------------------- | ----------------------------------- |
+| **Dificultad**      | ⭐⭐ Principiante-Intermedio        |
+| **Tiempo estimado** | 30 minutos                          |
+| **Conceptos**       | Nodos, Conexiones, Ejecución, Debug |
+| **Prerrequisitos**  | Práctica 03 completada              |
 
 ---
 
@@ -107,10 +107,12 @@ El nodo **Set** se conectará automáticamente:
 2. Haz clic en **"Add Field"**
 3. Selecciona **"String"**
 4. Configura:
+
    - **Name**: `mensaje`
    - **Value**: `¡Hola desde mi primer workflow!`
 
 5. Agrega otro campo:
+
    - Haz clic en **"Add Field"** → **"String"**
    - **Name**: `autor`
    - **Value**: `Tu nombre aquí`
@@ -303,6 +305,7 @@ Al finalizar esta práctica:
 <summary>Pista 1: No veo la opción "Add Field"</summary>
 
 Asegúrate de que:
+
 1. Tienes el nodo Set seleccionado
 2. Estás en la pestaña "Parameters"
 3. Busca el botón "+ Add Field" debajo de los campos existentes
@@ -329,14 +332,14 @@ Arrastra desde el punto de conexión (●) del primer nodo hasta el input del se
 
 ## ✅ Criterios de Evaluación
 
-| Criterio | Puntos |
-|----------|--------|
-| Workflow creado con nombre correcto | 1 |
-| Manual Trigger agregado | 1 |
-| Primer Set configurado con 3 campos | 2 |
-| Segundo Set configurado | 1 |
-| Ejecución exitosa | 1 |
-| **Total** | **6** |
+| Criterio                            | Puntos |
+| ----------------------------------- | ------ |
+| Workflow creado con nombre correcto | 1      |
+| Manual Trigger agregado             | 1      |
+| Primer Set configurado con 3 campos | 2      |
+| Segundo Set configurado             | 1      |
+| Ejecución exitosa                   | 1      |
+| **Total**                           | **6**  |
 
 ---
 
@@ -358,8 +361,8 @@ Arrastra desde el punto de conexión (●) del primer nodo hasta el input del se
 
 <div align="center">
 
-| ◀️ Anterior | 🏠 Volver | Siguiente ▶️ |
-|-------------|-----------|--------------|
+| ◀️ Anterior                                     | 🏠 Volver                     | Siguiente ▶️                                                     |
+| ----------------------------------------------- | ----------------------------- | ---------------------------------------------------------------- |
 | [Práctica 03](practica-03-explorar-interfaz.md) | [Índice Prácticas](README.md) | [Práctica 05: Workflow con Datos](practica-05-workflow-datos.md) |
 
 </div>

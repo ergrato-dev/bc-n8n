@@ -105,7 +105,9 @@ Consulta el [Glosario de Términos](5-glosario/README.md) para definiciones de:
 - **Nodo**: Unidad básica de operación en n8n
 - **Trigger**: Evento que inicia un workflow
 - **Ejecución**: Una instancia de corrida de un workflow
-- Y más de 35 términos adicionales...
+- **Expresión**: Código dinámico con sintaxis `{{ }}`
+- **Docker**: Plataforma de contenedores
+- Y más de **45 términos** organizados alfabéticamente...
 
 ---
 

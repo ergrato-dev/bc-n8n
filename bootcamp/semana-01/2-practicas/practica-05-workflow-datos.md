@@ -8,12 +8,12 @@
 
 ## 📋 Información General
 
-| Campo | Valor |
-|-------|-------|
-| **Dificultad** | ⭐⭐ Principiante-Intermedio |
-| **Tiempo estimado** | 35 minutos |
-| **Conceptos** | JSON, Expresiones, Acceso a datos, Items |
-| **Prerrequisitos** | Práctica 04 completada |
+| Campo               | Valor                                    |
+| ------------------- | ---------------------------------------- |
+| **Dificultad**      | ⭐⭐ Principiante-Intermedio             |
+| **Tiempo estimado** | 35 minutos                               |
+| **Conceptos**       | JSON, Expresiones, Acceso a datos, Items |
+| **Prerrequisitos**  | Práctica 04 completada                   |
 
 ---
 
@@ -62,7 +62,7 @@ En esta práctica trabajarás con datos JSON más complejos. Aprenderás a acced
 ```javascript
 /**
  * Generar datos de usuarios de prueba
- * 
+ *
  * Qué hace: Crea un array de usuarios ficticios
  * Para qué: Simular datos de entrada para el workflow
  * Cómo: Retorna objetos JSON con información de usuarios
@@ -72,33 +72,33 @@ En esta práctica trabajarás con datos JSON más complejos. Aprenderás a acced
 const usuarios = [
   {
     id: 1,
-    nombre: "María García",
-    email: "maria@example.com",
+    nombre: 'María García',
+    email: 'maria@example.com',
     edad: 28,
     activo: true,
-    departamento: "Ventas"
+    departamento: 'Ventas',
   },
   {
     id: 2,
-    nombre: "Carlos López",
-    email: "carlos@example.com",
+    nombre: 'Carlos López',
+    email: 'carlos@example.com',
     edad: 35,
     activo: true,
-    departamento: "Desarrollo"
+    departamento: 'Desarrollo',
   },
   {
     id: 3,
-    nombre: "Ana Martínez",
-    email: "ana@example.com",
+    nombre: 'Ana Martínez',
+    email: 'ana@example.com',
     edad: 42,
     activo: false,
-    departamento: "RRHH"
-  }
+    departamento: 'RRHH',
+  },
 ];
 
 // Retornamos los usuarios como items individuales
-return usuarios.map(usuario => ({
-  json: usuario
+return usuarios.map((usuario) => ({
+  json: usuario,
 }));
 ```
 
@@ -198,13 +198,13 @@ Deberías ver 3 items:
 
 Las expresiones en n8n usan la sintaxis `{{ }}`:
 
-| Expresión | Descripción | Resultado (María) |
-|-----------|-------------|-------------------|
-| `{{ $json.nombre }}` | Accede a la propiedad "nombre" | "María García" |
-| `{{ $json.edad }}` | Accede a la propiedad "edad" | 28 |
-| `{{ $json.edad > 30 }}` | Comparación | false |
-| `{{ $json.email.toUpperCase() }}` | Método JavaScript | "MARIA@EXAMPLE.COM" |
-| `{{ "Hola " + $json.nombre }}` | Concatenación | "Hola María García" |
+| Expresión                         | Descripción                    | Resultado (María)   |
+| --------------------------------- | ------------------------------ | ------------------- |
+| `{{ $json.nombre }}`              | Accede a la propiedad "nombre" | "María García"      |
+| `{{ $json.edad }}`                | Accede a la propiedad "edad"   | 28                  |
+| `{{ $json.edad > 30 }}`           | Comparación                    | false               |
+| `{{ $json.email.toUpperCase() }}` | Método JavaScript              | "MARIA@EXAMPLE.COM" |
+| `{{ "Hola " + $json.nombre }}`    | Concatenación                  | "Hola María García" |
 
 ---
 
@@ -266,6 +266,7 @@ Para el primer item (María):
 ### Paso 8: Agregar nodos para cada rama
 
 1. Desde la salida **True** del IF:
+
    - Agrega un nodo **Set** llamado **"Usuario Activo"**
    - Agrega un campo: `status` = `"Procesado - Activo"`
 
@@ -348,6 +349,7 @@ Al finalizar esta práctica:
 5. ✅ 2 ramas de salida funcionando
 
 **Flujo de datos:**
+
 - 3 items entran → Transformados → Filtrados → 2 activos + 1 inactivo
 
 ---
@@ -358,6 +360,7 @@ Al finalizar esta práctica:
 <summary>Pista 1: Error en expresión</summary>
 
 Asegúrate de:
+
 - Usar `{{ }}` para las expresiones
 - Verificar que el nombre de la propiedad es exacto (case-sensitive)
 - Que el nodo anterior tiene los datos esperados
@@ -368,6 +371,7 @@ Asegúrate de:
 <summary>Pista 2: El IF no filtra correctamente</summary>
 
 Verifica que:
+
 - El campo `activo` existe en los datos
 - La condición usa Expression mode
 - `$json.activo` retorna true/false (boolean)
@@ -378,6 +382,7 @@ Verifica que:
 <summary>Pista 3: Code node da error</summary>
 
 Verifica:
+
 - La sintaxis JavaScript es correcta
 - El return está devolviendo un array de `{json: ...}`
 - No hay errores de sintaxis (comas, llaves)
@@ -388,13 +393,13 @@ Verifica:
 
 ## ✅ Criterios de Evaluación
 
-| Criterio | Puntos |
-|----------|--------|
-| Code node genera 3 usuarios | 1 |
-| Set node usa expresiones correctamente | 2 |
-| IF node filtra por activo | 2 |
-| Ambas ramas tienen output correcto | 1 |
-| **Total** | **6** |
+| Criterio                               | Puntos |
+| -------------------------------------- | ------ |
+| Code node genera 3 usuarios            | 1      |
+| Set node usa expresiones correctamente | 2      |
+| IF node filtra por activo              | 2      |
+| Ambas ramas tienen output correcto     | 1      |
+| **Total**                              | **6**  |
 
 ---
 
@@ -418,8 +423,8 @@ Verifica:
 
 <div align="center">
 
-| ◀️ Anterior | 🏠 Volver | ▶️ Ir al Proyecto |
-|-------------|-----------|-------------------|
+| ◀️ Anterior                                   | 🏠 Volver                     | ▶️ Ir al Proyecto                              |
+| --------------------------------------------- | ----------------------------- | ---------------------------------------------- |
 | [Práctica 04](practica-04-primer-workflow.md) | [Índice Prácticas](README.md) | [Proyecto Integrador](../3-proyecto/README.md) |
 
 </div>

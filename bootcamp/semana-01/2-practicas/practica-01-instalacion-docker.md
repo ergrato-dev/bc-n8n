@@ -8,12 +8,12 @@
 
 ## 📋 Información General
 
-| Campo | Valor |
-|-------|-------|
-| **Dificultad** | ⭐ Principiante |
-| **Tiempo estimado** | 25 minutos |
-| **Conceptos** | Docker, Docker Compose, Contenedores |
-| **Prerrequisitos** | Sistema operativo compatible |
+| Campo               | Valor                                |
+| ------------------- | ------------------------------------ |
+| **Dificultad**      | ⭐ Principiante                      |
+| **Tiempo estimado** | 25 minutos                           |
+| **Conceptos**       | Docker, Docker Compose, Contenedores |
+| **Prerrequisitos**  | Sistema operativo compatible         |
 
 ---
 
@@ -127,11 +127,13 @@ newgrp docker
 #### 🪟 Windows 10/11
 
 1. **Habilitar WSL2** (si no está habilitado):
+
    - Abre PowerShell como Administrador
    - Ejecuta: `wsl --install`
    - Reinicia el computador
 
 2. **Instalar Docker Desktop**:
+
    - Descarga desde: https://www.docker.com/products/docker-desktop
    - Ejecuta el instalador
    - Marca la opción "Use WSL 2 instead of Hyper-V"
@@ -235,6 +237,7 @@ This message shows that your installation appears to be working correctly.
 <summary>Pista 1: Docker no inicia en Linux</summary>
 
 Asegúrate de que el servicio está activo:
+
 ```bash
 sudo systemctl start docker
 sudo systemctl enable docker
@@ -246,6 +249,7 @@ sudo systemctl enable docker
 <summary>Pista 2: Error de permisos en Linux</summary>
 
 Asegúrate de estar en el grupo docker:
+
 ```bash
 sudo usermod -aG docker $USER
 # Cierra sesión y vuelve a entrar, o ejecuta:
@@ -267,12 +271,12 @@ newgrp docker
 
 ## ✅ Criterios de Evaluación
 
-| Criterio | Puntos |
-|----------|--------|
-| Docker instalado correctamente | 2 |
-| Docker Compose instalado | 2 |
-| Contenedor hello-world ejecutado | 2 |
-| **Total** | **6** |
+| Criterio                         | Puntos |
+| -------------------------------- | ------ |
+| Docker instalado correctamente   | 2      |
+| Docker Compose instalado         | 2      |
+| Contenedor hello-world ejecutado | 2      |
+| **Total**                        | **6**  |
 
 ---
 
@@ -281,6 +285,7 @@ newgrp docker
 Si terminaste antes, intenta:
 
 1. **Ejecutar un servidor web básico:**
+
    ```bash
    docker run -d -p 8080:80 nginx
    # Abre http://localhost:8080 en tu navegador
@@ -305,8 +310,8 @@ Si terminaste antes, intenta:
 
 <div align="center">
 
-| 🏠 Volver | Siguiente ▶️ |
-|-----------|--------------|
+| 🏠 Volver                     | Siguiente ▶️                                             |
+| ----------------------------- | -------------------------------------------------------- |
 | [Índice Prácticas](README.md) | [Práctica 02: Levantar n8n](practica-02-levantar-n8n.md) |
 
 </div>

@@ -10,20 +10,20 @@ Templates oficiales y de la comunidad para aprender y reutilizar.
 
 ### Para Principiantes
 
-| Template                               | URL                                              | Descripción                    |
-| -------------------------------------- | ------------------------------------------------ | ------------------------------ |
-| **Hello World**                        | https://n8n.io/workflows/1-hello-world           | Primer workflow básico         |
-| **Schedule a Workflow**                | https://n8n.io/workflows/4-schedule-workflow     | Usar Schedule Trigger          |
-| **HTTP Request Basics**                | https://n8n.io/workflows/17-http-request         | Consumir APIs                  |
-| **Working with Data**                  | https://n8n.io/workflows/12-working-data         | Transformar datos              |
+| Template                | URL                                          | Descripción            |
+| ----------------------- | -------------------------------------------- | ---------------------- |
+| **Hello World**         | https://n8n.io/workflows/1-hello-world       | Primer workflow básico |
+| **Schedule a Workflow** | https://n8n.io/workflows/4-schedule-workflow | Usar Schedule Trigger  |
+| **HTTP Request Basics** | https://n8n.io/workflows/17-http-request     | Consumir APIs          |
+| **Working with Data**   | https://n8n.io/workflows/12-working-data     | Transformar datos      |
 
 ### Notificaciones
 
-| Template                               | URL                                              | Descripción                    |
-| -------------------------------------- | ------------------------------------------------ | ------------------------------ |
-| **Slack Notification**                 | https://n8n.io/workflows/29-slack-notification   | Enviar mensajes a Slack        |
-| **Email Notification**                 | https://n8n.io/workflows/22-email-notification   | Enviar emails                  |
-| **Telegram Bot**                       | https://n8n.io/workflows/45-telegram-bot         | Bot de Telegram                |
+| Template               | URL                                            | Descripción             |
+| ---------------------- | ---------------------------------------------- | ----------------------- |
+| **Slack Notification** | https://n8n.io/workflows/29-slack-notification | Enviar mensajes a Slack |
+| **Email Notification** | https://n8n.io/workflows/22-email-notification | Enviar emails           |
+| **Telegram Bot**       | https://n8n.io/workflows/45-telegram-bot       | Bot de Telegram         |
 
 ---
 
@@ -31,27 +31,27 @@ Templates oficiales y de la comunidad para aprender y reutilizar.
 
 ### 📊 Productividad
 
-| Template                               | Complejidad | Descripción                    |
-| -------------------------------------- | ----------- | ------------------------------ |
-| Google Sheets to Notion                | ⭐⭐        | Sincronizar datos              |
-| Airtable Automations                   | ⭐⭐        | Automatizar base de datos      |
-| Todo List Manager                      | ⭐          | Gestión de tareas              |
+| Template                | Complejidad | Descripción               |
+| ----------------------- | ----------- | ------------------------- |
+| Google Sheets to Notion | ⭐⭐        | Sincronizar datos         |
+| Airtable Automations    | ⭐⭐        | Automatizar base de datos |
+| Todo List Manager       | ⭐          | Gestión de tareas         |
 
 ### 📧 Marketing
 
-| Template                               | Complejidad | Descripción                    |
-| -------------------------------------- | ----------- | ------------------------------ |
-| Lead Capture to CRM                    | ⭐⭐        | Captura de leads               |
-| Email List Sync                        | ⭐⭐        | Sincronizar listas             |
-| Social Media Scheduler                 | ⭐⭐⭐      | Programar publicaciones        |
+| Template               | Complejidad | Descripción             |
+| ---------------------- | ----------- | ----------------------- |
+| Lead Capture to CRM    | ⭐⭐        | Captura de leads        |
+| Email List Sync        | ⭐⭐        | Sincronizar listas      |
+| Social Media Scheduler | ⭐⭐⭐      | Programar publicaciones |
 
 ### 🔔 Alertas
 
-| Template                               | Complejidad | Descripción                    |
-| -------------------------------------- | ----------- | ------------------------------ |
-| Website Monitoring                     | ⭐⭐        | Monitorear uptime              |
-| Error Notification                     | ⭐⭐        | Alertas de errores             |
-| Price Drop Alert                       | ⭐⭐⭐      | Monitorear precios             |
+| Template           | Complejidad | Descripción        |
+| ------------------ | ----------- | ------------------ |
+| Website Monitoring | ⭐⭐        | Monitorear uptime  |
+| Error Notification | ⭐⭐        | Alertas de errores |
+| Price Drop Alert   | ⭐⭐⭐      | Monitorear precios |
 
 ---
 
@@ -97,13 +97,14 @@ Templates oficiales y de la comunidad para aprender y reutilizar.
   ],
   "connections": {
     "Manual Trigger": {
-      "main": [[{"node": "Set - Mensaje", "type": "main", "index": 0}]]
+      "main": [[{ "node": "Set - Mensaje", "type": "main", "index": 0 }]]
     }
   }
 }
 ```
 
 **Cómo usar:**
+
 1. Copia el JSON
 2. En n8n, ve a Workflows > Import
 3. Pega el JSON
@@ -190,10 +191,10 @@ Templates oficiales y de la comunidad para aprender y reutilizar.
   ],
   "connections": {
     "Manual Trigger": {
-      "main": [[{"node": "Set - Datos Usuario", "type": "main", "index": 0}]]
+      "main": [[{ "node": "Set - Datos Usuario", "type": "main", "index": 0 }]]
     },
     "Set - Datos Usuario": {
-      "main": [[{"node": "Set - Formatear", "type": "main", "index": 0}]]
+      "main": [[{ "node": "Set - Formatear", "type": "main", "index": 0 }]]
     }
   }
 }
@@ -296,15 +297,15 @@ Templates oficiales y de la comunidad para aprender y reutilizar.
   ],
   "connections": {
     "Manual Trigger": {
-      "main": [[{"node": "Set - Score", "type": "main", "index": 0}]]
+      "main": [[{ "node": "Set - Score", "type": "main", "index": 0 }]]
     },
     "Set - Score": {
-      "main": [[{"node": "IF - Aprobado", "type": "main", "index": 0}]]
+      "main": [[{ "node": "IF - Aprobado", "type": "main", "index": 0 }]]
     },
     "IF - Aprobado": {
       "main": [
-        [{"node": "Set - Aprobado", "type": "main", "index": 0}],
-        [{"node": "Set - Reprobado", "type": "main", "index": 0}]
+        [{ "node": "Set - Aprobado", "type": "main", "index": 0 }],
+        [{ "node": "Set - Reprobado", "type": "main", "index": 0 }]
       ]
     }
   }
@@ -317,19 +318,19 @@ Templates oficiales y de la comunidad para aprender y reutilizar.
 
 ### Fuentes Oficiales
 
-| Fuente                   | URL                                              |
-| ------------------------ | ------------------------------------------------ |
-| **n8n Template Library** | https://n8n.io/workflows/                        |
-| **n8n Community**        | https://community.n8n.io/c/workflow-templates/   |
+| Fuente                   | URL                                                              |
+| ------------------------ | ---------------------------------------------------------------- |
+| **n8n Template Library** | https://n8n.io/workflows/                                        |
+| **n8n Community**        | https://community.n8n.io/c/workflow-templates/                   |
 | **n8n GitHub**           | https://github.com/n8n-io/n8n/tree/master/packages/cli/templates |
 
 ### Fuentes de la Comunidad
 
-| Fuente                   | URL                                              |
-| ------------------------ | ------------------------------------------------ |
-| **n8n.io/creators**      | Workflows de creadores verificados               |
-| **Dev.to #n8n**          | https://dev.to/t/n8n                             |
-| **Reddit r/n8n**         | https://reddit.com/r/n8n                         |
+| Fuente              | URL                                |
+| ------------------- | ---------------------------------- |
+| **n8n.io/creators** | Workflows de creadores verificados |
+| **Dev.to #n8n**     | https://dev.to/t/n8n               |
+| **Reddit r/n8n**    | https://reddit.com/r/n8n           |
 
 ---
 

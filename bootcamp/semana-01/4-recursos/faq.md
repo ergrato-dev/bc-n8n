@@ -11,6 +11,7 @@ Respuestas a las preguntas más frecuentes de la primera semana.
 ### ¿Por qué usar Docker para n8n?
 
 **Respuesta:** Docker proporciona:
+
 - ✅ Entorno aislado y consistente
 - ✅ Fácil instalación sin dependencias
 - ✅ Actualizaciones simples
@@ -20,6 +21,7 @@ Respuestas a las preguntas más frecuentes de la primera semana.
 ### ¿Puedo usar n8n sin Docker?
 
 **Respuesta:** Sí, hay otras opciones:
+
 1. **npm global:** `npm install n8n -g`
 2. **n8n Cloud:** https://n8n.io/cloud (gratis para empezar)
 3. **Electron App:** Aplicación de escritorio
@@ -32,7 +34,7 @@ Para el bootcamp recomendamos Docker por su portabilidad.
 
 ```yaml
 ports:
-  - "5679:5678"  # Usar puerto 5679 en lugar de 5678
+  - '5679:5678' # Usar puerto 5679 en lugar de 5678
 ```
 
 Luego accede a `http://localhost:5679`
@@ -57,6 +59,7 @@ docker compose up -d
 **Respuesta:** En el volumen Docker `n8n_data`. Los datos persisten aunque detengas o elimines el contenedor.
 
 Para ver la ubicación física:
+
 ```bash
 docker volume inspect n8n_data
 ```
@@ -79,6 +82,7 @@ docker volume inspect n8n_data
 ### ¿Qué significa el color de los nodos?
 
 **Respuesta:**
+
 - 🔵 **Azul:** Nodo ejecutado exitosamente
 - 🔴 **Rojo:** Error en ejecución
 - ⚪ **Gris:** Nodo no ejecutado
@@ -87,6 +91,7 @@ docker volume inspect n8n_data
 ### ¿Cómo veo los datos entre nodos?
 
 **Respuesta:**
+
 1. Ejecuta el workflow
 2. Click en el nodo
 3. Ve la pestaña "Output" a la derecha
@@ -113,32 +118,50 @@ También puedes usar el pin icon para "pinear" datos y probar nodos posteriores.
 ### ¿Cuál es la diferencia entre `{{ }}` y sin llaves?
 
 **Respuesta:**
+
 - `{{ expresión }}` - Evalúa código JavaScript
 - `texto normal` - Se usa como string literal
 
 ```javascript
 // Expresión (se evalúa)
-{{ $json.nombre }}  // Retorna: "Juan"
+{
+  {
+    $json.nombre;
+  }
+} // Retorna: "Juan"
 
 // Literal (no se evalúa)
-$json.nombre        // Retorna: "$json.nombre"
+$json.nombre; // Retorna: "$json.nombre"
 ```
 
 ### ¿Qué es `$json` vs `$input`?
 
 **Respuesta:**
+
 - `$json` - Datos del item actual que se está procesando
 - `$input` - Acceso a todos los items de entrada
 
 ```javascript
 // Datos del item actual
-{{ $json.nombre }}
+{
+  {
+    $json.nombre;
+  }
+}
 
 // Primer item de entrada
-{{ $input.first().json.nombre }}
+{
+  {
+    $input.first().json.nombre;
+  }
+}
 
 // Todos los items
-{{ $input.all() }}
+{
+  {
+    $input.all();
+  }
+}
 ```
 
 ### ¿Cómo accedo a datos de un nodo anterior?
@@ -147,15 +170,24 @@ $json.nombre        // Retorna: "$json.nombre"
 
 ```javascript
 // Por nombre del nodo
-{{ $('Nombre del Nodo').item.json.campo }}
+{
+  {
+    $('Nombre del Nodo').item.json.campo;
+  }
+}
 
 // Primer item de ese nodo
-{{ $('Nombre del Nodo').first().json.campo }}
+{
+  {
+    $('Nombre del Nodo').first().json.campo;
+  }
+}
 ```
 
 ### ¿Por qué mi expresión no funciona?
 
 **Respuesta:** Verifica:
+
 1. ✅ Sintaxis correcta con `{{ }}`
 2. ✅ Nombre del campo es exacto (case-sensitive)
 3. ✅ El nodo anterior produjo datos
@@ -166,6 +198,7 @@ Tip: Usa el panel de Output para ver la estructura exacta de datos.
 ### ¿Cuándo uso Set Node vs Code Node?
 
 **Respuesta:**
+
 - **Set Node:** Transformaciones simples, agregar campos
 - **Code Node:** Lógica compleja, loops, funciones personalizadas
 
@@ -182,6 +215,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ### ¿Cómo activo un workflow para que corra automáticamente?
 
 **Respuesta:**
+
 1. Usa un trigger automático (Schedule, Webhook, etc.)
 2. Toggle "Active" en la esquina superior derecha
 3. El workflow se ejecutará según el trigger configurado
@@ -189,6 +223,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ### ¿Por qué mi workflow no se ejecuta automáticamente?
 
 **Respuesta:** Verifica:
+
 - ✅ El workflow está "Active" (toggle activado)
 - ✅ Tiene un trigger automático (no Manual Trigger)
 - ✅ n8n está corriendo
@@ -201,6 +236,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ### ¿Cómo comparto un workflow?
 
 **Respuesta:**
+
 1. Menú del workflow > Export
 2. Guarda el archivo JSON
 3. Comparte el JSON
@@ -215,12 +251,21 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 **Causa:** Estás intentando acceder a un campo que no existe.
 
 **Solución:**
+
 ```javascript
 // Verificar antes de acceder
-{{ $json.campo ?? 'valor_por_defecto' }}
+{
+  {
+    $json.campo ?? 'valor_por_defecto';
+  }
+}
 
 // O usar optional chaining
-{{ $json.objeto?.subCampo }}
+{
+  {
+    $json.objeto?.subCampo;
+  }
+}
 ```
 
 ### "Node does not have any input data"
@@ -228,6 +273,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 **Causa:** El nodo no recibió datos del nodo anterior.
 
 **Solución:**
+
 - Verifica que el nodo anterior produce output
 - Verifica que la conexión está correcta
 - Ejecuta el workflow completo
@@ -237,6 +283,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 **Causa:** Sintaxis incorrecta en la expresión.
 
 **Solución:**
+
 - Verifica las llaves `{{ }}`
 - Revisa nombres de variables
 - Prueba en el editor de expresiones (click en el ícono de expresión)
@@ -244,6 +291,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ### Mi workflow funciona en test pero no en producción
 
 **Posibles causas:**
+
 1. Variables de entorno diferentes
 2. Credenciales expiradas
 3. APIs con rate limiting
@@ -256,12 +304,14 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ### ¿n8n es gratis?
 
 **Respuesta:**
+
 - ✅ **Self-hosted:** Completamente gratis, código abierto
 - 💰 **n8n Cloud:** Plan gratuito limitado, planes pagados para más features
 
 ### ¿Qué tan seguro es n8n?
 
 **Respuesta:** n8n self-hosted te da control total:
+
 - Tus datos nunca salen de tu servidor
 - Puedes configurar autenticación
 - Código abierto auditable
@@ -274,12 +324,14 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ### ¿n8n tiene límites de workflows/ejecuciones?
 
 **Respuesta:**
+
 - **Self-hosted:** Sin límites artificiales
 - **n8n Cloud:** Límites según plan
 
 ### ¿Dónde puedo pedir ayuda?
 
 **Respuesta:**
+
 1. 🔗 **Comunidad n8n:** https://community.n8n.io/
 2. 💬 **Discord:** https://discord.gg/n8n
 3. 📚 **Documentación:** https://docs.n8n.io/
@@ -296,6 +348,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ### ¿Qué hago si me atraso?
 
 **Respuesta:**
+
 1. No te preocupes, el material estará disponible
 2. Los ejercicios están diseñados para aprendizaje progresivo
 3. Enfócate en entender conceptos, no solo completar tareas
@@ -310,6 +363,7 @@ Regla general: Si Set Node puede hacerlo, úsalo. Code Node para lo demás.
 ## 💡 ¿Tienes otra pregunta?
 
 Si tu duda no está aquí:
+
 1. Revisa la documentación oficial
 2. Busca en la comunidad de n8n
 3. Pregunta en el foro del bootcamp

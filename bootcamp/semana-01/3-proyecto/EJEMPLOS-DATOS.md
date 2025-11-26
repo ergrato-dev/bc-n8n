@@ -19,6 +19,7 @@ Este archivo contiene conjuntos de datos para probar el workflow del proyecto.
 ```
 
 **Output Esperado:**
+
 ```json
 {
   "mensaje": "¡Bienvenido Juan Pérez! Gracias por unirte con el plan Free. Tu cuenta fue creada el 15/01/2025 a las 10:30.",
@@ -44,6 +45,7 @@ Este archivo contiene conjuntos de datos para probar el workflow del proyecto.
 ```
 
 **Output Esperado:**
+
 ```json
 {
   "mensaje": "¡Bienvenido María García López! Gracias por unirte con el plan Pro. Tu cuenta fue creada el 15/01/2025 a las 11:45.",
@@ -69,6 +71,7 @@ Este archivo contiene conjuntos de datos para probar el workflow del proyecto.
 ```
 
 **Output Esperado:**
+
 ```json
 {
   "mensaje": "¡Bienvenido Carlos Alberto Ramírez! Gracias por unirte con el plan Enterprise. Tu cuenta fue creada el 15/01/2025 a las 14:20.",
@@ -96,6 +99,7 @@ Este archivo contiene conjuntos de datos para probar el workflow del proyecto.
 ```
 
 **Output Esperado:**
+
 - Nombre formateado: `Ana` (una sola palabra)
 
 ---
@@ -111,6 +115,7 @@ Este archivo contiene conjuntos de datos para probar el workflow del proyecto.
 ```
 
 **Output Esperado:**
+
 - Nombre formateado: `José De La Cruz Mendoza`
 
 ---
@@ -138,34 +143,34 @@ Para practicar con múltiples items, usa este array en un Code node:
  */
 const testUsers = [
   {
-    nombre: "usuario uno",
-    email: "user1@test.com",
-    plan: "Free"
+    nombre: 'usuario uno',
+    email: 'user1@test.com',
+    plan: 'Free',
   },
   {
-    nombre: "usuario dos",
-    email: "user2@test.com",
-    plan: "Pro"
+    nombre: 'usuario dos',
+    email: 'user2@test.com',
+    plan: 'Pro',
   },
   {
-    nombre: "usuario tres",
-    email: "user3@test.com",
-    plan: "Enterprise"
+    nombre: 'usuario tres',
+    email: 'user3@test.com',
+    plan: 'Enterprise',
   },
   {
-    nombre: "usuario cuatro",
-    email: "user4@test.com",
-    plan: "Free"
+    nombre: 'usuario cuatro',
+    email: 'user4@test.com',
+    plan: 'Free',
   },
   {
-    nombre: "usuario cinco",
-    email: "user5@test.com",
-    plan: "Pro"
-  }
+    nombre: 'usuario cinco',
+    email: 'user5@test.com',
+    plan: 'Pro',
+  },
 ];
 
 // Retornar como items de n8n
-return testUsers.map(user => ({ json: user }));
+return testUsers.map((user) => ({ json: user }));
 ```
 
 ---
@@ -183,6 +188,7 @@ return testUsers.map(user => ({ json: user }));
 ```
 
 **Comportamiento Esperado:**
+
 - Si implementas validación: El workflow debe detectar y manejar este caso
 - Sin validación: El workflow procesará normalmente
 
@@ -199,6 +205,7 @@ return testUsers.map(user => ({ json: user }));
 ```
 
 **Comportamiento Esperado:**
+
 - Deberías considerar un valor por defecto o validación
 
 ---
@@ -214,6 +221,7 @@ return testUsers.map(user => ({ json: user }));
 ```
 
 **Comportamiento Esperado:**
+
 - La función de capitalización retornará string vacío
 - Considera añadir validación
 
@@ -237,16 +245,20 @@ return testUsers.map(user => ({ json: user }));
 // Para usar con nodo IF o Switch
 const usersByPlan = {
   free: [
-    { nombre: "free user 1", email: "free1@test.com", plan: "Free" },
-    { nombre: "free user 2", email: "free2@test.com", plan: "Free" }
+    { nombre: 'free user 1', email: 'free1@test.com', plan: 'Free' },
+    { nombre: 'free user 2', email: 'free2@test.com', plan: 'Free' },
   ],
   pro: [
-    { nombre: "pro user 1", email: "pro1@test.com", plan: "Pro" },
-    { nombre: "pro user 2", email: "pro2@test.com", plan: "Pro" }
+    { nombre: 'pro user 1', email: 'pro1@test.com', plan: 'Pro' },
+    { nombre: 'pro user 2', email: 'pro2@test.com', plan: 'Pro' },
   ],
   enterprise: [
-    { nombre: "enterprise user", email: "enterprise@test.com", plan: "Enterprise" }
-  ]
+    {
+      nombre: 'enterprise user',
+      email: 'enterprise@test.com',
+      plan: 'Enterprise',
+    },
+  ],
 };
 ```
 
@@ -259,32 +271,32 @@ const usersByPlan = {
  */
 const realisticUsers = [
   {
-    nombre: "alejandro sánchez",
-    email: "a.sanchez@startup.io",
-    plan: "Pro",
-    fuente: "Google Ads",
-    pais: "México",
-    idioma: "es"
+    nombre: 'alejandro sánchez',
+    email: 'a.sanchez@startup.io',
+    plan: 'Pro',
+    fuente: 'Google Ads',
+    pais: 'México',
+    idioma: 'es',
   },
   {
-    nombre: "sarah johnson",
-    email: "sarah.j@company.us",
-    plan: "Enterprise",
-    fuente: "Referido",
-    pais: "Estados Unidos",
-    idioma: "en"
+    nombre: 'sarah johnson',
+    email: 'sarah.j@company.us',
+    plan: 'Enterprise',
+    fuente: 'Referido',
+    pais: 'Estados Unidos',
+    idioma: 'en',
   },
   {
-    nombre: "pedro costa",
-    email: "pcosta@empresa.br",
-    plan: "Free",
-    fuente: "Orgánico",
-    pais: "Brasil",
-    idioma: "pt"
-  }
+    nombre: 'pedro costa',
+    email: 'pcosta@empresa.br',
+    plan: 'Free',
+    fuente: 'Orgánico',
+    pais: 'Brasil',
+    idioma: 'pt',
+  },
 ];
 
-return realisticUsers.map(user => ({ json: user }));
+return realisticUsers.map((user) => ({ json: user }));
 ```
 
 ---
@@ -324,41 +336,41 @@ return realisticUsers.map(user => ({ json: user }));
 ```javascript
 /**
  * Validador de datos de entrada
- * 
+ *
  * ¿Qué hace? Verifica que los datos del usuario sean válidos
  * ¿Para qué? Prevenir errores en nodos posteriores
  * ¿Cómo? Valida presencia de campos y formato de email
  */
 function validateUserData(userData) {
   const errors = [];
-  
+
   // Validar nombre
   if (!userData.nombre || userData.nombre.trim().length < 1) {
-    errors.push("El nombre es requerido");
+    errors.push('El nombre es requerido');
   }
-  
+
   // Validar email
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!userData.email || !emailRegex.test(userData.email)) {
-    errors.push("El email no es válido");
+    errors.push('El email no es válido');
   }
-  
+
   // Validar plan
-  const validPlans = ["Free", "Pro", "Enterprise"];
+  const validPlans = ['Free', 'Pro', 'Enterprise'];
   if (!userData.plan || !validPlans.includes(userData.plan)) {
-    errors.push("El plan debe ser Free, Pro o Enterprise");
+    errors.push('El plan debe ser Free, Pro o Enterprise');
   }
-  
+
   return {
     isValid: errors.length === 0,
-    errors: errors
+    errors: errors,
   };
 }
 
 // Uso en el workflow
 const validation = validateUserData($json);
 if (!validation.isValid) {
-  throw new Error(`Datos inválidos: ${validation.errors.join(", ")}`);
+  throw new Error(`Datos inválidos: ${validation.errors.join(', ')}`);
 }
 ```
 
@@ -373,27 +385,43 @@ Para pruebas extensivas, usa este generador:
  * Generador de usuarios aleatorios
  * Útil para testing de volumen y edge cases
  */
-const nombres = ["juan", "maría", "carlos", "ana", "pedro", "elena", "diego", "lucía"];
-const apellidos = ["garcía", "martínez", "lópez", "rodríguez", "sánchez", "pérez"];
-const dominios = ["gmail.com", "hotmail.com", "empresa.com", "test.io"];
-const planes = ["Free", "Pro", "Enterprise"];
+const nombres = [
+  'juan',
+  'maría',
+  'carlos',
+  'ana',
+  'pedro',
+  'elena',
+  'diego',
+  'lucía',
+];
+const apellidos = [
+  'garcía',
+  'martínez',
+  'lópez',
+  'rodríguez',
+  'sánchez',
+  'pérez',
+];
+const dominios = ['gmail.com', 'hotmail.com', 'empresa.com', 'test.io'];
+const planes = ['Free', 'Pro', 'Enterprise'];
 
 function generateRandomUser() {
   const nombre = nombres[Math.floor(Math.random() * nombres.length)];
   const apellido = apellidos[Math.floor(Math.random() * apellidos.length)];
   const dominio = dominios[Math.floor(Math.random() * dominios.length)];
   const plan = planes[Math.floor(Math.random() * planes.length)];
-  
+
   return {
     nombre: `${nombre} ${apellido}`,
     email: `${nombre}.${apellido}@${dominio}`,
-    plan: plan
+    plan: plan,
   };
 }
 
 // Generar 10 usuarios aleatorios
 const randomUsers = Array.from({ length: 10 }, () => generateRandomUser());
-return randomUsers.map(user => ({ json: user }));
+return randomUsers.map((user) => ({ json: user }));
 ```
 
 ---

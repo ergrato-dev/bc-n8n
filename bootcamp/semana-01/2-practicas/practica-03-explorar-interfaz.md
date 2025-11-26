@@ -8,12 +8,12 @@
 
 ## 📋 Información General
 
-| Campo | Valor |
-|-------|-------|
-| **Dificultad** | ⭐ Principiante |
-| **Tiempo estimado** | 25 minutos |
-| **Conceptos** | UI, Navegación, Editor de Workflows |
-| **Prerrequisitos** | Práctica 02 completada (n8n corriendo) |
+| Campo               | Valor                                  |
+| ------------------- | -------------------------------------- |
+| **Dificultad**      | ⭐ Principiante                        |
+| **Tiempo estimado** | 25 minutos                             |
+| **Conceptos**       | UI, Navegación, Editor de Workflows    |
+| **Prerrequisitos**  | Práctica 02 completada (n8n corriendo) |
 
 ---
 
@@ -104,6 +104,7 @@ Haz clic en **Workflows** en el sidebar:
 ```
 
 **Funcionalidades:**
+
 - Crear nuevos workflows
 - Buscar workflows existentes
 - Organizar en carpetas
@@ -179,6 +180,7 @@ Haz clic en **Executions**:
 ```
 
 **Funcionalidades:**
+
 - Ver historial de todas las ejecuciones
 - Filtrar por workflow, estado, fecha
 - Debug de ejecuciones fallidas
@@ -223,13 +225,13 @@ Haz clic en **Executions**:
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-| Elemento | Función |
-|----------|---------|
-| ← Back | Volver a la lista de workflows |
-| Nombre ✏️ | Editar nombre del workflow |
-| Save | Guardar cambios |
-| Execute | Ejecutar el workflow |
-| Share | Compartir workflow |
+| Elemento  | Función                        |
+| --------- | ------------------------------ |
+| ← Back    | Volver a la lista de workflows |
+| Nombre ✏️ | Editar nombre del workflow     |
+| Save      | Guardar cambios                |
+| Execute   | Ejecutar el workflow           |
+| Share     | Compartir workflow             |
 
 #### Área de Canvas
 
@@ -293,6 +295,7 @@ Haz clic en **"+"** para ver los nodos disponibles:
 ```
 
 **Tabs del panel:**
+
 - **Parameters**: Configuración del nodo
 - **Settings**: Opciones avanzadas
 - **Input**: Datos de entrada (del nodo anterior)
@@ -326,6 +329,7 @@ Al finalizar esta práctica, deberías:
 <summary>Pista 1: No encuentro el botón de agregar nodo</summary>
 
 Hay varias formas de agregar nodos:
+
 - Clic en el botón **"+"** en el canvas
 - Clic derecho en el canvas
 - Arrastra desde el punto de conexión de un nodo
@@ -343,13 +347,13 @@ Usa la rueda del ratón para hacer zoom, o los controles de zoom en la esquina i
 
 ## ✅ Criterios de Evaluación
 
-| Criterio | Puntos |
-|----------|--------|
-| Exploró todas las secciones del sidebar | 2 |
-| Abrió el editor de workflows | 2 |
-| Agregó un nodo Manual Trigger | 1 |
-| Guardó el workflow | 1 |
-| **Total** | **6** |
+| Criterio                                | Puntos |
+| --------------------------------------- | ------ |
+| Exploró todas las secciones del sidebar | 2      |
+| Abrió el editor de workflows            | 2      |
+| Agregó un nodo Manual Trigger           | 1      |
+| Guardó el workflow                      | 1      |
+| **Total**                               | **6**  |
 
 ---
 
@@ -375,8 +379,8 @@ Usa la rueda del ratón para hacer zoom, o los controles de zoom en la esquina i
 
 <div align="center">
 
-| ◀️ Anterior | 🏠 Volver | Siguiente ▶️ |
-|-------------|-----------|--------------|
+| ◀️ Anterior                                | 🏠 Volver                     | Siguiente ▶️                                                   |
+| ------------------------------------------ | ----------------------------- | -------------------------------------------------------------- |
 | [Práctica 02](practica-02-levantar-n8n.md) | [Índice Prácticas](README.md) | [Práctica 04: Primer Workflow](practica-04-primer-workflow.md) |
 
 </div>

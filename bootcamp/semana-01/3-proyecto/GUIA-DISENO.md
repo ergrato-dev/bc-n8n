@@ -48,13 +48,14 @@
 
 ### 1️⃣ Manual Trigger
 
-| Propiedad   | Valor          |
-| ----------- | -------------- |
-| **Tipo**    | Manual Trigger |
-| **Nombre**  | Manual Trigger |
+| Propiedad   | Valor                        |
+| ----------- | ---------------------------- |
+| **Tipo**    | Manual Trigger               |
+| **Nombre**  | Manual Trigger               |
 | **Función** | Iniciar workflow manualmente |
 
 **Propósito:**
+
 - Permite ejecutar el workflow bajo demanda
 - Ideal para desarrollo y pruebas
 - En producción se reemplazaría por Webhook o Schedule
@@ -63,12 +64,12 @@
 
 ### 2️⃣ Set Node - Datos del Usuario
 
-| Propiedad   | Valor                       |
-| ----------- | --------------------------- |
-| **Tipo**    | Set                         |
-| **Nombre**  | Datos del Usuario           |
-| **Modo**    | Keep Only Set               |
-| **Función** | Simular entrada de datos    |
+| Propiedad   | Valor                    |
+| ----------- | ------------------------ |
+| **Tipo**    | Set                      |
+| **Nombre**  | Datos del Usuario        |
+| **Modo**    | Keep Only Set            |
+| **Función** | Simular entrada de datos |
 
 **Configuración de Campos:**
 
@@ -93,6 +94,7 @@
 ```
 
 **Nota del nodo:**
+
 ```
 📝 DATOS DE ENTRADA
 Este nodo simula los datos que llegarían de un formulario de registro.
@@ -103,25 +105,26 @@ En un caso real, estos datos vendrían de un Webhook o API.
 
 ### 3️⃣ Set Node - Formatear Datos
 
-| Propiedad   | Valor                           |
-| ----------- | ------------------------------- |
-| **Tipo**    | Set                             |
-| **Nombre**  | Formatear Datos                 |
-| **Modo**    | Keep Only Set                   |
-| **Función** | Transformar y enriquecer datos  |
+| Propiedad   | Valor                          |
+| ----------- | ------------------------------ |
+| **Tipo**    | Set                            |
+| **Nombre**  | Formatear Datos                |
+| **Modo**    | Keep Only Set                  |
+| **Función** | Transformar y enriquecer datos |
 
 **Configuración de Campos:**
 
-| Campo             | Expresión                                                                                       |
-| ----------------- | ----------------------------------------------------------------------------------------------- |
-| `nombreFormateado`| `{{ $json.nombre.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') }}`     |
-| `email`           | `{{ $json.email }}`                                                                             |
-| `plan`            | `{{ $json.plan }}`                                                                              |
-| `fechaRegistro`   | `{{ $now.toISO() }}`                                                                            |
-| `fechaFormateada` | `{{ $now.format('DD/MM/YYYY') }}`                                                               |
-| `horaFormateada`  | `{{ $now.format('HH:mm') }}`                                                                    |
+| Campo              | Expresión                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------ |
+| `nombreFormateado` | `{{ $json.nombre.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') }}` |
+| `email`            | `{{ $json.email }}`                                                                        |
+| `plan`             | `{{ $json.plan }}`                                                                         |
+| `fechaRegistro`    | `{{ $now.toISO() }}`                                                                       |
+| `fechaFormateada`  | `{{ $now.format('DD/MM/YYYY') }}`                                                          |
+| `horaFormateada`   | `{{ $now.format('HH:mm') }}`                                                               |
 
 **Nota del nodo:**
+
 ```
 🔄 PROCESAMIENTO DE DATOS
 Transformaciones aplicadas:
@@ -134,19 +137,19 @@ Transformaciones aplicadas:
 
 ### 4️⃣ Set Node - Mensaje de Bienvenida
 
-| Propiedad   | Valor                              |
-| ----------- | ---------------------------------- |
-| **Tipo**    | Set                                |
-| **Nombre**  | Mensaje de Bienvenida              |
-| **Modo**    | Keep Only Set                      |
-| **Función** | Generar output final estructurado  |
+| Propiedad   | Valor                             |
+| ----------- | --------------------------------- |
+| **Tipo**    | Set                               |
+| **Nombre**  | Mensaje de Bienvenida             |
+| **Modo**    | Keep Only Set                     |
+| **Función** | Generar output final estructurado |
 
 **Configuración de Campos:**
 
-| Campo      | Expresión                                                                                                                                    |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `mensaje`  | `{{ '¡Bienvenido ' + $json.nombreFormateado + '! Gracias por unirte con el plan ' + $json.plan + '. Tu cuenta fue creada el ' + $json.fechaFormateada + ' a las ' + $json.horaFormateada + '.' }}` |
-| `usuario`  | Objeto JSON (ver abajo)                                                                                                                      |
+| Campo     | Expresión                                                                                                                                                                                          |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `mensaje` | `{{ '¡Bienvenido ' + $json.nombreFormateado + '! Gracias por unirte con el plan ' + $json.plan + '. Tu cuenta fue creada el ' + $json.fechaFormateada + ' a las ' + $json.horaFormateada + '.' }}` |
+| `usuario` | Objeto JSON (ver abajo)                                                                                                                                                                            |
 
 **Estructura del objeto `usuario`:**
 
@@ -161,6 +164,7 @@ Transformaciones aplicadas:
 ```
 
 **Nota del nodo:**
+
 ```
 📤 OUTPUT FINAL
 Este nodo genera el mensaje de bienvenida personalizado
@@ -174,15 +178,16 @@ y estructura todos los datos del usuario para uso posterior
 
 ### 📛 Nomenclatura de Nodos
 
-| ✅ Correcto                    | ❌ Incorrecto         |
-| ----------------------------- | --------------------- |
-| `Datos del Usuario`           | `Set`                 |
-| `Formatear Datos`             | `Set1`                |
-| `Mensaje de Bienvenida`       | `Nodo para mensaje`   |
+| ✅ Correcto             | ❌ Incorrecto       |
+| ----------------------- | ------------------- |
+| `Datos del Usuario`     | `Set`               |
+| `Formatear Datos`       | `Set1`              |
+| `Mensaje de Bienvenida` | `Nodo para mensaje` |
 
 ### 📝 Notas Explicativas
 
 Cada nodo debe tener una nota que responda:
+
 1. **¿QUÉ?** - ¿Qué hace este nodo?
 2. **¿PARA QUÉ?** - ¿Cuál es su propósito en el flujo?
 3. **¿CÓMO?** - Detalles técnicos si son necesarios
@@ -221,9 +226,9 @@ Cada nodo debe tener una nota que responda:
 
 ```typescript
 interface UserInput {
-  nombre: string;     // Requerido, min 2 caracteres
-  email: string;      // Requerido, formato email válido
-  plan: "Free" | "Pro" | "Enterprise";  // Requerido
+  nombre: string; // Requerido, min 2 caracteres
+  email: string; // Requerido, formato email válido
+  plan: 'Free' | 'Pro' | 'Enterprise'; // Requerido
 }
 ```
 
@@ -231,12 +236,12 @@ interface UserInput {
 
 ```typescript
 interface WelcomeOutput {
-  mensaje: string;    // Mensaje de bienvenida completo
+  mensaje: string; // Mensaje de bienvenida completo
   usuario: {
     nombreFormateado: string;
     email: string;
     plan: string;
-    fechaRegistro: string;  // ISO 8601
+    fechaRegistro: string; // ISO 8601
   };
 }
 ```
@@ -248,6 +253,7 @@ interface WelcomeOutput {
 ### Caso 1: Datos Válidos Estándar
 
 **Input:**
+
 ```json
 {
   "nombre": "maría garcía",
@@ -257,6 +263,7 @@ interface WelcomeOutput {
 ```
 
 **Output Esperado:**
+
 ```json
 {
   "mensaje": "¡Bienvenido María García! Gracias por unirte con el plan Pro...",
@@ -272,6 +279,7 @@ interface WelcomeOutput {
 ### Caso 2: Nombre con Múltiples Palabras
 
 **Input:**
+
 ```json
 {
   "nombre": "ana maría de los santos",
@@ -281,11 +289,13 @@ interface WelcomeOutput {
 ```
 
 **Output Esperado:**
+
 - Nombre formateado: `Ana María De Los Santos`
 
 ### Caso 3: Plan Enterprise
 
 **Input:**
+
 ```json
 {
   "nombre": "carlos ruiz",
