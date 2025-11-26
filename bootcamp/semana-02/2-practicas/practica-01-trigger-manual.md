@@ -75,13 +75,13 @@ Crearás un workflow que procesa información de usuarios. Usarás el Manual Tri
    - Haz clic en **"Add Field"**
    - Agrega los siguientes campos:
 
-| Campo           | Tipo   | Valor                                          |
-| --------------- | ------ | ---------------------------------------------- |
-| `userId`        | Number | `{{ Math.floor(Math.random() * 1000) }}`       |
-| `fullName`      | String | `Usuario de Prueba`                            |
-| `email`         | String | `test@ejemplo.com`                             |
-| `createdAt`     | String | `{{ $now.toISO() }}`                           |
-| `isTestMode`    | Boolean| `true`                                         |
+| Campo        | Tipo    | Valor                                    |
+| ------------ | ------- | ---------------------------------------- |
+| `userId`     | Number  | `{{ Math.floor(Math.random() * 1000) }}` |
+| `fullName`   | String  | `Usuario de Prueba`                      |
+| `email`      | String  | `test@ejemplo.com`                       |
+| `createdAt`  | String  | `{{ $now.toISO() }}`                     |
+| `isTestMode` | Boolean | `true`                                   |
 
 ### Paso 4: Agregar Nodo IF para Validación
 
@@ -118,6 +118,7 @@ Crearás un workflow que procesa información de usuarios. Usarás el Manual Tri
 ### Paso 5: Agregar Nodos de Resultado
 
 1. **Rama True** (email válido):
+
    - Agrega un nodo **"Edit Fields (Set)"**
    - Renómbralo a: `Email Válido`
    - Agrega campo `status` = `valid`
@@ -269,6 +270,6 @@ Tu práctica está completa cuando:
 
 ## 🏠 Navegación
 
-| ⬅️ Anterior | 💻 Práctica Actual | ➡️ Siguiente |
-|------------|---------------------|--------------|
+| ⬅️ Anterior            | 💻 Práctica Actual      | ➡️ Siguiente                                             |
+| ---------------------- | ----------------------- | -------------------------------------------------------- |
 | [Teoría](../1-teoria/) | **01 - Trigger Manual** | [02 - Schedule Trigger](practica-02-schedule-trigger.md) |

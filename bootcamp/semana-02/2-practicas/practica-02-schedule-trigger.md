@@ -120,15 +120,15 @@ Ahora cambiemos a una expresión cron más específica:
 2. Renómbralo a: `Registrar Ejecución`
 3. Configura los campos:
 
-| Campo            | Tipo   | Valor/Expresión                                    |
-| ---------------- | ------ | -------------------------------------------------- |
-| `executionId`    | String | `{{ $execution.id }}`                              |
-| `executedAt`     | String | `{{ $now.toISO() }}`                               |
-| `triggerTime`    | String | `{{ $json.timestamp }}`                            |
-| `dayOfWeek`      | String | `{{ $json["Day of week"] }}`                       |
-| `hour`           | String | `{{ $json.Hour }}`                                 |
-| `minute`         | String | `{{ $json.Minute }}`                               |
-| `timezone`       | String | `{{ $json.Timezone }}`                             |
+| Campo         | Tipo   | Valor/Expresión              |
+| ------------- | ------ | ---------------------------- |
+| `executionId` | String | `{{ $execution.id }}`        |
+| `executedAt`  | String | `{{ $now.toISO() }}`         |
+| `triggerTime` | String | `{{ $json.timestamp }}`      |
+| `dayOfWeek`   | String | `{{ $json["Day of week"] }}` |
+| `hour`        | String | `{{ $json.Hour }}`           |
+| `minute`      | String | `{{ $json.Minute }}`         |
+| `timezone`    | String | `{{ $json.Timezone }}`       |
 
 ### Paso 7: Agregar Lógica de Horario
 
@@ -143,6 +143,7 @@ Ahora cambiemos a una expresión cron más específica:
 ### Paso 8: Agregar Respuestas Según Horario
 
 **Rama True (Horario Laboral):**
+
 1. Agrega **"Edit Fields (Set)"**
 2. Renómbralo a: `Estado: Activo`
 3. Campos:
@@ -151,6 +152,7 @@ Ahora cambiemos a una expresión cron más específica:
    - `priority`: `normal`
 
 **Rama False (Fuera de Horario):**
+
 1. Agrega **"Edit Fields (Set)"**
 2. Renómbralo a: `Estado: Standby`
 3. Campos:
@@ -223,12 +225,12 @@ El workflow se ejecutará en todos los horarios configurados.
 
 Prueba estas expresiones y verifica qué hacen:
 
-| Expresión        | Tu predicción                              | Verificación en crontab.guru |
-| ---------------- | ------------------------------------------ | ---------------------------- |
-| `*/15 * * * *`   |                                            |                              |
-| `0 9,12,18 * * *`|                                            |                              |
-| `0 0 1 * *`      |                                            |                              |
-| `30 8 * * 1`     |                                            |                              |
+| Expresión         | Tu predicción | Verificación en crontab.guru |
+| ----------------- | ------------- | ---------------------------- |
+| `*/15 * * * *`    |               |                              |
+| `0 9,12,18 * * *` |               |                              |
+| `0 0 1 * *`       |               |                              |
+| `30 8 * * 1`      |               |                              |
 
 ---
 
@@ -282,6 +284,7 @@ El Schedule Trigger proporciona estos datos automáticamente:
 **NO actives este workflow en producción** (no hagas clic en "Active") durante la práctica. Solo usa "Test Workflow" para probar.
 
 Si lo activas accidentalmente:
+
 1. Ve al workflow
 2. Haz clic en el toggle "Active" para desactivarlo
 3. O usa el dashboard de ejecuciones para pausarlo
@@ -298,6 +301,6 @@ Si lo activas accidentalmente:
 
 ## 🏠 Navegación
 
-| ⬅️ Anterior | 💻 Práctica Actual | ➡️ Siguiente |
-|------------|---------------------|--------------|
+| ⬅️ Anterior                                          | 💻 Práctica Actual        | ➡️ Siguiente                                         |
+| ---------------------------------------------------- | ------------------------- | ---------------------------------------------------- |
 | [01 - Trigger Manual](practica-01-trigger-manual.md) | **02 - Schedule Trigger** | [03 - Webhook Básico](practica-03-webhook-basico.md) |
