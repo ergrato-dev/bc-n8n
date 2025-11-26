@@ -52,6 +52,10 @@ Al finalizar este módulo, serás capaz de:
 
 n8n proporciona varias herramientas integradas para depurar workflows:
 
+![Debugging en n8n](../0-assets/04-debugging-workflow.svg)
+
+> 📊 **Diagrama**: Proceso sistemático y herramientas de debugging en n8n.
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │              HERRAMIENTAS DE DEBUGGING EN n8n                    │

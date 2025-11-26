@@ -44,6 +44,10 @@ Las expresiones cron son universales:
 
 Una expresión cron estándar tiene **5 campos** (algunas implementaciones tienen 6 o 7):
 
+![Expresión Cron](../0-assets/02-expresion-cron.svg)
+
+> 📊 **Diagrama**: Anatomía visual de una expresión cron con ejemplo explicado.
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                  ESTRUCTURA DE EXPRESIÓN CRON                    │

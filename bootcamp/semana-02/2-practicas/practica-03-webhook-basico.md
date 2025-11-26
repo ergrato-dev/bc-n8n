@@ -29,6 +29,10 @@ Al completar esta práctica, serás capaz de:
 
 Los **Webhooks** son endpoints HTTP que permiten que sistemas externos inicien workflows en n8n. Son fundamentales para integraciones en tiempo real: formularios web, notificaciones de servicios, eventos de aplicaciones, etc.
 
+![Flujo de Webhook](../0-assets/03-flujo-webhook.svg)
+
+> 📊 **Diagrama**: Flujo completo de una petición webhook en n8n.
+
 ---
 
 ## 🔨 Ejercicio

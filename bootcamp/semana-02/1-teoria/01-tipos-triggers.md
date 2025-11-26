@@ -73,6 +73,10 @@ Todo trigger en n8n comparte características comunes:
 
 Los triggers en n8n se pueden clasificar en **tres categorías principales**:
 
+![Tipos de Triggers](../0-assets/01-tipos-triggers.svg)
+
+> 📊 **Diagrama**: Comparativa visual de los tres tipos principales de triggers en n8n.
+
 ```
                     ┌─────────────────────────────────────┐
                     │        TIPOS DE TRIGGERS            │

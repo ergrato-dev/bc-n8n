@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="fieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="900" height="450" fill="url(#bgGrad)"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#fff" opacity="0.05"/>
+  </pattern>
+  <rect width="900" height="450" fill="url(#grid)"/>
+  
+  <!-- Título -->
+  <text x="450" y="45" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#fff" text-anchor="middle">
+    Anatomía de una Expresión Cron
+  </text>
+  <text x="450" y="70" font-family="Arial, sans-serif" font-size="13" fill="#a0a0a0" text-anchor="middle">
+    Cada campo controla cuándo se ejecuta el Schedule Trigger
+  </text>
+  
+  <!-- Expresión de ejemplo -->
+  <rect x="150" y="95" width="600" height="60" rx="10" fill="#2a2a4a" filter="url(#shadow)"/>
+  <text x="450" y="135" font-family="monospace" font-size="36" font-weight="bold" fill="#00f2fe" text-anchor="middle">
+    0  9  *  *  1-5
+  </text>
+  
+  <!-- Campos con líneas conectoras -->
+  <!-- Campo 1: Minuto -->
+  <g transform="translate(205, 160)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#4facfe" stroke-width="2"/>
+    <rect x="-60" y="40" width="120" height="90" rx="8" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="-60" y="40" width="120" height="25" rx="8" fill="url(#fieldGrad)"/>
+    <rect x="-60" y="57" width="120" height="8" fill="url(#fieldGrad)"/>
+    <text x="0" y="58" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">MINUTO</text>
+    <text x="0" y="85" font-family="monospace" font-size="18" fill="#00f2fe" text-anchor="middle">0</text>
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">En el minuto 0</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="9" fill="#666" text-anchor="middle">(0-59)</text>
+  </g>
+  
+  <!-- Campo 2: Hora -->
+  <g transform="translate(305, 160)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#4facfe" stroke-width="2"/>
+    <rect x="-60" y="40" width="120" height="90" rx="8" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="-60" y="40" width="120" height="25" rx="8" fill="url(#fieldGrad)"/>
+    <rect x="-60" y="57" width="120" height="8" fill="url(#fieldGrad)"/>
+    <text x="0" y="58" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">HORA</text>
+    <text x="0" y="85" font-family="monospace" font-size="18" fill="#00f2fe" text-anchor="middle">9</text>
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">A las 9:00 AM</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="9" fill="#666" text-anchor="middle">(0-23)</text>
+  </g>
+  
+  <!-- Campo 3: Día del mes -->
+  <g transform="translate(430, 160)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#4facfe" stroke-width="2"/>
+    <rect x="-60" y="40" width="120" height="90" rx="8" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="-60" y="40" width="120" height="25" rx="8" fill="url(#fieldGrad)"/>
+    <rect x="-60" y="57" width="120" height="8" fill="url(#fieldGrad)"/>
+    <text x="0" y="58" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">DÍA MES</text>
+    <text x="0" y="85" font-family="monospace" font-size="18" fill="#00f2fe" text-anchor="middle">*</text>
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Cualquier día</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="9" fill="#666" text-anchor="middle">(1-31)</text>
+  </g>
+  
+  <!-- Campo 4: Mes -->
+  <g transform="translate(555, 160)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#4facfe" stroke-width="2"/>
+    <rect x="-60" y="40" width="120" height="90" rx="8" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="-60" y="40" width="120" height="25" rx="8" fill="url(#fieldGrad)"/>
+    <rect x="-60" y="57" width="120" height="8" fill="url(#fieldGrad)"/>
+    <text x="0" y="58" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">MES</text>
+    <text x="0" y="85" font-family="monospace" font-size="18" fill="#00f2fe" text-anchor="middle">*</text>
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Cualquier mes</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="9" fill="#666" text-anchor="middle">(1-12)</text>
+  </g>
+  
+  <!-- Campo 5: Día de la semana -->
+  <g transform="translate(680, 160)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#4facfe" stroke-width="2"/>
+    <rect x="-60" y="40" width="120" height="90" rx="8" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="-60" y="40" width="120" height="25" rx="8" fill="url(#fieldGrad)"/>
+    <rect x="-60" y="57" width="120" height="8" fill="url(#fieldGrad)"/>
+    <text x="0" y="58" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">DÍA SEMANA</text>
+    <text x="0" y="85" font-family="monospace" font-size="18" fill="#00f2fe" text-anchor="middle">1-5</text>
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Lunes a Viernes</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="9" fill="#666" text-anchor="middle">(0-6, 0=Dom)</text>
+  </g>
+  
+  <!-- Resultado -->
+  <rect x="200" y="310" width="500" height="50" rx="10" fill="#2a2a4a" filter="url(#shadow)"/>
+  <rect x="200" y="310" width="500" height="50" rx="10" fill="url(#headerGrad)" opacity="0.2"/>
+  <text x="450" y="342" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">
+    📅 Resultado: Todos los días laborables a las 9:00 AM
+  </text>
+  
+  <!-- Caracteres especiales -->
+  <g transform="translate(100, 380)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#f5576c">Caracteres Especiales:</text>
+    <text x="150" y="15" font-family="monospace" font-size="11" fill="#fff">*</text>
+    <text x="165" y="15" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0">cualquier valor</text>
+    <text x="280" y="15" font-family="monospace" font-size="11" fill="#fff">,</text>
+    <text x="295" y="15" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0">lista (1,3,5)</text>
+    <text x="400" y="15" font-family="monospace" font-size="11" fill="#fff">-</text>
+    <text x="415" y="15" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0">rango (1-5)</text>
+    <text x="510" y="15" font-family="monospace" font-size="11" fill="#fff">/</text>
+    <text x="525" y="15" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0">intervalo (*/15)</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="450" y="440" font-family="Arial, sans-serif" font-size="10" fill="#505050" text-anchor="middle">
+    Bootcamp n8n - Semana 02 - Expresiones Cron
+  </text>
+</svg>

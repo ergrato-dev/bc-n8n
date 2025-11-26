@@ -56,6 +56,10 @@ Crearás un workflow en n8n que integre:
 
 ## 🏗️ Arquitectura del Sistema
 
+![Arquitectura del Proyecto](../0-assets/05-proyecto-recordatorios.svg)
+
+> 📊 **Diagrama**: Arquitectura completa del Sistema de Recordatorios Programados.
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │           SISTEMA DE RECORDATORIOS PROGRAMADOS                   │

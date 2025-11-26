@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="clientGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="webhookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="responseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e"/>
+      <stop offset="100%" style="stop-color:#38ef7d"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00f2fe"/>
+    </marker>
+    <marker id="arrowReturn" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38ef7d"/>
+    </marker>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="900" height="400" fill="url(#bg)"/>
+  <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="0.8" fill="#fff" opacity="0.05"/>
+  </pattern>
+  <rect width="900" height="400" fill="url(#dots)"/>
+  
+  <!-- Título -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle">
+    Flujo de un Webhook en n8n
+  </text>
+  
+  <!-- PASO 1: Cliente -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="140" height="160" rx="12" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="140" height="35" rx="12" fill="url(#clientGrad)"/>
+    <rect x="0" y="27" width="140" height="8" fill="url(#clientGrad)"/>
+    <text x="70" y="24" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">1. CLIENTE</text>
+    
+    <text x="70" y="60" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">🖥️</text>
+    <text x="70" y="90" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">App, cURL, Postman</text>
+    
+    <rect x="15" y="105" width="110" height="45" rx="5" fill="#1a1a2e"/>
+    <text x="70" y="122" font-family="monospace" font-size="8" fill="#4facfe" text-anchor="middle">POST /webhook/api</text>
+    <text x="70" y="138" font-family="monospace" font-size="8" fill="#a0a0a0" text-anchor="middle">{"data": "..."}</text>
+  </g>
+  
+  <!-- Flecha 1→2 -->
+  <line x1="230" y1="180" x2="300" y2="180" stroke="#00f2fe" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="265" y="170" font-family="Arial, sans-serif" font-size="9" fill="#00f2fe" text-anchor="middle">HTTP Request</text>
+  
+  <!-- PASO 2: Webhook -->
+  <g transform="translate(310, 100)">
+    <rect x="0" y="0" width="140" height="160" rx="12" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="140" height="35" rx="12" fill="url(#webhookGrad)"/>
+    <rect x="0" y="27" width="140" height="8" fill="url(#webhookGrad)"/>
+    <text x="70" y="24" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">2. WEBHOOK</text>
+    
+    <text x="70" y="60" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">🌐</text>
+    <text x="70" y="90" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Recibe y valida</text>
+    
+    <rect x="15" y="105" width="110" height="45" rx="5" fill="#1a1a2e"/>
+    <text x="70" y="120" font-family="Arial, sans-serif" font-size="8" fill="#00f2fe" text-anchor="middle">✓ Método: POST</text>
+    <text x="70" y="132" font-family="Arial, sans-serif" font-size="8" fill="#00f2fe" text-anchor="middle">✓ Path: correcto</text>
+    <text x="70" y="144" font-family="Arial, sans-serif" font-size="8" fill="#00f2fe" text-anchor="middle">✓ Auth: válida</text>
+  </g>
+  
+  <!-- Flecha 2→3 -->
+  <line x1="460" y1="180" x2="530" y2="180" stroke="#00f2fe" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="495" y="170" font-family="Arial, sans-serif" font-size="9" fill="#00f2fe" text-anchor="middle">Inicia workflow</text>
+  
+  <!-- PASO 3: Procesamiento -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="140" height="160" rx="12" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="140" height="35" rx="12" fill="url(#processGrad)"/>
+    <rect x="0" y="27" width="140" height="8" fill="url(#processGrad)"/>
+    <text x="70" y="24" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">3. WORKFLOW</text>
+    
+    <text x="70" y="60" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">⚙️</text>
+    <text x="70" y="90" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">Procesa datos</text>
+    
+    <rect x="15" y="105" width="110" height="45" rx="5" fill="#1a1a2e"/>
+    <text x="70" y="120" font-family="Arial, sans-serif" font-size="8" fill="#f5576c" text-anchor="middle">→ Set Node</text>
+    <text x="70" y="132" font-family="Arial, sans-serif" font-size="8" fill="#f5576c" text-anchor="middle">→ IF Node</text>
+    <text x="70" y="144" font-family="Arial, sans-serif" font-size="8" fill="#f5576c" text-anchor="middle">→ HTTP Request</text>
+  </g>
+  
+  <!-- Flecha 3→4 -->
+  <line x1="690" y1="180" x2="760" y2="180" stroke="#00f2fe" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="725" y="170" font-family="Arial, sans-serif" font-size="9" fill="#00f2fe" text-anchor="middle">Resultado</text>
+  
+  <!-- PASO 4: Respuesta -->
+  <g transform="translate(770, 100)">
+    <rect x="0" y="0" width="110" height="160" rx="12" fill="#2a2a4a" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="110" height="35" rx="12" fill="url(#responseGrad)"/>
+    <rect x="0" y="27" width="110" height="8" fill="url(#responseGrad)"/>
+    <text x="55" y="24" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">4. RESPONSE</text>
+    
+    <text x="55" y="60" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">✅</text>
+    <text x="55" y="90" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0" text-anchor="middle">HTTP 200</text>
+    
+    <rect x="10" y="105" width="90" height="45" rx="5" fill="#1a1a2e"/>
+    <text x="55" y="122" font-family="monospace" font-size="8" fill="#38ef7d" text-anchor="middle">{"status":</text>
+    <text x="55" y="138" font-family="monospace" font-size="8" fill="#38ef7d" text-anchor="middle">"success"}</text>
+  </g>
+  
+  <!-- Flecha de retorno -->
+  <path d="M 770 270 L 770 310 L 150 310 L 150 270" stroke="#38ef7d" stroke-width="2" fill="none" stroke-dasharray="8,4" marker-end="url(#arrowReturn)"/>
+  <text x="450" y="328" font-family="Arial, sans-serif" font-size="10" fill="#38ef7d" text-anchor="middle">HTTP Response al cliente</text>
+  
+  <!-- Leyenda -->
+  <g transform="translate(200, 355)">
+    <rect x="0" y="0" width="500" height="30" rx="8" fill="#2a2a4a" opacity="0.7"/>
+    <text x="20" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#fff">Response Mode:</text>
+    <circle cx="140" cy="15" r="4" fill="#4facfe"/>
+    <text x="150" y="19" font-family="Arial, sans-serif" font-size="9" fill="#a0a0a0">Last Node</text>
+    <circle cx="240" cy="15" r="4" fill="#f5576c"/>
+    <text x="250" y="19" font-family="Arial, sans-serif" font-size="9" fill="#a0a0a0">Respond to Webhook</text>
+    <circle cx="380" cy="15" r="4" fill="#666"/>
+    <text x="390" y="19" font-family="Arial, sans-serif" font-size="9" fill="#a0a0a0">Do Not Respond</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="450" y="395" font-family="Arial, sans-serif" font-size="9" fill="#404040" text-anchor="middle">
+    Bootcamp n8n - Semana 02 - Flujo de Webhook
+  </text>
+</svg>
