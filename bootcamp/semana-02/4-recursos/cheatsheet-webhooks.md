@@ -30,13 +30,13 @@ Production: http://localhost:5678/webhook/mi-webhook
 
 ## 🔀 Métodos HTTP
 
-| Método | Uso | Tiene Body |
-|--------|-----|------------|
-| `GET` | Obtener datos | ❌ No |
-| `POST` | Crear/enviar datos | ✅ Sí |
-| `PUT` | Actualizar (completo) | ✅ Sí |
-| `PATCH` | Actualizar (parcial) | ✅ Sí |
-| `DELETE` | Eliminar | ❌ Opcional |
+| Método   | Uso                   | Tiene Body  |
+| -------- | --------------------- | ----------- |
+| `GET`    | Obtener datos         | ❌ No       |
+| `POST`   | Crear/enviar datos    | ✅ Sí       |
+| `PUT`    | Actualizar (completo) | ✅ Sí       |
+| `PATCH`  | Actualizar (parcial)  | ✅ Sí       |
+| `DELETE` | Eliminar              | ❌ Opcional |
 
 ---
 
@@ -62,14 +62,14 @@ Production: http://localhost:5678/webhook/mi-webhook
 
 ### Acceso a Datos
 
-| Dato | Expresión n8n |
-|------|---------------|
-| Body completo | `{{ $json.body }}` |
-| Campo del body | `{{ $json.body.campo }}` |
-| Query param | `{{ $json.query.param }}` |
-| Header | `{{ $json.headers['header-name'] }}` |
-| User Agent | `{{ $json.headers['user-agent'] }}` |
-| Content Type | `{{ $json.headers['content-type'] }}` |
+| Dato           | Expresión n8n                         |
+| -------------- | ------------------------------------- |
+| Body completo  | `{{ $json.body }}`                    |
+| Campo del body | `{{ $json.body.campo }}`              |
+| Query param    | `{{ $json.query.param }}`             |
+| Header         | `{{ $json.headers['header-name'] }}`  |
+| User Agent     | `{{ $json.headers['user-agent'] }}`   |
+| Content Type   | `{{ $json.headers['content-type'] }}` |
 
 ---
 
@@ -83,6 +83,7 @@ Header Value: mi-clave-secreta
 ```
 
 Verificar en el cliente:
+
 ```bash
 curl -H "X-API-Key: mi-clave-secreta" ...
 ```
@@ -95,6 +96,7 @@ Password: contraseña
 ```
 
 Verificar en el cliente:
+
 ```bash
 curl -u usuario:contraseña ...
 ```
@@ -103,11 +105,11 @@ curl -u usuario:contraseña ...
 
 ## 📤 Response Mode
 
-| Modo | Cuándo Responde | Uso |
-|------|-----------------|-----|
+| Modo                    | Cuándo Responde              | Uso                         |
+| ----------------------- | ---------------------------- | --------------------------- |
 | When Last Node Finishes | Al terminar todo el workflow | Resultado del procesamiento |
-| Respond to Webhook | Inmediatamente | Respuesta personalizada |
-| Do Not Respond | Nunca | Fire and forget |
+| Respond to Webhook      | Inmediatamente               | Respuesta personalizada     |
+| Do Not Respond          | Nunca                        | Fire and forget             |
 
 ---
 
@@ -115,29 +117,29 @@ curl -u usuario:contraseña ...
 
 ### Éxito (2xx)
 
-| Código | Nombre | Uso |
-|--------|--------|-----|
-| `200` | OK | Éxito general |
-| `201` | Created | Recurso creado |
-| `204` | No Content | Éxito sin contenido |
+| Código | Nombre     | Uso                 |
+| ------ | ---------- | ------------------- |
+| `200`  | OK         | Éxito general       |
+| `201`  | Created    | Recurso creado      |
+| `204`  | No Content | Éxito sin contenido |
 
 ### Errores Cliente (4xx)
 
-| Código | Nombre | Causa |
-|--------|--------|-------|
-| `400` | Bad Request | Datos inválidos |
-| `401` | Unauthorized | Sin autenticación |
-| `403` | Forbidden | Sin permisos |
-| `404` | Not Found | No existe |
-| `422` | Unprocessable | Validación fallida |
+| Código | Nombre        | Causa              |
+| ------ | ------------- | ------------------ |
+| `400`  | Bad Request   | Datos inválidos    |
+| `401`  | Unauthorized  | Sin autenticación  |
+| `403`  | Forbidden     | Sin permisos       |
+| `404`  | Not Found     | No existe          |
+| `422`  | Unprocessable | Validación fallida |
 
 ### Errores Servidor (5xx)
 
-| Código | Nombre | Causa |
-|--------|--------|-------|
-| `500` | Internal Error | Error del servidor |
-| `502` | Bad Gateway | Proxy error |
-| `503` | Service Unavailable | Servicio caído |
+| Código | Nombre              | Causa              |
+| ------ | ------------------- | ------------------ |
+| `500`  | Internal Error      | Error del servidor |
+| `502`  | Bad Gateway         | Proxy error        |
+| `503`  | Service Unavailable | Servicio caído     |
 
 ---
 
@@ -203,13 +205,13 @@ curl -X POST http://localhost:5678/webhook-test/mi-webhook \
 
 ## ⚠️ Errores Comunes
 
-| Error | Causa | Solución |
-|-------|-------|----------|
-| 404 Not Found | Path incorrecto | Verificar URL y path |
-| 401 Unauthorized | Auth faltante | Agregar header de auth |
-| Test URL no funciona | Workflow no ejecutándose | Click "Listen for Test Event" |
-| Production URL no funciona | Workflow no activo | Activar el workflow |
-| Body vacío | Content-Type faltante | Agregar `Content-Type: application/json` |
+| Error                      | Causa                    | Solución                                 |
+| -------------------------- | ------------------------ | ---------------------------------------- |
+| 404 Not Found              | Path incorrecto          | Verificar URL y path                     |
+| 401 Unauthorized           | Auth faltante            | Agregar header de auth                   |
+| Test URL no funciona       | Workflow no ejecutándose | Click "Listen for Test Event"            |
+| Production URL no funciona | Workflow no activo       | Activar el workflow                      |
+| Body vacío                 | Content-Type faltante    | Agregar `Content-Type: application/json` |
 
 ---
 
@@ -235,12 +237,12 @@ fetch('http://localhost:5678/webhook-test/[PATH]', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'X-API-Key': '[TU-KEY]'
+    'X-API-Key': '[TU-KEY]',
   },
   body: JSON.stringify({
     field1: 'value1',
-    field2: 'value2'
-  })
+    field2: 'value2',
+  }),
 });
 ```
 
@@ -248,6 +250,6 @@ fetch('http://localhost:5678/webhook-test/[PATH]', {
 
 ## 🏠 Navegación
 
-| ⬅️ Anterior | 📚 Recurso Actual | ➡️ Siguiente |
-|------------|-------------------|--------------|
+| ⬅️ Anterior                           | 📚 Recurso Actual       | ➡️ Siguiente  |
+| ------------------------------------- | ----------------------- | ------------- |
 | [Cheatsheet Cron](cheatsheet-cron.md) | **Cheatsheet Webhooks** | [FAQ](faq.md) |

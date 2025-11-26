@@ -29,12 +29,12 @@
 
 ### ¿Cuál es la diferencia entre Test URL y Production URL en webhooks?
 
-| Aspecto | Test URL | Production URL |
-|---------|----------|----------------|
+| Aspecto        | Test URL             | Production URL            |
+| -------------- | -------------------- | ------------------------- |
 | Disponibilidad | Solo cuando escuchas | Siempre (workflow activo) |
-| Uso | Desarrollo y pruebas | Producción |
-| Path | `/webhook-test/...` | `/webhook/...` |
-| Activación | Manual (Listen) | Automática |
+| Uso            | Desarrollo y pruebas | Producción                |
+| Path           | `/webhook-test/...`  | `/webhook/...`            |
+| Activación     | Manual (Listen)      | Automática                |
 
 ### ¿Por qué mi Manual Trigger no aparece?
 
@@ -75,7 +75,11 @@ Usa esta expresión que ejecuta los días 28-31:
 Y agrega un nodo **IF** para verificar:
 
 ```javascript
-{{ $now.toFormat('dd') === $now.endOf('month').toFormat('dd') }}
+{
+  {
+    $now.toFormat('dd') === $now.endOf('month').toFormat('dd');
+  }
+}
 ```
 
 ### ¿Puedo pausar temporalmente un Schedule sin desactivar el workflow?
@@ -112,11 +116,11 @@ Opciones de seguridad:
 
 ### ¿Por qué mi webhook funciona en test pero no en producción?
 
-| Problema | Causa | Solución |
-|----------|-------|----------|
-| 404 en production | Workflow no activo | Activar el workflow |
-| Timeout | Workflow muy lento | Usar "Respond to Webhook" antes |
-| Auth error | Credenciales diferentes | Verificar configuración |
+| Problema          | Causa                   | Solución                        |
+| ----------------- | ----------------------- | ------------------------------- |
+| 404 en production | Workflow no activo      | Activar el workflow             |
+| Timeout           | Workflow muy lento      | Usar "Respond to Webhook" antes |
+| Auth error        | Credenciales diferentes | Verificar configuración         |
 
 ### ¿Cómo recibo archivos por webhook?
 
@@ -165,6 +169,7 @@ Indican errores. Haz click en el nodo para ver:
 **Causa**: El nodo anterior no retornó datos.
 
 **Solución**:
+
 1. Verifica que el nodo anterior tenga output
 2. Revisa si hay un filtro que elimina todos los items
 3. Usa Pinned Data para pruebas
@@ -174,6 +179,7 @@ Indican errores. Haz click en el nodo para ver:
 **Causa**: Intentas acceder a una propiedad que no existe.
 
 **Solución**:
+
 1. Verifica el nombre exacto de la propiedad (case sensitive)
 2. Usa operador opcional: `{{ $json.campo?.subcampo }}`
 3. Revisa la estructura de datos en el panel de output
@@ -183,6 +189,7 @@ Indican errores. Haz click en el nodo para ver:
 **Causa**: Dos webhooks con el mismo path.
 
 **Solución**:
+
 1. Cambia el path de uno de los webhooks
 2. Verifica que no haya workflows duplicados
 
@@ -191,6 +198,7 @@ Indican errores. Haz click en el nodo para ver:
 **Causa**: Intentas llamar al Production URL con workflow inactivo.
 
 **Solución**:
+
 1. Activa el workflow (toggle en la esquina)
 2. O usa Test URL durante desarrollo
 
@@ -199,6 +207,7 @@ Indican errores. Haz click en el nodo para ver:
 **Causa**: No se puede conectar al servicio externo.
 
 **Solución**:
+
 1. Verifica que la URL sea correcta
 2. Comprueba que el servicio esté activo
 3. Revisa configuración de firewall/proxy
@@ -234,6 +243,6 @@ Opciones:
 
 ## 🏠 Navegación
 
-| ⬅️ Anterior | 📚 Recurso Actual | ➡️ Siguiente |
-|------------|-------------------|--------------|
-| [Cheatsheet Webhooks](cheatsheet-webhooks.md) | **FAQ** | [Videos Recomendados](videos-recomendados.md) |
+| ⬅️ Anterior                                   | 📚 Recurso Actual | ➡️ Siguiente                                  |
+| --------------------------------------------- | ----------------- | --------------------------------------------- |
+| [Cheatsheet Webhooks](cheatsheet-webhooks.md) | **FAQ**           | [Videos Recomendados](videos-recomendados.md) |

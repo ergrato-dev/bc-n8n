@@ -11,34 +11,35 @@
 
 ### Triggers
 
-| Video | Duración | Descripción | Link |
-|-------|----------|-------------|------|
-| Getting Started with Triggers | ~10 min | Introducción a triggers en n8n | [YouTube](https://www.youtube.com/results?search_query=n8n+triggers+getting+started) |
-| Schedule Trigger Tutorial | ~15 min | Cómo programar workflows | [YouTube](https://www.youtube.com/results?search_query=n8n+schedule+trigger+tutorial) |
-| Webhook Basics in n8n | ~12 min | Configurar webhooks | [YouTube](https://www.youtube.com/results?search_query=n8n+webhook+tutorial) |
+| Video                         | Duración | Descripción                    | Link                                                                                  |
+| ----------------------------- | -------- | ------------------------------ | ------------------------------------------------------------------------------------- |
+| Getting Started with Triggers | ~10 min  | Introducción a triggers en n8n | [YouTube](https://www.youtube.com/results?search_query=n8n+triggers+getting+started)  |
+| Schedule Trigger Tutorial     | ~15 min  | Cómo programar workflows       | [YouTube](https://www.youtube.com/results?search_query=n8n+schedule+trigger+tutorial) |
+| Webhook Basics in n8n         | ~12 min  | Configurar webhooks            | [YouTube](https://www.youtube.com/results?search_query=n8n+webhook+tutorial)          |
 
 ### Debugging
 
-| Video | Duración | Descripción | Link |
-|-------|----------|-------------|------|
-| Debugging Workflows | ~10 min | Técnicas de debugging | [YouTube](https://www.youtube.com/results?search_query=n8n+debugging+workflows) |
-| Understanding Data Flow | ~8 min | Cómo fluyen los datos | [YouTube](https://www.youtube.com/results?search_query=n8n+data+flow) |
+| Video                   | Duración | Descripción           | Link                                                                            |
+| ----------------------- | -------- | --------------------- | ------------------------------------------------------------------------------- |
+| Debugging Workflows     | ~10 min  | Técnicas de debugging | [YouTube](https://www.youtube.com/results?search_query=n8n+debugging+workflows) |
+| Understanding Data Flow | ~8 min   | Cómo fluyen los datos | [YouTube](https://www.youtube.com/results?search_query=n8n+data+flow)           |
 
 ---
 
 ## 📺 Canales de YouTube Recomendados
 
 ### Canal Oficial n8n
+
 - **URL**: [youtube.com/@n8n-io](https://www.youtube.com/@n8n-io)
 - **Contenido**: Tutoriales oficiales, webinars, casos de uso
 - **Idioma**: Inglés
 
 ### Canales de la Comunidad
 
-| Canal | Idioma | Enfoque | Recomendación |
-|-------|--------|---------|---------------|
-| n8n Official | 🇬🇧 EN | Oficial, completo | ⭐⭐⭐⭐⭐ |
-| Automations with n8n | 🇬🇧 EN | Tutoriales prácticos | ⭐⭐⭐⭐ |
+| Canal                | Idioma | Enfoque              | Recomendación |
+| -------------------- | ------ | -------------------- | ------------- |
+| n8n Official         | 🇬🇧 EN  | Oficial, completo    | ⭐⭐⭐⭐⭐    |
+| Automations with n8n | 🇬🇧 EN  | Tutoriales prácticos | ⭐⭐⭐⭐      |
 
 ---
 
@@ -46,16 +47,16 @@
 
 ### Gratuitos
 
-| Plataforma | Curso | Nivel | Duración |
-|------------|-------|-------|----------|
-| n8n Academy | n8n Basics | Principiante | ~2 horas |
-| YouTube | n8n Crash Course | Principiante | ~1 hora |
+| Plataforma  | Curso            | Nivel        | Duración |
+| ----------- | ---------------- | ------------ | -------- |
+| n8n Academy | n8n Basics       | Principiante | ~2 horas |
+| YouTube     | n8n Crash Course | Principiante | ~1 hora  |
 
 ### De Pago (Opcionales)
 
-| Plataforma | Curso | Nivel | Duración |
-|------------|-------|-------|----------|
-| Udemy | n8n Complete Course | Intermedio | ~8 horas |
+| Plataforma | Curso               | Nivel      | Duración |
+| ---------- | ------------------- | ---------- | -------- |
+| Udemy      | n8n Complete Course | Intermedio | ~8 horas |
 
 ---
 
@@ -98,6 +99,6 @@ n8n manual trigger vs webhook
 
 ## 🏠 Navegación
 
-| ⬅️ Anterior | 📚 Recurso Actual | ➡️ Siguiente |
-|------------|-------------------|--------------|
-| [Recursos README](README.md) | **Videos** | [Enlaces Útiles](enlaces-utiles.md) |
+| ⬅️ Anterior                  | 📚 Recurso Actual | ➡️ Siguiente                        |
+| ---------------------------- | ----------------- | ----------------------------------- |
+| [Recursos README](README.md) | **Videos**        | [Enlaces Útiles](enlaces-utiles.md) |
