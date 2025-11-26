@@ -31,14 +31,14 @@ Al finalizar este módulo, serás capaz de:
 
 Las expresiones cron son universales:
 
-| Sistema/Herramienta | Usa Cron  |
-| ------------------- | --------- |
-| n8n                 | ✅        |
-| Linux/Unix          | ✅        |
-| GitHub Actions      | ✅        |
-| AWS CloudWatch      | ✅        |
-| Google Cloud        | ✅        |
-| Kubernetes          | ✅        |
+| Sistema/Herramienta | Usa Cron |
+| ------------------- | -------- |
+| n8n                 | ✅       |
+| Linux/Unix          | ✅       |
+| GitHub Actions      | ✅       |
+| AWS CloudWatch      | ✅       |
+| Google Cloud        | ✅       |
+| Kubernetes          | ✅       |
 
 ### 2.2 Anatomía de una Expresión Cron
 
@@ -68,11 +68,11 @@ Una expresión cron estándar tiene **5 campos** (algunas implementaciones tiene
 
 | Campo            | Valores Permitidos | Caracteres Especiales |
 | ---------------- | ------------------ | --------------------- |
-| Minuto           | 0-59               | * , - /               |
-| Hora             | 0-23               | * , - /               |
-| Día del mes      | 1-31               | * , - / L W           |
-| Mes              | 1-12 o JAN-DEC     | * , - /               |
-| Día de la semana | 0-7 o SUN-SAT      | * , - / L #           |
+| Minuto           | 0-59               | \* , - /              |
+| Hora             | 0-23               | \* , - /              |
+| Día del mes      | 1-31               | \* , - / L W          |
+| Mes              | 1-12 o JAN-DEC     | \* , - /              |
+| Día de la semana | 0-7 o SUN-SAT      | \* , - / L #          |
 
 ### 2.3 Caracteres Especiales
 
@@ -151,53 +151,53 @@ Aquí tienes una biblioteca de expresiones cron para casos de uso frecuentes:
 
 #### Intervalos de Tiempo
 
-| Expresión         | Descripción                        |
-| ----------------- | ---------------------------------- |
-| `* * * * *`       | Cada minuto                        |
-| `*/5 * * * *`     | Cada 5 minutos                     |
-| `*/15 * * * *`    | Cada 15 minutos                    |
-| `*/30 * * * *`    | Cada 30 minutos                    |
-| `0 * * * *`       | Cada hora (en punto)               |
-| `0 */2 * * *`     | Cada 2 horas                       |
-| `0 */6 * * *`     | Cada 6 horas                       |
+| Expresión      | Descripción          |
+| -------------- | -------------------- |
+| `* * * * *`    | Cada minuto          |
+| `*/5 * * * *`  | Cada 5 minutos       |
+| `*/15 * * * *` | Cada 15 minutos      |
+| `*/30 * * * *` | Cada 30 minutos      |
+| `0 * * * *`    | Cada hora (en punto) |
+| `0 */2 * * *`  | Cada 2 horas         |
+| `0 */6 * * *`  | Cada 6 horas         |
 
 #### Horarios Específicos
 
-| Expresión         | Descripción                        |
-| ----------------- | ---------------------------------- |
-| `0 9 * * *`       | Todos los días a las 9:00 AM       |
-| `0 0 * * *`       | Todos los días a medianoche        |
-| `0 12 * * *`      | Todos los días a mediodía          |
-| `30 8 * * *`      | Todos los días a las 8:30 AM       |
-| `0 9,18 * * *`    | A las 9:00 AM y 6:00 PM            |
+| Expresión      | Descripción                  |
+| -------------- | ---------------------------- |
+| `0 9 * * *`    | Todos los días a las 9:00 AM |
+| `0 0 * * *`    | Todos los días a medianoche  |
+| `0 12 * * *`   | Todos los días a mediodía    |
+| `30 8 * * *`   | Todos los días a las 8:30 AM |
+| `0 9,18 * * *` | A las 9:00 AM y 6:00 PM      |
 
 #### Días de la Semana
 
-| Expresión         | Descripción                        |
-| ----------------- | ---------------------------------- |
-| `0 9 * * 1-5`     | Lunes a Viernes a las 9:00 AM      |
-| `0 9 * * 1`       | Todos los Lunes a las 9:00 AM      |
-| `0 10 * * 6,0`    | Sábados y Domingos a las 10:00 AM  |
-| `0 8 * * 1,3,5`   | Lunes, Miércoles, Viernes 8:00 AM  |
+| Expresión       | Descripción                       |
+| --------------- | --------------------------------- |
+| `0 9 * * 1-5`   | Lunes a Viernes a las 9:00 AM     |
+| `0 9 * * 1`     | Todos los Lunes a las 9:00 AM     |
+| `0 10 * * 6,0`  | Sábados y Domingos a las 10:00 AM |
+| `0 8 * * 1,3,5` | Lunes, Miércoles, Viernes 8:00 AM |
 
 #### Días del Mes
 
-| Expresión         | Descripción                        |
-| ----------------- | ---------------------------------- |
-| `0 9 1 * *`       | Primer día del mes a las 9:00 AM   |
-| `0 9 15 * *`      | Día 15 de cada mes a las 9:00 AM   |
-| `0 0 1,15 * *`    | Días 1 y 15 a medianoche           |
-| `0 9 L * *`       | Último día del mes a las 9:00 AM   |
+| Expresión      | Descripción                      |
+| -------------- | -------------------------------- |
+| `0 9 1 * *`    | Primer día del mes a las 9:00 AM |
+| `0 9 15 * *`   | Día 15 de cada mes a las 9:00 AM |
+| `0 0 1,15 * *` | Días 1 y 15 a medianoche         |
+| `0 9 L * *`    | Último día del mes a las 9:00 AM |
 
 #### Combinaciones Empresariales
 
-| Expresión             | Descripción                              |
-| --------------------- | ---------------------------------------- |
-| `0 9 * * 1-5`         | Horario laboral: L-V 9 AM                |
-| `0 8-18 * * 1-5`      | Cada hora de 8 AM a 6 PM, L-V            |
-| `*/30 9-17 * * 1-5`   | Cada 30 min horario laboral              |
-| `0 0 1 * *`           | Inicio de cada mes                       |
-| `0 0 1 1 *`           | Inicio de cada año (1 de enero)          |
+| Expresión           | Descripción                     |
+| ------------------- | ------------------------------- |
+| `0 9 * * 1-5`       | Horario laboral: L-V 9 AM       |
+| `0 8-18 * * 1-5`    | Cada hora de 8 AM a 6 PM, L-V   |
+| `*/30 9-17 * * 1-5` | Cada 30 min horario laboral     |
+| `0 0 1 * *`         | Inicio de cada mes              |
+| `0 0 1 1 *`         | Inicio de cada año (1 de enero) |
 
 ### 2.5 Expresiones Cron en n8n
 
@@ -241,12 +241,12 @@ Puedes configurar múltiples expresiones cron en el mismo Schedule Trigger:
   "schedules": [
     {
       "mode": "cron",
-      "expression": "0 9 * * 1-5",    // 9 AM Lunes-Viernes
+      "expression": "0 9 * * 1-5", // 9 AM Lunes-Viernes
       "timezone": "America/Mexico_City"
     },
     {
-      "mode": "cron", 
-      "expression": "0 12 * * 6",     // 12 PM Sábados
+      "mode": "cron",
+      "expression": "0 12 * * 6", // 12 PM Sábados
       "timezone": "America/Mexico_City"
     }
   ]
@@ -281,14 +281,14 @@ Puedes configurar múltiples expresiones cron en el mismo Schedule Trigger:
 
 #### Zonas Horarias Comunes
 
-| Zona Horaria              | Región                    | UTC Offset       |
-| ------------------------- | ------------------------- | ---------------- |
-| `America/Mexico_City`     | México Central            | UTC-6 / UTC-5    |
-| `America/Bogota`          | Colombia                  | UTC-5            |
-| `America/Santiago`        | Chile                     | UTC-4 / UTC-3    |
-| `America/Buenos_Aires`    | Argentina                 | UTC-3            |
-| `Europe/Madrid`           | España                    | UTC+1 / UTC+2    |
-| `UTC`                     | Tiempo Universal          | UTC              |
+| Zona Horaria           | Región           | UTC Offset    |
+| ---------------------- | ---------------- | ------------- |
+| `America/Mexico_City`  | México Central   | UTC-6 / UTC-5 |
+| `America/Bogota`       | Colombia         | UTC-5         |
+| `America/Santiago`     | Chile            | UTC-4 / UTC-3 |
+| `America/Buenos_Aires` | Argentina        | UTC-3         |
+| `Europe/Madrid`        | España           | UTC+1 / UTC+2 |
+| `UTC`                  | Tiempo Universal | UTC           |
 
 #### Consideraciones de DST (Horario de Verano)
 
@@ -318,11 +318,11 @@ Puedes configurar múltiples expresiones cron en el mismo Schedule Trigger:
 
 #### Herramientas Online Recomendadas
 
-| Herramienta        | URL                           | Características                |
-| ------------------ | ----------------------------- | ------------------------------ |
-| Crontab Guru       | crontab.guru                  | Explicaciones en inglés simple |
-| Cronitor           | crontab.cronitor.io           | Genera cron desde descripción  |
-| FreeFormatter      | freeformatter.com/cron...     | Múltiples formatos             |
+| Herramienta   | URL                       | Características                |
+| ------------- | ------------------------- | ------------------------------ |
+| Crontab Guru  | crontab.guru              | Explicaciones en inglés simple |
+| Cronitor      | crontab.cronitor.io       | Genera cron desde descripción  |
+| FreeFormatter | freeformatter.com/cron... | Múltiples formatos             |
 
 #### Crontab Guru (Recomendado)
 
@@ -352,21 +352,21 @@ Puedes configurar múltiples expresiones cron en el mismo Schedule Trigger:
 ```javascript
 // ❌ MAL: No especificar timezone
 // El cron usa la zona horaria del servidor (puede variar)
-cron: "0 9 * * *"
+cron: '0 9 * * *';
 
 // ✅ BIEN: Especificar timezone explícitamente
-cron: "0 9 * * *"
-timezone: "America/Mexico_City"
+cron: '0 9 * * *';
+timezone: 'America/Mexico_City';
 ```
 
 #### ❌ Error 2: Frecuencia Excesiva
 
 ```javascript
 // ❌ MAL: Ejecutar cada segundo (consume recursos)
-cron: "* * * * * *"  // Si se soportan 6 campos
+cron: '* * * * * *'; // Si se soportan 6 campos
 
 // ✅ BIEN: Evaluar si realmente necesitas tanta frecuencia
-cron: "*/5 * * * *"  // Cada 5 minutos suele ser suficiente
+cron: '*/5 * * * *'; // Cada 5 minutos suele ser suficiente
 ```
 
 #### ❌ Error 3: Confundir Día de Semana
@@ -376,8 +376,8 @@ cron: "*/5 * * * *"  // Cada 5 minutos suele ser suficiente
 // En la mayoría de implementaciones: 0 = domingo, 1 = lunes
 
 // ✅ BIEN: Usar nombres o verificar
-cron: "0 9 * * MON-FRI"  // Más claro
-cron: "0 9 * * 1-5"      // 1=lunes, 5=viernes
+cron: '0 9 * * MON-FRI'; // Más claro
+cron: '0 9 * * 1-5'; // 1=lunes, 5=viernes
 ```
 
 #### ❌ Error 4: Expresiones Ambiguas
@@ -385,11 +385,11 @@ cron: "0 9 * * 1-5"      // 1=lunes, 5=viernes
 ```javascript
 // ❌ MAL: Día del mes Y día de semana
 // "El día 15 Y los lunes" - comportamiento confuso
-cron: "0 9 15 * 1"
+cron: '0 9 15 * 1';
 
 // ✅ BIEN: Usar solo uno de los dos campos
-cron: "0 9 15 * *"   // Solo día 15
-cron: "0 9 * * 1"    // Solo lunes
+cron: '0 9 15 * *'; // Solo día 15
+cron: '0 9 * * 1'; // Solo lunes
 ```
 
 ---
@@ -482,6 +482,6 @@ Intenta crear la expresión cron para cada caso:
 
 ## 🏠 Navegación
 
-| ⬅️ Anterior | 📚 Módulo Actual | ➡️ Siguiente |
-|------------|------------------|--------------|
+| ⬅️ Anterior                                    | 📚 Módulo Actual          | ➡️ Siguiente                                 |
+| ---------------------------------------------- | ------------------------- | -------------------------------------------- |
 | [01 - Tipos de Triggers](01-tipos-triggers.md) | **02 - Expresiones Cron** | [03 - Debugging en n8n](03-debugging-n8n.md) |
