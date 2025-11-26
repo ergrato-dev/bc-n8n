@@ -6,16 +6,14 @@
 
 ## 📋 Índice de Recursos
 
-| #   | Recurso                                                     | Tipo         | Descripción                   |
-| --- | ----------------------------------------------------------- | ------------ | ----------------------------- |
-| 01  | [Videos - Introducción](01-videos-introduccion.md)          | 🎬 Video     | Introducción a n8n            |
-| 02  | [Videos - Instalación](02-videos-instalacion.md)            | 🎬 Video     | Tutoriales de instalación     |
-| 03  | [Videos - Primeros Pasos](03-videos-primeros-pasos.md)      | 🎬 Video     | Primeros workflows            |
-| 04  | [eBooks - Automatización](04-ebooks-automatizacion.md)      | 📚 eBook     | Fundamentos de automatización |
-| 05  | [Artículos - n8n Basics](05-articulos-n8n-basics.md)        | 📝 Artículo  | Artículos introductorios      |
-| 06  | [Documentación Oficial](06-documentacion-oficial.md)        | 📖 Docs      | Links a docs.n8n.io           |
-| 07  | [Herramientas de Desarrollo](07-herramientas-desarrollo.md) | 🛠️ Tools     | VS Code, Docker Desktop       |
-| 08  | [Comunidades](08-comunidades.md)                            | 👥 Community | Foros y grupos                |
+| #   | Recurso                                       | Tipo          | Descripción                      |
+| --- | --------------------------------------------- | ------------- | -------------------------------- |
+| 01  | [Videos Recomendados](videos-recomendados.md) | 🎬 Video      | Tutoriales y cursos en video     |
+| 02  | [eBooks y PDFs](ebooks-pdfs.md)               | 📚 Lectura    | Material de lectura descargable  |
+| 03  | [Enlaces Útiles](enlaces-utiles.md)           | 🔗 Links      | Recursos web y documentación     |
+| 04  | [Templates](templates.md)                     | 📦 Templates  | Workflows de ejemplo importables |
+| 05  | [Cheat Sheet](cheatsheet.md)                  | 📋 Referencia | Guía de consulta rápida          |
+| 06  | [FAQ](faq.md)                                 | ❓ FAQ        | Preguntas frecuentes             |
 
 ---
 
@@ -81,29 +79,35 @@
 
 ---
 
-## 📁 Subcarpetas
+## 📁 Estructura de Recursos
 
 ```
 4-recursos/
-├── README.md                        # Este archivo
-├── 01-videos-introduccion.md        # Videos introductorios
-├── 02-videos-instalacion.md         # Videos de instalación
-├── 03-videos-primeros-pasos.md      # Videos primeros pasos
-├── 04-ebooks-automatizacion.md      # eBooks recomendados
-├── 05-articulos-n8n-basics.md       # Artículos básicos
-├── 06-documentacion-oficial.md      # Links documentación
-├── 07-herramientas-desarrollo.md    # Herramientas necesarias
-├── 08-comunidades.md                # Comunidades y foros
-├── ebooks-free/                     # PDFs descargables
-├── videografia/                     # Notas de videos
-└── webgrafia/                       # Bookmarks y enlaces
+├── README.md               # Este archivo (índice)
+├── videos-recomendados.md  # 🎬 Videos y canales
+├── ebooks-pdfs.md          # 📚 Material de lectura
+├── enlaces-utiles.md       # 🔗 Links y documentación
+├── templates.md            # 📦 Workflows de ejemplo
+├── cheatsheet.md           # 📋 Referencia rápida
+└── faq.md                  # ❓ Preguntas frecuentes
 ```
 
 ---
 
 ## 💡 Cómo Usar Estos Recursos
 
-1. **Prioriza los esenciales**: Empieza por videos y docs marcados como esenciales
-2. **Complementa con lecturas**: Los artículos profundizan conceptos
-3. **Únete a comunidades**: Pregunta y aprende de otros
-4. **Guarda bookmarks**: Usa la carpeta webgrafia para referencias futuras
+### 📌 Orden Recomendado
+
+1. **Antes de empezar:** Revisa [Videos Recomendados](videos-recomendados.md) - 30 min
+2. **Durante prácticas:** Consulta [Cheat Sheet](cheatsheet.md) para referencia rápida
+3. **Si te atascas:** Busca en [FAQ](faq.md) o [Enlaces Útiles](enlaces-utiles.md)
+4. **Para profundizar:** Lee [eBooks y PDFs](ebooks-pdfs.md)
+5. **Para practicar:** Importa [Templates](templates.md)
+
+### 🎯 Tips de Aprovechamiento
+
+- ✅ **Prioriza lo esencial:** Videos oficiales de n8n primero
+- ✅ **Practica mientras aprendes:** Replica los ejemplos
+- ✅ **Guarda referencias:** Bookmarkea lo que uses seguido
+- ✅ **Únete a comunidades:** Discord y foro de n8n
+- ✅ **Pregunta si te atascas:** No pierdas tiempo en bloqueos

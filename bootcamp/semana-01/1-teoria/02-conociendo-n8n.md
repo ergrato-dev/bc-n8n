@@ -43,14 +43,14 @@ Al finalizar este módulo, serás capaz de:
 
 #### Historia Breve
 
-| Año | Evento |
-|-----|--------|
-| 2019 | Jan Oberhauser crea n8n en Berlín |
+| Año  | Evento                                   |
+| ---- | ---------------------------------------- |
+| 2019 | Jan Oberhauser crea n8n en Berlín        |
 | 2020 | Primera versión pública, comunidad crece |
-| 2021 | Financiación Serie A ($12M) |
-| 2022 | n8n Cloud lanzado oficialmente |
-| 2023 | +400 integraciones, AI nodes |
-| 2024 | Serie B, +50K instalaciones activas |
+| 2021 | Financiación Serie A ($12M)              |
+| 2022 | n8n Cloud lanzado oficialmente           |
+| 2023 | +400 integraciones, AI nodes             |
+| 2024 | Serie B, +50K instalaciones activas      |
 
 ### 2.2 ¿Por Qué Elegir n8n?
 
@@ -67,34 +67,38 @@ Al finalizar este módulo, serás capaz de:
 
 n8n ocupa un espacio único en el mercado:
 
-| Aspecto | Zapier/Make | Código Puro | n8n |
-|---------|-------------|-------------|-----|
-| Curva de aprendizaje | Baja | Alta | Media |
-| Flexibilidad | Media | Alta | Alta |
-| Control de datos | ❌ Cloud only | ✅ Total | ✅ Total |
-| Costo a escala | 💰💰💰 | 💰 (dev time) | 💰 |
-| Integraciones | +5000 | Ilimitadas | +400 + custom |
-| Código custom | Limitado | Todo | JavaScript |
-| Self-hosted | ❌ | ✅ | ✅ |
+| Aspecto              | Zapier/Make   | Código Puro   | n8n           |
+| -------------------- | ------------- | ------------- | ------------- |
+| Curva de aprendizaje | Baja          | Alta          | Media         |
+| Flexibilidad         | Media         | Alta          | Alta          |
+| Control de datos     | ❌ Cloud only | ✅ Total      | ✅ Total      |
+| Costo a escala       | 💰💰💰        | 💰 (dev time) | 💰            |
+| Integraciones        | +5000         | Ilimitadas    | +400 + custom |
+| Código custom        | Limitado      | Todo          | JavaScript    |
+| Self-hosted          | ❌            | ✅            | ✅            |
 
 #### Los 5 Pilares de n8n
 
 1. **🔓 Open Source / Fair Code**
+
    - Código fuente disponible
    - Puedes auditar y contribuir
    - Comunidad activa de desarrolladores
 
 2. **🏠 Self-Hosted**
+
    - Tus datos nunca salen de tu infraestructura
    - Cumplimiento regulatorio (GDPR, HIPAA)
    - Sin límites arbitrarios
 
 3. **🎨 Visual + Código**
+
    - Interfaz visual para la mayoría de tareas
    - Code nodes para lógica compleja
    - Lo mejor de ambos mundos
 
 4. **🔧 Extensibilidad**
+
    - Crear nodos personalizados
    - API completa
    - Webhooks ilimitados
@@ -139,12 +143,12 @@ n8n ocupa un espacio único en el mercado:
 
 #### Componentes Principales
 
-| Componente | Tecnología | Función |
-|------------|------------|---------|
-| **Editor** | Vue.js | Interfaz visual para crear workflows |
-| **Engine** | Node.js | Ejecuta los workflows |
+| Componente   | Tecnología        | Función                                       |
+| ------------ | ----------------- | --------------------------------------------- |
+| **Editor**   | Vue.js            | Interfaz visual para crear workflows          |
+| **Engine**   | Node.js           | Ejecuta los workflows                         |
 | **Database** | SQLite/PostgreSQL | Almacena workflows, credenciales, ejecuciones |
-| **Workers** | Node.js | Procesamiento paralelo (opcional) |
+| **Workers**  | Node.js           | Procesamiento paralelo (opcional)             |
 
 ### 2.4 Conceptos Fundamentales
 
@@ -165,6 +169,7 @@ Un **workflow** es un flujo de trabajo automatizado compuesto por nodos conectad
 ```
 
 **Características de un Workflow:**
+
 - Tiene un nombre único
 - Puede estar activo o inactivo
 - Se puede exportar/importar como JSON
@@ -176,11 +181,11 @@ Un **nodo** es la unidad básica de trabajo en n8n. Cada nodo realiza una operac
 
 **Tipos de Nodos:**
 
-| Tipo | Icono | Descripción | Ejemplos |
-|------|-------|-------------|----------|
-| **Trigger** | ⚡ | Inicia el workflow | Webhook, Schedule, Manual |
-| **Regular** | 🔧 | Procesa datos | HTTP Request, Set, IF |
-| **Integration** | 🔌 | Conecta con servicios | Gmail, Slack, Sheets |
+| Tipo            | Icono | Descripción           | Ejemplos                  |
+| --------------- | ----- | --------------------- | ------------------------- |
+| **Trigger**     | ⚡    | Inicia el workflow    | Webhook, Schedule, Manual |
+| **Regular**     | 🔧    | Procesa datos         | HTTP Request, Set, IF     |
+| **Integration** | 🔌    | Conecta con servicios | Gmail, Slack, Sheets      |
 
 **Anatomía de un Nodo:**
 
@@ -224,12 +229,12 @@ Una **ejecución** es una instancia de corrida de un workflow.
 
 **Estados de Ejecución:**
 
-| Estado | Color | Descripción |
-|--------|-------|-------------|
-| ✅ Success | Verde | Completó sin errores |
-| ❌ Error | Rojo | Falló en algún nodo |
+| Estado     | Color    | Descripción               |
+| ---------- | -------- | ------------------------- |
+| ✅ Success | Verde    | Completó sin errores      |
+| ❌ Error   | Rojo     | Falló en algún nodo       |
 | ⏸️ Waiting | Amarillo | Esperando (webhook, etc.) |
-| 🔄 Running | Azul | En proceso |
+| 🔄 Running | Azul     | En proceso                |
 
 #### 🔷 Credenciales
 
@@ -256,31 +261,32 @@ Las **credenciales** almacenan de forma segura las claves API y tokens necesario
 
 #### n8n vs Zapier
 
-| Característica | n8n | Zapier |
-|----------------|-----|--------|
-| **Precio** | Self-hosted gratis / Cloud desde $20 | Desde $20/mes |
-| **Tareas/mes** | Ilimitadas (self-hosted) | Limitadas por plan |
-| **Self-hosted** | ✅ Sí | ❌ No |
-| **Open Source** | ✅ Sí | ❌ No |
-| **Código custom** | ✅ JavaScript completo | ⚠️ Limitado |
-| **Integraciones** | +400 | +5000 |
-| **Complejidad** | Workflows complejos | Mejor para simple |
-| **Curva aprendizaje** | Media | Baja |
+| Característica        | n8n                                  | Zapier             |
+| --------------------- | ------------------------------------ | ------------------ |
+| **Precio**            | Self-hosted gratis / Cloud desde $20 | Desde $20/mes      |
+| **Tareas/mes**        | Ilimitadas (self-hosted)             | Limitadas por plan |
+| **Self-hosted**       | ✅ Sí                                | ❌ No              |
+| **Open Source**       | ✅ Sí                                | ❌ No              |
+| **Código custom**     | ✅ JavaScript completo               | ⚠️ Limitado        |
+| **Integraciones**     | +400                                 | +5000              |
+| **Complejidad**       | Workflows complejos                  | Mejor para simple  |
+| **Curva aprendizaje** | Media                                | Baja               |
 
 #### n8n vs Make (Integromat)
 
-| Característica | n8n | Make |
-|----------------|-----|------|
-| **Precio** | Self-hosted gratis | Desde $9/mes |
-| **Self-hosted** | ✅ Sí | ❌ No |
-| **Visual Builder** | ✅ Excelente | ✅ Excelente |
-| **Código custom** | ✅ JavaScript | ⚠️ Limitado |
-| **Documentación** | Buena | Muy buena |
-| **Comunidad** | Creciente | Establecida |
+| Característica     | n8n                | Make         |
+| ------------------ | ------------------ | ------------ |
+| **Precio**         | Self-hosted gratis | Desde $9/mes |
+| **Self-hosted**    | ✅ Sí              | ❌ No        |
+| **Visual Builder** | ✅ Excelente       | ✅ Excelente |
+| **Código custom**  | ✅ JavaScript      | ⚠️ Limitado  |
+| **Documentación**  | Buena              | Muy buena    |
+| **Comunidad**      | Creciente          | Establecida  |
 
 #### ¿Cuándo Elegir n8n?
 
 ✅ **Elige n8n si:**
+
 - Necesitas control total sobre tus datos
 - Quieres evitar costos por volumen
 - Requieres workflows complejos con código
@@ -288,6 +294,7 @@ Las **credenciales** almacenan de forma segura las claves API y tokens necesario
 - Valoras el open source
 
 ❌ **Considera alternativas si:**
+
 - Necesitas +400 integraciones nativas
 - Tu equipo no es técnico
 - Prefieres zero maintenance
@@ -310,13 +317,13 @@ Las **credenciales** almacenan de forma segura las claves API y tokens necesario
 
 #### Recursos de la Comunidad
 
-| Recurso | URL | Descripción |
-|---------|-----|-------------|
-| **Documentación** | docs.n8n.io | Referencia oficial |
-| **Comunidad** | community.n8n.io | Foro de ayuda |
-| **Templates** | n8n.io/workflows | Workflows listos |
-| **GitHub** | github.com/n8n-io/n8n | Código fuente |
-| **Discord** | discord.gg/n8n | Chat en tiempo real |
+| Recurso           | URL                   | Descripción         |
+| ----------------- | --------------------- | ------------------- |
+| **Documentación** | docs.n8n.io           | Referencia oficial  |
+| **Comunidad**     | community.n8n.io      | Foro de ayuda       |
+| **Templates**     | n8n.io/workflows      | Workflows listos    |
+| **GitHub**        | github.com/n8n-io/n8n | Código fuente       |
+| **Discord**       | discord.gg/n8n        | Chat en tiempo real |
 
 ---
 
@@ -332,12 +339,12 @@ Las **credenciales** almacenan de forma segura las claves API y tokens necesario
 
 ## ⚠️ Errores Comunes
 
-| Error | Consecuencia | Solución |
-|-------|--------------|----------|
-| Esperar que sea igual a Zapier | Frustración inicial | Aprovechar sus fortalezas únicas |
-| Ignorar las credenciales | Workflows fallan | Configurar credenciales primero |
-| No guardar workflows | Pérdida de trabajo | Guardar frecuentemente |
-| Workflows muy grandes | Difícil mantenimiento | Dividir en sub-workflows |
+| Error                          | Consecuencia          | Solución                         |
+| ------------------------------ | --------------------- | -------------------------------- |
+| Esperar que sea igual a Zapier | Frustración inicial   | Aprovechar sus fortalezas únicas |
+| Ignorar las credenciales       | Workflows fallan      | Configurar credenciales primero  |
+| No guardar workflows           | Pérdida de trabajo    | Guardar frecuentemente           |
+| Workflows muy grandes          | Difícil mantenimiento | Dividir en sub-workflows         |
 
 ---
 
@@ -382,8 +389,8 @@ Antes de continuar, asegúrate de poder responder:
 
 <div align="center">
 
-| ◀️ Anterior | 🏠 Volver | Siguiente ▶️ |
-|-------------|-----------|--------------|
+| ◀️ Anterior                                    | 🏠 Volver                  | Siguiente ▶️                                              |
+| ---------------------------------------------- | -------------------------- | --------------------------------------------------------- |
 | [Módulo 01](01-introduccion-automatizacion.md) | [Índice Teoría](README.md) | [Módulo 03: Instalación](03-instalacion-configuracion.md) |
 
 </div>

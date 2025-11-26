@@ -86,16 +86,14 @@ Al finalizar esta semana, serás capaz de:
 
 ## 📖 Recursos
 
-| #   | Recurso                                                                | Descripción                 |
-| --- | ---------------------------------------------------------------------- | --------------------------- |
-| 01  | [Videos - Introducción](4-recursos/01-videos-introduccion.md)          | Videos introductorios a n8n |
-| 02  | [Videos - Instalación](4-recursos/02-videos-instalacion.md)            | Tutoriales de instalación   |
-| 03  | [Videos - Primeros Pasos](4-recursos/03-videos-primeros-pasos.md)      | Guías para comenzar         |
-| 04  | [eBooks - Automatización](4-recursos/04-ebooks-automatizacion.md)      | Lectura complementaria      |
-| 05  | [Artículos - n8n Basics](4-recursos/05-articulos-n8n-basics.md)        | Artículos recomendados      |
-| 06  | [Documentación Oficial](4-recursos/06-documentacion-oficial.md)        | Enlaces a docs.n8n.io       |
-| 07  | [Herramientas de Desarrollo](4-recursos/07-herramientas-desarrollo.md) | VS Code, Docker Desktop     |
-| 08  | [Comunidades](4-recursos/08-comunidades.md)                            | Foros y grupos              |
+| #   | Recurso                                                  | Tipo          | Descripción                      |
+| --- | -------------------------------------------------------- | ------------- | -------------------------------- |
+| 01  | [Videos Recomendados](4-recursos/videos-recomendados.md) | 🎬 Video      | Tutoriales y cursos en video     |
+| 02  | [eBooks y PDFs](4-recursos/ebooks-pdfs.md)               | 📚 Lectura    | Material de lectura descargable  |
+| 03  | [Enlaces Útiles](4-recursos/enlaces-utiles.md)           | 🔗 Links      | Recursos web y documentación     |
+| 04  | [Templates](4-recursos/templates.md)                     | 📦 Templates  | Workflows de ejemplo importables |
+| 05  | [Cheat Sheet](4-recursos/cheatsheet.md)                  | 📋 Referencia | Guía de consulta rápida          |
+| 06  | [FAQ](4-recursos/faq.md)                                 | ❓ FAQ        | Preguntas frecuentes             |
 
 ---
 

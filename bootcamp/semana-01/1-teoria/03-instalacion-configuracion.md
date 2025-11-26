@@ -46,12 +46,12 @@ n8n ofrece múltiples formas de instalación según tus necesidades:
 
 #### Comparativa de Opciones
 
-| Opción | Dificultad | Tiempo Setup | Ideal Para |
-|--------|------------|--------------|------------|
-| **n8n Cloud** | ⭐ | 2 min | Probar rápido, equipos no técnicos |
-| **Docker** | ⭐⭐ | 15 min | Desarrollo local, este bootcamp |
-| **npm** | ⭐⭐⭐ | 20 min | Desarrolladores Node.js |
-| **Kubernetes** | ⭐⭐⭐⭐⭐ | 1-2 hrs | Producción enterprise |
+| Opción         | Dificultad | Tiempo Setup | Ideal Para                         |
+| -------------- | ---------- | ------------ | ---------------------------------- |
+| **n8n Cloud**  | ⭐         | 2 min        | Probar rápido, equipos no técnicos |
+| **Docker**     | ⭐⭐       | 15 min       | Desarrollo local, este bootcamp    |
+| **npm**        | ⭐⭐⭐     | 20 min       | Desarrolladores Node.js            |
+| **Kubernetes** | ⭐⭐⭐⭐⭐ | 1-2 hrs      | Producción enterprise              |
 
 > 🎯 **En este bootcamp usaremos Docker Compose** por su balance entre facilidad y control.
 
@@ -59,11 +59,11 @@ n8n ofrece múltiples formas de instalación según tus necesidades:
 
 #### Hardware Mínimo
 
-| Recurso | Mínimo | Recomendado |
-|---------|--------|-------------|
-| **CPU** | 1 core | 2+ cores |
-| **RAM** | 2 GB | 4+ GB |
-| **Disco** | 5 GB | 20+ GB |
+| Recurso   | Mínimo | Recomendado |
+| --------- | ------ | ----------- |
+| **CPU**   | 1 core | 2+ cores    |
+| **RAM**   | 2 GB   | 4+ GB       |
+| **Disco** | 5 GB   | 20+ GB      |
 
 #### Software Requerido
 
@@ -122,12 +122,12 @@ n8n ofrece múltiples formas de instalación según tus necesidades:
 
 #### Conceptos Clave de Docker
 
-| Concepto | Descripción | Analogía |
-|----------|-------------|----------|
-| **Imagen** | Plantilla inmutable con la app | Receta de cocina |
-| **Contenedor** | Instancia ejecutable de una imagen | Plato preparado |
-| **Volumen** | Almacenamiento persistente | Refrigerador |
-| **Red** | Comunicación entre contenedores | Red telefónica |
+| Concepto           | Descripción                            | Analogía             |
+| ------------------ | -------------------------------------- | -------------------- |
+| **Imagen**         | Plantilla inmutable con la app         | Receta de cocina     |
+| **Contenedor**     | Instancia ejecutable de una imagen     | Plato preparado      |
+| **Volumen**        | Almacenamiento persistente             | Refrigerador         |
+| **Red**            | Comunicación entre contenedores        | Red telefónica       |
 | **Docker Compose** | Orquestación de múltiples contenedores | Director de orquesta |
 
 #### ¿Qué es Docker Compose?
@@ -146,7 +146,7 @@ services:
   n8n:
     image: n8nio/n8n
     ports:
-      - "5678:5678"
+      - '5678:5678'
     volumes:
       - n8n_data:/home/node/.n8n
 
@@ -160,10 +160,10 @@ El bootcamp incluye un archivo `docker-compose.yml` en la raíz del repositorio.
 
 ```yaml
 # docker-compose.yml para bc-n8n
-# 
+#
 # Qué hace: Configura n8n para desarrollo local
 # Para qué: Tener un entorno reproducible para el bootcamp
-# Cómo funciona: 
+# Cómo funciona:
 #   1. Descarga la imagen de n8n
 #   2. Configura puertos y volúmenes
 #   3. Aplica variables de entorno
@@ -179,7 +179,7 @@ services:
     ports:
       # Puerto host:Puerto contenedor
       # Acceder en http://localhost:5678
-      - "5678:5678"
+      - '5678:5678'
     environment:
       # Configuración básica
       - N8N_BASIC_AUTH_ACTIVE=true
@@ -203,16 +203,16 @@ volumes:
 
 #### Explicación de Cada Sección
 
-| Sección | Propósito |
-|---------|-----------|
-| `version` | Versión del formato de Docker Compose |
-| `services` | Lista de contenedores a ejecutar |
-| `image` | Imagen de Docker a usar (n8n oficial) |
+| Sección          | Propósito                             |
+| ---------------- | ------------------------------------- |
+| `version`        | Versión del formato de Docker Compose |
+| `services`       | Lista de contenedores a ejecutar      |
+| `image`          | Imagen de Docker a usar (n8n oficial) |
 | `container_name` | Nombre para identificar el contenedor |
-| `restart` | Política de reinicio automático |
-| `ports` | Mapeo de puertos (host:contenedor) |
-| `environment` | Variables de entorno |
-| `volumes` | Almacenamiento persistente |
+| `restart`        | Política de reinicio automático       |
+| `ports`          | Mapeo de puertos (host:contenedor)    |
+| `environment`    | Variables de entorno                  |
+| `volumes`        | Almacenamiento persistente            |
 
 ### 3.5 Variables de Entorno Importantes
 
@@ -388,12 +388,12 @@ sudo chown -R 1000:1000 ./workflows
 
 ## ⚠️ Errores Comunes
 
-| Error | Causa | Solución |
-|-------|-------|----------|
+| Error                 | Causa                  | Solución                          |
+| --------------------- | ---------------------- | --------------------------------- |
 | "Port already in use" | Otro servicio usa 5678 | Cambiar puerto o detener servicio |
-| "Permission denied" | Permisos de volumen | `chown -R 1000:1000` |
-| "Cannot connect" | Contenedor no corre | `docker compose up -d` |
-| "No such image" | Imagen no descargada | `docker compose pull` |
+| "Permission denied"   | Permisos de volumen    | `chown -R 1000:1000`              |
+| "Cannot connect"      | Contenedor no corre    | `docker compose up -d`            |
+| "No such image"       | Imagen no descargada   | `docker compose pull`             |
 
 ---
 
@@ -437,8 +437,8 @@ Antes de continuar, asegúrate de poder responder:
 
 <div align="center">
 
-| ◀️ Anterior | 🏠 Volver | ▶️ Ir a Prácticas |
-|-------------|-----------|-------------------|
+| ◀️ Anterior                       | 🏠 Volver                  | ▶️ Ir a Prácticas                                               |
+| --------------------------------- | -------------------------- | --------------------------------------------------------------- |
 | [Módulo 02](02-conociendo-n8n.md) | [Índice Teoría](README.md) | [Práctica 01](../2-practicas/practica-01-instalacion-docker.md) |
 
 </div>

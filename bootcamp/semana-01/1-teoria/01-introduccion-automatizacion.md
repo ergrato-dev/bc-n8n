@@ -29,12 +29,12 @@ La **automatización** es el uso de tecnología para realizar tareas con mínima
 
 #### Ejemplos Cotidianos
 
-| Antes (Manual) | Después (Automatizado) |
-|----------------|------------------------|
+| Antes (Manual)                                 | Después (Automatizado)                           |
+| ---------------------------------------------- | ------------------------------------------------ |
 | Copiar datos de un email a una hoja de cálculo | Los datos se extraen y registran automáticamente |
-| Enviar recordatorios a clientes uno por uno | Sistema envía emails automáticos según fechas |
-| Revisar inventario y hacer pedidos | Alerta automática cuando stock baja de umbral |
-| Generar reportes mensuales manualmente | Reportes se generan y envían solos cada mes |
+| Enviar recordatorios a clientes uno por uno    | Sistema envía emails automáticos según fechas    |
+| Revisar inventario y hacer pedidos             | Alerta automática cuando stock baja de umbral    |
+| Generar reportes mensuales manualmente         | Reportes se generan y envían solos cada mes      |
 
 ### 1.2 El Problema de las Tareas Repetitivas
 
@@ -87,6 +87,7 @@ ROI = (Tiempo Ahorrado × Costo por Hora × Frecuencia) - Costo de Implementaci�
 ```
 
 **Ejemplo Real:**
+
 - Tarea: Sincronizar contactos entre CRM y email marketing
 - Tiempo manual: 2 horas/semana
 - Costo por hora: $25
@@ -97,13 +98,13 @@ ROI = (Tiempo Ahorrado × Costo por Hora × Frecuencia) - Costo de Implementaci�
 
 #### 📊 Otros Beneficios Clave
 
-| Beneficio | Descripción | Impacto |
-|-----------|-------------|---------|
-| **Reducción de errores** | Elimina errores humanos por fatiga o distracción | 90% menos errores |
-| **Escalabilidad** | Procesar 10 o 10,000 items con el mismo esfuerzo | Crecimiento sin límites |
-| **Consistencia** | Misma calidad en cada ejecución | Experiencia uniforme |
-| **Trazabilidad** | Registro automático de cada acción | Auditoría completa |
-| **Liberación de talento** | Personal enfocado en tareas de alto valor | Mayor innovación |
+| Beneficio                 | Descripción                                      | Impacto                 |
+| ------------------------- | ------------------------------------------------ | ----------------------- |
+| **Reducción de errores**  | Elimina errores humanos por fatiga o distracción | 90% menos errores       |
+| **Escalabilidad**         | Procesar 10 o 10,000 items con el mismo esfuerzo | Crecimiento sin límites |
+| **Consistencia**          | Misma calidad en cada ejecución                  | Experiencia uniforme    |
+| **Trazabilidad**          | Registro automático de cada acción               | Auditoría completa      |
+| **Liberación de talento** | Personal enfocado en tareas de alto valor        | Mayor innovación        |
 
 ### 1.4 Casos de Uso Comunes
 
@@ -121,6 +122,7 @@ ROI = (Tiempo Ahorrado × Costo por Hora × Frecuencia) - Costo de Implementaci�
 ```
 
 **Ejemplo**: Cuando un cliente se registra en el CRM, automáticamente:
+
 1. Se crea un registro en el ERP
 2. Se añade a Google Sheets para reportes
 3. Se envía email de bienvenida
@@ -175,11 +177,11 @@ ROI = (Tiempo Ahorrado × Costo por Hora × Frecuencia) - Costo de Implementaci�
 └─────────────────────────────────────────────────────────────┘
 ```
 
-| Nivel | Descripción | Herramientas | Ejemplo |
-|-------|-------------|--------------|---------|
-| **Básica** | Reglas simples, un trigger → una acción | IFTTT, Zapier | Si recibo email → enviar Slack |
-| **Procesos** | Múltiples pasos, condiciones, loops | n8n, Make | Workflow de onboarding completo |
-| **Inteligente** | ML, procesamiento de lenguaje | n8n + AI | Clasificar tickets automáticamente |
+| Nivel           | Descripción                             | Herramientas  | Ejemplo                            |
+| --------------- | --------------------------------------- | ------------- | ---------------------------------- |
+| **Básica**      | Reglas simples, un trigger → una acción | IFTTT, Zapier | Si recibo email → enviar Slack     |
+| **Procesos**    | Múltiples pasos, condiciones, loops     | n8n, Make     | Workflow de onboarding completo    |
+| **Inteligente** | ML, procesamiento de lenguaje           | n8n + AI      | Clasificar tickets automáticamente |
 
 #### n8n se especializa en el nivel de **Orquestación de Procesos**, permitiendo crear workflows complejos con múltiples pasos, condiciones y ramificaciones.
 
@@ -187,13 +189,13 @@ ROI = (Tiempo Ahorrado × Costo por Hora × Frecuencia) - Costo de Implementaci�
 
 No todo debe automatizarse. Evita automatizar cuando:
 
-| ❌ Evitar Automatización | ✅ Mejor Alternativa |
-|--------------------------|---------------------|
+| ❌ Evitar Automatización                   | ✅ Mejor Alternativa                   |
+| ------------------------------------------ | -------------------------------------- |
 | Tareas que requieren juicio humano crítico | Automatizar preparación, humano decide |
-| Procesos que cambian constantemente | Estabilizar proceso primero |
-| Tareas de una sola vez | Hacerlo manual es más rápido |
-| Cuando el costo supera el beneficio | Evaluar ROI primero |
-| Procesos no documentados | Documentar, luego automatizar |
+| Procesos que cambian constantemente        | Estabilizar proceso primero            |
+| Tareas de una sola vez                     | Hacerlo manual es más rápido           |
+| Cuando el costo supera el beneficio        | Evaluar ROI primero                    |
+| Procesos no documentados                   | Documentar, luego automatizar          |
 
 ### 1.7 El Flujo de Automatización
 
@@ -226,12 +228,12 @@ Este patrón **Trigger → Proceso → Acción** es fundamental y lo verás en t
 
 ## ⚠️ Errores Comunes
 
-| Error | Consecuencia | Solución |
-|-------|--------------|----------|
-| Automatizar procesos rotos | Amplifica los problemas | Optimizar proceso primero |
-| No calcular ROI | Inversión sin retorno | Evaluar beneficio vs costo |
-| Automatizar todo | Complejidad innecesaria | Priorizar por impacto |
-| Ignorar mantenimiento | Workflows que fallan | Planificar revisiones |
+| Error                      | Consecuencia            | Solución                   |
+| -------------------------- | ----------------------- | -------------------------- |
+| Automatizar procesos rotos | Amplifica los problemas | Optimizar proceso primero  |
+| No calcular ROI            | Inversión sin retorno   | Evaluar beneficio vs costo |
+| Automatizar todo           | Complejidad innecesaria | Priorizar por impacto      |
+| Ignorar mantenimiento      | Workflows que fallan    | Planificar revisiones      |
 
 ---
 
@@ -275,8 +277,8 @@ Antes de continuar, asegúrate de poder responder:
 
 <div align="center">
 
-| 🏠 Volver | Siguiente ▶️ |
-|-----------|--------------|
+| 🏠 Volver                  | Siguiente ▶️                                      |
+| -------------------------- | ------------------------------------------------- |
 | [Índice Teoría](README.md) | [Módulo 02: Conociendo n8n](02-conociendo-n8n.md) |
 
 </div>
