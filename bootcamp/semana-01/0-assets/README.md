@@ -6,13 +6,13 @@
 
 ## 📋 Diagramas Disponibles
 
-| #   | Archivo                                                         | Usado en       | Descripción                                   |
-| --- | --------------------------------------------------------------- | -------------- | --------------------------------------------- |
-| 01  | [arquitectura-n8n.svg](01-arquitectura-n8n.svg)                 | Módulo 02      | Arquitectura general de n8n y sus componentes |
-| 02  | [flujo-workflow-basico.svg](02-flujo-workflow-basico.svg)       | Práctica 04    | Flujo de datos en un workflow simple          |
-| 03  | [interfaz-n8n.svg](03-interfaz-n8n.svg)                         | Práctica 03    | Componentes de la interfaz de usuario         |
-| 04  | [comparativa-herramientas.svg](04-comparativa-herramientas.svg) | Módulo 02      | n8n vs Zapier vs Make                         |
-| 05  | [docker-compose-stack.svg](05-docker-compose-stack.svg)         | Módulo 03      | Stack de Docker para n8n                      |
+| #   | Archivo                                                         | Usado en    | Descripción                                   |
+| --- | --------------------------------------------------------------- | ----------- | --------------------------------------------- |
+| 01  | [arquitectura-n8n.svg](01-arquitectura-n8n.svg)                 | Módulo 02   | Arquitectura general de n8n y sus componentes |
+| 02  | [flujo-workflow-basico.svg](02-flujo-workflow-basico.svg)       | Práctica 04 | Flujo de datos en un workflow simple          |
+| 03  | [interfaz-n8n.svg](03-interfaz-n8n.svg)                         | Práctica 03 | Componentes de la interfaz de usuario         |
+| 04  | [comparativa-herramientas.svg](04-comparativa-herramientas.svg) | Módulo 02   | n8n vs Zapier vs Make                         |
+| 05  | [docker-compose-stack.svg](05-docker-compose-stack.svg)         | Módulo 03   | Stack de Docker para n8n                      |
 
 ---
 
@@ -23,6 +23,7 @@
 ![Arquitectura n8n](01-arquitectura-n8n.svg)
 
 **Uso en documentación:**
+
 ```markdown
 ![Arquitectura de n8n](../0-assets/01-arquitectura-n8n.svg)
 ```
@@ -34,6 +35,7 @@
 ![Flujo Workflow](02-flujo-workflow-basico.svg)
 
 **Uso en documentación:**
+
 ```markdown
 ![Flujo de Workflow](../0-assets/02-flujo-workflow-basico.svg)
 ```
@@ -45,6 +47,7 @@
 ![Interfaz n8n](03-interfaz-n8n.svg)
 
 **Uso en documentación:**
+
 ```markdown
 ![Interfaz de n8n](../0-assets/03-interfaz-n8n.svg)
 ```
@@ -56,6 +59,7 @@
 ![Comparativa](04-comparativa-herramientas.svg)
 
 **Uso en documentación:**
+
 ```markdown
 ![Comparativa](../0-assets/04-comparativa-herramientas.svg)
 ```
@@ -67,6 +71,7 @@
 ![Docker Stack](05-docker-compose-stack.svg)
 
 **Uso en documentación:**
+
 ```markdown
 ![Docker Stack](../0-assets/05-docker-compose-stack.svg)
 ```
