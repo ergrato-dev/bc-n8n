@@ -1,6 +1,6 @@
 # Bootcamp n8n: Zero to Hero
 
-![Banner del Bootcamp](./assets/banner-bootcamp.svg)
+![Banner del Bootcamp](./_assets/banner-bootcamp.svg)
 
 ## 🎯 Descripción
 
