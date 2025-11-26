@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dockerBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2496ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d76bb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg5)"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">🐳 Docker Compose Stack para n8n</text>
+  <text x="400" y="55" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="11">Arquitectura de contenedores</text>
+  
+  <!-- Host Machine -->
+  <rect x="40" y="75" width="720" height="355" rx="10" fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="60" y="95" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">🖥️ HOST MACHINE (Tu computadora)</text>
+  
+  <!-- Docker Engine -->
+  <rect x="60" y="110" width="680" height="300" rx="8" fill="#21262d" stroke="#2496ed" stroke-width="2"/>
+  <rect x="60" y="110" width="680" height="30" rx="8" fill="url(#dockerBlue)"/>
+  <text x="400" y="130" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">🐳 DOCKER ENGINE</text>
+  
+  <!-- n8n Container -->
+  <g transform="translate(90, 160)">
+    <rect width="280" height="220" rx="6" fill="#1a1a2e" stroke="#ff6d5a" stroke-width="2"/>
+    <rect width="280" height="30" rx="6" fill="#ff6d5a"/>
+    <text x="140" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">📦 CONTAINER: n8n</text>
+    
+    <!-- Container details -->
+    <text x="15" y="55" fill="#a0aec0" font-family="monospace" font-size="9">Image: n8nio/n8n:latest</text>
+    <text x="15" y="75" fill="#a0aec0" font-family="monospace" font-size="9">Port: 5678 → 5678</text>
+    
+    <!-- n8n App -->
+    <rect x="20" y="95" width="240" height="70" rx="4" fill="#2d3748"/>
+    <text x="140" y="120" text-anchor="middle" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="14" font-weight="bold">n8n Application</text>
+    <text x="140" y="140" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="9">Node.js Runtime</text>
+    <text x="140" y="155" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="9">Editor + Engine + API</text>
+    
+    <!-- Environment vars -->
+    <text x="15" y="185" fill="#68d391" font-family="monospace" font-size="8">ENV:</text>
+    <text x="15" y="198" fill="#a0aec0" font-family="monospace" font-size="8">N8N_BASIC_AUTH_USER=admin</text>
+    <text x="15" y="210" fill="#a0aec0" font-family="monospace" font-size="8">TZ=America/Mexico_City</text>
+  </g>
+  
+  <!-- Volume -->
+  <g transform="translate(430, 160)">
+    <rect width="280" height="100" rx="6" fill="#1a1a2e" stroke="#48bb78" stroke-width="2"/>
+    <rect width="280" height="30" rx="6" fill="#48bb78"/>
+    <text x="140" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">💾 VOLUME: n8n_data</text>
+    
+    <text x="15" y="55" fill="#a0aec0" font-family="monospace" font-size="9">/home/node/.n8n</text>
+    <text x="15" y="75" fill="#718096" font-family="Arial, sans-serif" font-size="9">• Workflows guardados</text>
+    <text x="15" y="90" fill="#718096" font-family="Arial, sans-serif" font-size="9">• Credenciales encriptadas</text>
+  </g>
+  
+  <!-- Network -->
+  <g transform="translate(430, 280)">
+    <rect width="280" height="100" rx="6" fill="#1a1a2e" stroke="#9f7aea" stroke-width="2"/>
+    <rect width="280" height="30" rx="6" fill="#9f7aea"/>
+    <text x="140" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">🌐 NETWORK: bridge</text>
+    
+    <text x="15" y="55" fill="#a0aec0" font-family="monospace" font-size="9">Driver: bridge (default)</text>
+    <text x="15" y="75" fill="#718096" font-family="Arial, sans-serif" font-size="9">• Comunicación interna</text>
+    <text x="15" y="90" fill="#718096" font-family="Arial, sans-serif" font-size="9">• Aislamiento de red</text>
+  </g>
+  
+  <!-- Arrows -->
+  <!-- Container to Volume -->
+  <path d="M 370 250 L 400 250 L 400 210 L 430 210" stroke="#48bb78" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="405" y="245" fill="#48bb78" font-family="Arial, sans-serif" font-size="8">mount</text>
+  
+  <!-- Container to Network -->
+  <path d="M 370 330 L 400 330 L 430 330" stroke="#9f7aea" stroke-width="2" fill="none"/>
+  <text x="405" y="325" fill="#9f7aea" font-family="Arial, sans-serif" font-size="8">connect</text>
+  
+  <!-- External Access -->
+  <g transform="translate(90, 395)">
+    <rect width="180" height="30" rx="4" fill="#2d3748" stroke="#63b3ed" stroke-width="1"/>
+    <text x="90" y="20" text-anchor="middle" fill="#63b3ed" font-family="Arial, sans-serif" font-size="10">🌍 localhost:5678</text>
+  </g>
+  
+  <!-- Arrow from browser to container -->
+  <path d="M 180 395 L 180 385 L 230 300" stroke="#63b3ed" stroke-width="2" fill="none" stroke-dasharray="4"/>
+  
+  <!-- docker-compose.yml representation -->
+  <g transform="translate(550, 395)">
+    <rect width="180" height="30" rx="4" fill="#2d3748" stroke="#f6ad55" stroke-width="1"/>
+    <text x="90" y="20" text-anchor="middle" fill="#f6ad55" font-family="Arial, sans-serif" font-size="10">📄 docker-compose.yml</text>
+  </g>
+</svg>

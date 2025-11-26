@@ -33,6 +33,10 @@ Al completar esta práctica, serás capaz de:
 
 En esta práctica crearás tu primer workflow funcional que combina varios nodos. Aprenderás el flujo básico de trabajo: trigger → proceso → resultado.
 
+> 📊 **Diagrama del Flujo:** Ver [02-flujo-workflow-basico.svg](../0-assets/02-flujo-workflow-basico.svg)
+
+![Flujo de Workflow](../0-assets/02-flujo-workflow-basico.svg)
+
 ---
 
 ## 🔧 Requisitos Técnicos

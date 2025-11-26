@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bg4)"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Comparativa: n8n vs Zapier vs Make</text>
+  <text x="450" y="55" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="12">Herramientas de automatización de workflows</text>
+  
+  <!-- Headers -->
+  <rect x="50" y="80" width="180" height="40" rx="5" fill="#2d3748"/>
+  <text x="140" y="105" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Característica</text>
+  
+  <rect x="240" y="80" width="200" height="40" rx="5" fill="#ff6d5a"/>
+  <text x="340" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">n8n</text>
+  <text x="340" y="115" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">Open Source</text>
+  
+  <rect x="450" y="80" width="200" height="40" rx="5" fill="#ff4a00"/>
+  <text x="550" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Zapier</text>
+  <text x="550" y="115" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">SaaS Leader</text>
+  
+  <rect x="660" y="80" width="200" height="40" rx="5" fill="#6366f1"/>
+  <text x="760" y="100" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Make</text>
+  <text x="760" y="115" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">(ex-Integromat)</text>
+  
+  <!-- Row 1: Pricing -->
+  <rect x="50" y="130" width="180" height="45" rx="3" fill="#1e1e3f"/>
+  <text x="140" y="157" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">💰 Precio</text>
+  
+  <rect x="240" y="130" width="200" height="45" rx="3" fill="#1a3a1a"/>
+  <text x="340" y="150" text-anchor="middle" fill="#68d391" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Gratis (self-hosted)</text>
+  <text x="340" y="167" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Cloud desde €20/mes</text>
+  
+  <rect x="450" y="130" width="200" height="45" rx="3" fill="#3a2a1a"/>
+  <text x="550" y="150" text-anchor="middle" fill="#f6ad55" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Desde $19.99/mes</text>
+  <text x="550" y="167" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Free tier limitado</text>
+  
+  <rect x="660" y="130" width="200" height="45" rx="3" fill="#2a2a3a"/>
+  <text x="760" y="150" text-anchor="middle" fill="#a78bfa" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Desde $9/mes</text>
+  <text x="760" y="167" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Free tier generoso</text>
+  
+  <!-- Row 2: Self-hosted -->
+  <rect x="50" y="185" width="180" height="45" rx="3" fill="#1e1e3f"/>
+  <text x="140" y="212" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">🏠 Self-hosted</text>
+  
+  <rect x="240" y="185" width="200" height="45" rx="3" fill="#1a3a1a"/>
+  <text x="340" y="212" text-anchor="middle" fill="#68d391" font-family="Arial, sans-serif" font-size="14">✅ Sí</text>
+  
+  <rect x="450" y="185" width="200" height="45" rx="3" fill="#3a1a1a"/>
+  <text x="550" y="212" text-anchor="middle" fill="#fc8181" font-family="Arial, sans-serif" font-size="14">❌ No</text>
+  
+  <rect x="660" y="185" width="200" height="45" rx="3" fill="#3a1a1a"/>
+  <text x="760" y="212" text-anchor="middle" fill="#fc8181" font-family="Arial, sans-serif" font-size="14">❌ No</text>
+  
+  <!-- Row 3: Code Access -->
+  <rect x="50" y="240" width="180" height="45" rx="3" fill="#1e1e3f"/>
+  <text x="140" y="267" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">💻 Código Custom</text>
+  
+  <rect x="240" y="240" width="200" height="45" rx="3" fill="#1a3a1a"/>
+  <text x="340" y="260" text-anchor="middle" fill="#68d391" font-family="Arial, sans-serif" font-size="11" font-weight="bold">✅ JavaScript</text>
+  <text x="340" y="277" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Sin límites</text>
+  
+  <rect x="450" y="240" width="200" height="45" rx="3" fill="#2a2a1a"/>
+  <text x="550" y="260" text-anchor="middle" fill="#f6e05e" font-family="Arial, sans-serif" font-size="11" font-weight="bold">⚠️ Limitado</text>
+  <text x="550" y="277" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Code by Zapier (básico)</text>
+  
+  <rect x="660" y="240" width="200" height="45" rx="3" fill="#1a3a1a"/>
+  <text x="760" y="260" text-anchor="middle" fill="#68d391" font-family="Arial, sans-serif" font-size="11" font-weight="bold">✅ JavaScript</text>
+  <text x="760" y="277" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Módulos custom</text>
+  
+  <!-- Row 4: Integrations -->
+  <rect x="50" y="295" width="180" height="45" rx="3" fill="#1e1e3f"/>
+  <text x="140" y="322" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">🔗 Integraciones</text>
+  
+  <rect x="240" y="295" width="200" height="45" rx="3" fill="#2a2a3a"/>
+  <text x="340" y="322" text-anchor="middle" fill="#a78bfa" font-family="Arial, sans-serif" font-size="14" font-weight="bold">400+</text>
+  
+  <rect x="450" y="295" width="200" height="45" rx="3" fill="#1a3a1a"/>
+  <text x="550" y="322" text-anchor="middle" fill="#68d391" font-family="Arial, sans-serif" font-size="14" font-weight="bold">6,000+</text>
+  
+  <rect x="660" y="295" width="200" height="45" rx="3" fill="#2a2a3a"/>
+  <text x="760" y="322" text-anchor="middle" fill="#a78bfa" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1,500+</text>
+  
+  <!-- Row 5: Complexity -->
+  <rect x="50" y="350" width="180" height="45" rx="3" fill="#1e1e3f"/>
+  <text x="140" y="377" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">🧩 Complejidad</text>
+  
+  <rect x="240" y="350" width="200" height="45" rx="3" fill="#1a3a1a"/>
+  <text x="340" y="370" text-anchor="middle" fill="#68d391" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Alta flexibilidad</text>
+  <text x="340" y="387" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Curva media</text>
+  
+  <rect x="450" y="350" width="200" height="45" rx="3" fill="#1a3a1a"/>
+  <text x="550" y="370" text-anchor="middle" fill="#68d391" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Muy fácil</text>
+  <text x="550" y="387" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Curva baja</text>
+  
+  <rect x="660" y="350" width="200" height="45" rx="3" fill="#2a2a1a"/>
+  <text x="760" y="370" text-anchor="middle" fill="#f6e05e" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Muy potente</text>
+  <text x="760" y="387" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Curva alta</text>
+  
+  <!-- Row 6: Best For -->
+  <rect x="50" y="405" width="180" height="55" rx="3" fill="#1e1e3f"/>
+  <text x="140" y="437" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">🎯 Ideal para</text>
+  
+  <rect x="240" y="405" width="200" height="55" rx="3" fill="#2d3748"/>
+  <text x="340" y="427" text-anchor="middle" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Desarrolladores</text>
+  <text x="340" y="442" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Control total, privacidad</text>
+  <text x="340" y="455" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Workflows complejos</text>
+  
+  <rect x="450" y="405" width="200" height="55" rx="3" fill="#2d3748"/>
+  <text x="550" y="427" text-anchor="middle" fill="#ff4a00" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Usuarios no-técnicos</text>
+  <text x="550" y="442" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Automatizaciones simples</text>
+  <text x="550" y="455" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Rápido de implementar</text>
+  
+  <rect x="660" y="405" width="200" height="55" rx="3" fill="#2d3748"/>
+  <text x="760" y="427" text-anchor="middle" fill="#6366f1" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Power Users</text>
+  <text x="760" y="442" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Escenarios visuales</text>
+  <text x="760" y="455" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Lógica compleja</text>
+  
+  <!-- Footer -->
+  <text x="450" y="485" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="10">💡 n8n ofrece el mejor balance entre potencia, flexibilidad y costo para desarrolladores</text>
+</svg>

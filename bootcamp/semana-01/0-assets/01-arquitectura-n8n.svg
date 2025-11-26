@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="n8nGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6d5a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea4c89;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Arquitectura de n8n</text>
+  <text x="400" y="60" text-anchor="middle" fill="#888888" font-family="Arial, sans-serif" font-size="12">Semana 01 - Bootcamp n8n</text>
+  
+  <!-- Editor Layer -->
+  <rect x="50" y="80" width="700" height="100" rx="10" fill="#2d3748" filter="url(#shadow)"/>
+  <text x="400" y="105" text-anchor="middle" fill="#63b3ed" font-family="Arial, sans-serif" font-size="14" font-weight="bold">CAPA DE PRESENTACIÓN</text>
+  
+  <!-- Browser Icon -->
+  <rect x="80" y="115" width="120" height="50" rx="5" fill="#4a5568"/>
+  <text x="140" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">🌐 Editor Web</text>
+  
+  <!-- Canvas -->
+  <rect x="220" y="115" width="120" height="50" rx="5" fill="#4a5568"/>
+  <text x="280" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">🎨 Canvas</text>
+  
+  <!-- Node Panel -->
+  <rect x="360" y="115" width="120" height="50" rx="5" fill="#4a5568"/>
+  <text x="420" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">📦 Panel Nodos</text>
+  
+  <!-- Execution View -->
+  <rect x="500" y="115" width="120" height="50" rx="5" fill="#4a5568"/>
+  <text x="560" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">▶️ Ejecuciones</text>
+  
+  <!-- Settings -->
+  <rect x="640" y="115" width="80" height="50" rx="5" fill="#4a5568"/>
+  <text x="680" y="145" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">⚙️ Config</text>
+  
+  <!-- Arrow down -->
+  <polygon points="400,185 385,195 415,195" fill="#ff6d5a"/>
+  <line x1="400" y1="195" x2="400" y2="210" stroke="#ff6d5a" stroke-width="2"/>
+  
+  <!-- Engine Layer -->
+  <rect x="50" y="210" width="700" height="120" rx="10" fill="#2d3748" filter="url(#shadow)"/>
+  <text x="400" y="235" text-anchor="middle" fill="url(#n8nGrad)" font-family="Arial, sans-serif" font-size="14" font-weight="bold">n8n ENGINE (Node.js)</text>
+  
+  <!-- Workflow Execution -->
+  <rect x="80" y="250" width="140" height="60" rx="5" fill="#553c9a"/>
+  <text x="150" y="275" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Workflow Engine</text>
+  <text x="150" y="295" text-anchor="middle" fill="#e9d8fd" font-family="Arial, sans-serif" font-size="9">Ejecuta workflows</text>
+  
+  <!-- Trigger Manager -->
+  <rect x="240" y="250" width="140" height="60" rx="5" fill="#2c7a7b"/>
+  <text x="310" y="275" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Trigger Manager</text>
+  <text x="310" y="295" text-anchor="middle" fill="#b2f5ea" font-family="Arial, sans-serif" font-size="9">Webhooks, Schedules</text>
+  
+  <!-- Credential Manager -->
+  <rect x="400" y="250" width="140" height="60" rx="5" fill="#c53030"/>
+  <text x="470" y="275" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Credentials</text>
+  <text x="470" y="295" text-anchor="middle" fill="#fed7d7" font-family="Arial, sans-serif" font-size="9">Encriptación AES</text>
+  
+  <!-- Queue -->
+  <rect x="560" y="250" width="140" height="60" rx="5" fill="#d69e2e"/>
+  <text x="630" y="275" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Queue (Opcional)</text>
+  <text x="630" y="295" text-anchor="middle" fill="#fefcbf" font-family="Arial, sans-serif" font-size="9">Redis/Bull</text>
+  
+  <!-- Arrow down -->
+  <polygon points="400,335 385,345 415,345" fill="#ff6d5a"/>
+  <line x1="400" y1="345" x2="400" y2="360" stroke="#ff6d5a" stroke-width="2"/>
+  
+  <!-- Storage Layer -->
+  <rect x="50" y="360" width="700" height="80" rx="10" fill="#2d3748" filter="url(#shadow)"/>
+  <text x="400" y="385" text-anchor="middle" fill="#48bb78" font-family="Arial, sans-serif" font-size="14" font-weight="bold">CAPA DE PERSISTENCIA</text>
+  
+  <!-- SQLite -->
+  <rect x="100" y="400" width="130" height="30" rx="5" fill="#38a169"/>
+  <text x="165" y="420" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">SQLite (Default)</text>
+  
+  <!-- PostgreSQL -->
+  <rect x="250" y="400" width="130" height="30" rx="5" fill="#3182ce"/>
+  <text x="315" y="420" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">PostgreSQL</text>
+  
+  <!-- MySQL -->
+  <rect x="400" y="400" width="130" height="30" rx="5" fill="#dd6b20"/>
+  <text x="465" y="420" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">MySQL/MariaDB</text>
+  
+  <!-- File System -->
+  <rect x="550" y="400" width="130" height="30" rx="5" fill="#718096"/>
+  <text x="615" y="420" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">📁 File System</text>
+  
+  <!-- External Services -->
+  <text x="400" y="470" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="11">↔️ Conexión con +400 servicios externos (APIs, Webhooks, Databases)</text>
+  
+  <!-- Legend -->
+  <rect x="620" y="470" width="10" height="10" fill="#ff6d5a"/>
+  <text x="635" y="479" fill="#888888" font-family="Arial, sans-serif" font-size="9">Flujo de datos</text>
+</svg>

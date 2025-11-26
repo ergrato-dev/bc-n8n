@@ -67,6 +67,8 @@ Al finalizar este módulo, serás capaz de:
 
 n8n ocupa un espacio único en el mercado:
 
+> 📊 **Comparativa Visual:** Ver [04-comparativa-herramientas.svg](../0-assets/04-comparativa-herramientas.svg)
+
 | Aspecto              | Zapier/Make   | Código Puro   | n8n           |
 | -------------------- | ------------- | ------------- | ------------- |
 | Curva de aprendizaje | Baja          | Alta          | Media         |
@@ -111,6 +113,10 @@ n8n ocupa un espacio único en el mercado:
 ### 2.3 Arquitectura de n8n
 
 #### Visión General
+
+> 📊 **Diagrama Interactivo:** Ver [01-arquitectura-n8n.svg](../0-assets/01-arquitectura-n8n.svg)
+
+![Arquitectura de n8n](../0-assets/01-arquitectura-n8n.svg)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐

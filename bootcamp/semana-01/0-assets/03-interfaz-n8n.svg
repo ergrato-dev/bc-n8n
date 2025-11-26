@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="600" fill="url(#bg3)"/>
+  
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Interfaz de n8n - Componentes Principales</text>
+  <text x="500" y="55" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="12">Editor visual de workflows</text>
+  
+  <!-- Main Container (Browser mockup) -->
+  <rect x="30" y="75" width="940" height="500" rx="8" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+  
+  <!-- Browser bar -->
+  <rect x="30" y="75" width="940" height="30" rx="8" fill="#1a202c"/>
+  <circle cx="55" cy="90" r="6" fill="#fc8181"/>
+  <circle cx="75" cy="90" r="6" fill="#f6e05e"/>
+  <circle cx="95" cy="90" r="6" fill="#68d391"/>
+  <rect x="120" y="82" width="300" height="16" rx="4" fill="#4a5568"/>
+  <text x="270" y="94" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="10">localhost:5678</text>
+  
+  <!-- Top Menu Bar -->
+  <rect x="30" y="105" width="940" height="40" fill="#1e1e3f"/>
+  
+  <!-- n8n Logo -->
+  <text x="60" y="130" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="18" font-weight="bold">n8n</text>
+  
+  <!-- Workflow name -->
+  <rect x="110" y="115" width="200" height="24" rx="4" fill="#2d3748"/>
+  <text x="210" y="132" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11">📁 mi-primer-workflow</text>
+  
+  <!-- Top buttons -->
+  <rect x="700" y="115" width="80" height="24" rx="4" fill="#4a5568"/>
+  <text x="740" y="131" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">💾 Guardar</text>
+  
+  <rect x="790" y="115" width="80" height="24" rx="4" fill="#ff6d5a"/>
+  <text x="830" y="131" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">▶ Ejecutar</text>
+  
+  <!-- Toggle Active -->
+  <rect x="880" y="115" width="70" height="24" rx="12" fill="#48bb78"/>
+  <circle cx="935" cy="127" r="9" fill="#ffffff"/>
+  <text x="900" y="131" fill="#ffffff" font-family="Arial, sans-serif" font-size="8">Active</text>
+  
+  <!-- Left Sidebar - Node Panel -->
+  <rect x="30" y="145" width="200" height="430" fill="#1a202c"/>
+  
+  <!-- Search -->
+  <rect x="45" y="160" width="170" height="28" rx="4" fill="#2d3748"/>
+  <text x="55" y="178" fill="#718096" font-family="Arial, sans-serif" font-size="11">🔍 Buscar nodos...</text>
+  
+  <!-- Node Categories -->
+  <text x="45" y="210" fill="#a0aec0" font-family="Arial, sans-serif" font-size="10" font-weight="bold">TRIGGERS</text>
+  <rect x="45" y="220" width="170" height="25" rx="4" fill="#553c9a"/>
+  <text x="55" y="237" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">⚡ Manual Trigger</text>
+  <rect x="45" y="250" width="170" height="25" rx="4" fill="#2d3748"/>
+  <text x="55" y="267" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">⏰ Schedule Trigger</text>
+  <rect x="45" y="280" width="170" height="25" rx="4" fill="#2d3748"/>
+  <text x="55" y="297" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">🔗 Webhook</text>
+  
+  <text x="45" y="330" fill="#a0aec0" font-family="Arial, sans-serif" font-size="10" font-weight="bold">CORE NODES</text>
+  <rect x="45" y="340" width="170" height="25" rx="4" fill="#2d3748"/>
+  <text x="55" y="357" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">📝 Set</text>
+  <rect x="45" y="370" width="170" height="25" rx="4" fill="#2d3748"/>
+  <text x="55" y="387" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">🔀 IF</text>
+  <rect x="45" y="400" width="170" height="25" rx="4" fill="#2d3748"/>
+  <text x="55" y="417" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">💻 Code</text>
+  <rect x="45" y="430" width="170" height="25" rx="4" fill="#2d3748"/>
+  <text x="55" y="447" fill="#ffffff" font-family="Arial, sans-serif" font-size="10">🌐 HTTP Request</text>
+  
+  <text x="45" y="480" fill="#a0aec0" font-family="Arial, sans-serif" font-size="10" font-weight="bold">APPS</text>
+  <rect x="45" y="490" width="80" height="25" rx="4" fill="#2d3748"/>
+  <text x="85" y="507" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">Google</text>
+  <rect x="130" y="490" width="80" height="25" rx="4" fill="#2d3748"/>
+  <text x="170" y="507" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">Slack</text>
+  <rect x="45" y="520" width="80" height="25" rx="4" fill="#2d3748"/>
+  <text x="85" y="537" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">Notion</text>
+  <rect x="130" y="520" width="80" height="25" rx="4" fill="#2d3748"/>
+  <text x="170" y="537" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">+400</text>
+  
+  <!-- Canvas Area -->
+  <rect x="230" y="145" width="540" height="430" fill="#0d1117"/>
+  
+  <!-- Grid on canvas -->
+  <pattern id="canvasGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="#2d3748"/>
+  </pattern>
+  <rect x="230" y="145" width="540" height="430" fill="url(#canvasGrid)"/>
+  
+  <!-- Nodes on Canvas -->
+  <!-- Trigger Node -->
+  <g transform="translate(280, 280)">
+    <rect width="100" height="60" rx="6" fill="#553c9a" stroke="#805ad5" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16">⚡</text>
+    <text x="50" y="45" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">Manual Trigger</text>
+    <!-- Output connector -->
+    <circle cx="100" cy="30" r="6" fill="#805ad5" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Connection line -->
+  <path d="M 386 310 C 420 310, 420 310, 450 310" stroke="#ff6d5a" stroke-width="2" fill="none"/>
+  
+  <!-- Set Node -->
+  <g transform="translate(450, 280)">
+    <rect width="100" height="60" rx="6" fill="#2c7a7b" stroke="#38b2ac" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16">📝</text>
+    <text x="50" y="45" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">Datos Usuario</text>
+    <!-- Input connector -->
+    <circle cx="0" cy="30" r="6" fill="#38b2ac" stroke="#ffffff" stroke-width="2"/>
+    <!-- Output connector -->
+    <circle cx="100" cy="30" r="6" fill="#38b2ac" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Connection line 2 -->
+  <path d="M 556 310 C 590 310, 590 310, 620 310" stroke="#ff6d5a" stroke-width="2" fill="none"/>
+  
+  <!-- IF Node -->
+  <g transform="translate(620, 280)">
+    <rect width="100" height="60" rx="6" fill="#c05621" stroke="#ed8936" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="16">🔀</text>
+    <text x="50" y="45" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">IF: Validar</text>
+    <!-- Input connector -->
+    <circle cx="0" cy="30" r="6" fill="#ed8936" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Zoom controls -->
+  <rect x="710" y="520" width="50" height="25" rx="4" fill="#2d3748"/>
+  <text x="735" y="537" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12">100%</text>
+  
+  <!-- Right Panel - Node Settings -->
+  <rect x="770" y="145" width="200" height="430" fill="#1a202c"/>
+  
+  <!-- Panel header -->
+  <rect x="770" y="145" width="200" height="35" fill="#2d3748"/>
+  <text x="870" y="168" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">📝 Datos Usuario</text>
+  
+  <!-- Tabs -->
+  <rect x="780" y="190" width="60" height="22" rx="4" fill="#ff6d5a"/>
+  <text x="810" y="205" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="9">Params</text>
+  <rect x="845" y="190" width="55" height="22" rx="4" fill="#2d3748"/>
+  <text x="872" y="205" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Output</text>
+  <rect x="905" y="190" width="55" height="22" rx="4" fill="#2d3748"/>
+  <text x="932" y="205" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Settings</text>
+  
+  <!-- Parameters -->
+  <text x="785" y="240" fill="#a0aec0" font-family="Arial, sans-serif" font-size="9">Fields to Set:</text>
+  
+  <rect x="785" y="250" width="170" height="55" rx="4" fill="#2d3748"/>
+  <text x="795" y="268" fill="#68d391" font-family="monospace" font-size="9">nombre</text>
+  <text x="795" y="285" fill="#a0aec0" font-family="monospace" font-size="8">"juan pérez"</text>
+  
+  <rect x="785" y="315" width="170" height="55" rx="4" fill="#2d3748"/>
+  <text x="795" y="333" fill="#68d391" font-family="monospace" font-size="9">email</text>
+  <text x="795" y="350" fill="#a0aec0" font-family="monospace" font-size="8">"juan@example.com"</text>
+  
+  <rect x="785" y="380" width="170" height="55" rx="4" fill="#2d3748"/>
+  <text x="795" y="398" fill="#68d391" font-family="monospace" font-size="9">plan</text>
+  <text x="795" y="415" fill="#a0aec0" font-family="monospace" font-size="8">"Pro"</text>
+  
+  <!-- Add field button -->
+  <rect x="785" y="445" width="170" height="28" rx="4" fill="#4a5568" stroke="#718096" stroke-dasharray="4"/>
+  <text x="870" y="464" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="10">+ Add Field</text>
+  
+  <!-- Annotations -->
+  <!-- Arrow 1 - Left Panel -->
+  <line x1="130" y1="580" x2="130" y2="560" stroke="#f6e05e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="130" y="595" text-anchor="middle" fill="#f6e05e" font-family="Arial, sans-serif" font-size="10" font-weight="bold">① Panel de Nodos</text>
+  
+  <!-- Arrow 2 - Canvas -->
+  <line x1="500" y1="580" x2="500" y2="400" stroke="#4fd1c5" stroke-width="2"/>
+  <text x="500" y="595" text-anchor="middle" fill="#4fd1c5" font-family="Arial, sans-serif" font-size="10" font-weight="bold">② Canvas (Área de trabajo)</text>
+  
+  <!-- Arrow 3 - Right Panel -->
+  <line x1="870" y1="580" x2="870" y2="490" stroke="#ff6d5a" stroke-width="2"/>
+  <text x="870" y="595" text-anchor="middle" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="10" font-weight="bold">③ Panel de Configuración</text>
+</svg>

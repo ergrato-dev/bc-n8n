@@ -134,6 +134,10 @@ n8n ofrece múltiples formas de instalación según tus necesidades:
 
 **Docker Compose** permite definir y ejecutar aplicaciones multi-contenedor usando un archivo YAML.
 
+> 📊 **Diagrama del Stack:** Ver [05-docker-compose-stack.svg](../0-assets/05-docker-compose-stack.svg)
+
+![Docker Compose Stack](../0-assets/05-docker-compose-stack.svg)
+
 ```yaml
 # Ejemplo simplificado de docker-compose.yml
 # Qué hace: Define la configuración de n8n

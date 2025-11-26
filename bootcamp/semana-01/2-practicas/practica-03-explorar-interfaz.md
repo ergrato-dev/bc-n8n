@@ -32,6 +32,10 @@ Al completar esta práctica, serás capaz de:
 
 En esta práctica explorarás a fondo la interfaz de n8n. Conocer bien la UI te permitirá trabajar más eficientemente durante todo el bootcamp.
 
+> 📊 **Diagrama de Referencia:** Ver [03-interfaz-n8n.svg](../0-assets/03-interfaz-n8n.svg)
+
+![Interfaz de n8n](../0-assets/03-interfaz-n8n.svg)
+
 ---
 
 ## 🔧 Requisitos Técnicos

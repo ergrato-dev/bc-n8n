@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="triggerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9f7aea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#805ad5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="setGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fd1c5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38b2ac;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ifGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f6ad55;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ed8936;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#68d391;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#48bb78;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="400" fill="url(#bg2)"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  </pattern>
+  <rect width="900" height="400" fill="url(#grid)"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Flujo de un Workflow Básico</text>
+  <text x="450" y="55" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="12">Trigger → Procesamiento → Salida</text>
+  
+  <!-- Node 1: Manual Trigger -->
+  <g transform="translate(50, 120)">
+    <rect width="130" height="80" rx="8" fill="url(#triggerGrad)" filter="url(#glow)"/>
+    <text x="65" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20">⚡</text>
+    <text x="65" y="48" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Manual Trigger</text>
+    <text x="65" y="65" text-anchor="middle" fill="#e9d8fd" font-family="Arial, sans-serif" font-size="9">Inicia el workflow</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <line x1="185" y1="160" x2="230" y2="160" stroke="#ff6d5a" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <circle cx="207" cy="160" r="8" fill="#1a1a3e" stroke="#ff6d5a" stroke-width="2"/>
+  <text x="207" y="164" text-anchor="middle" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="10">1</text>
+  
+  <!-- Node 2: Set Node -->
+  <g transform="translate(235, 120)">
+    <rect width="130" height="80" rx="8" fill="url(#setGrad)" filter="url(#glow)"/>
+    <text x="65" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20">📝</text>
+    <text x="65" y="48" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Set Node</text>
+    <text x="65" y="65" text-anchor="middle" fill="#b2f5ea" font-family="Arial, sans-serif" font-size="9">Define datos</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <line x1="370" y1="160" x2="415" y2="160" stroke="#ff6d5a" stroke-width="3"/>
+  <circle cx="392" cy="160" r="8" fill="#1a1a3e" stroke="#ff6d5a" stroke-width="2"/>
+  <text x="392" y="164" text-anchor="middle" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="10">2</text>
+  
+  <!-- Node 3: IF Node -->
+  <g transform="translate(420, 120)">
+    <rect width="130" height="80" rx="8" fill="url(#ifGrad)" filter="url(#glow)"/>
+    <text x="65" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20">🔀</text>
+    <text x="65" y="48" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">IF Node</text>
+    <text x="65" y="65" text-anchor="middle" fill="#feebc8" font-family="Arial, sans-serif" font-size="9">Condición</text>
+  </g>
+  
+  <!-- Branch True -->
+  <path d="M 555 140 L 600 140 L 600 100 L 650 100" stroke="#48bb78" stroke-width="3" fill="none"/>
+  <text x="577" y="95" fill="#48bb78" font-family="Arial, sans-serif" font-size="10">✓ true</text>
+  
+  <!-- Branch False -->
+  <path d="M 555 180 L 600 180 L 600 220 L 650 220" stroke="#fc8181" stroke-width="3" fill="none"/>
+  <text x="577" y="240" fill="#fc8181" font-family="Arial, sans-serif" font-size="10">✗ false</text>
+  
+  <!-- Node 4a: Output True -->
+  <g transform="translate(655, 60)">
+    <rect width="130" height="80" rx="8" fill="url(#outputGrad)" filter="url(#glow)"/>
+    <text x="65" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20">✅</text>
+    <text x="65" y="48" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Aprobado</text>
+    <text x="65" y="65" text-anchor="middle" fill="#c6f6d5" font-family="Arial, sans-serif" font-size="9">Mensaje éxito</text>
+  </g>
+  
+  <!-- Node 4b: Output False -->
+  <g transform="translate(655, 180)">
+    <rect width="130" height="80" rx="8" fill="#e53e3e" filter="url(#glow)"/>
+    <text x="65" y="25" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20">❌</text>
+    <text x="65" y="48" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Rechazado</text>
+    <text x="65" y="65" text-anchor="middle" fill="#fed7d7" font-family="Arial, sans-serif" font-size="9">Mensaje error</text>
+  </g>
+  
+  <!-- Data Flow Visualization -->
+  <rect x="50" y="290" width="800" height="90" rx="10" fill="#1e1e3f" stroke="#4a5568" stroke-width="1"/>
+  <text x="450" y="315" text-anchor="middle" fill="#a0aec0" font-family="Arial, sans-serif" font-size="12" font-weight="bold">📊 Flujo de Datos JSON</text>
+  
+  <!-- JSON Examples -->
+  <text x="115" y="340" text-anchor="middle" fill="#9f7aea" font-family="monospace" font-size="9">{}</text>
+  <text x="115" y="355" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="8">Sin datos</text>
+  
+  <text x="300" y="340" text-anchor="middle" fill="#4fd1c5" font-family="monospace" font-size="9">{"nombre": "Juan"}</text>
+  <text x="300" y="355" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="8">Datos creados</text>
+  
+  <text x="485" y="340" text-anchor="middle" fill="#f6ad55" font-family="monospace" font-size="9">{"nombre": "Juan", "score": 85}</text>
+  <text x="485" y="355" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="8">Evaluación</text>
+  
+  <text x="720" y="340" text-anchor="middle" fill="#68d391" font-family="monospace" font-size="9">{"resultado": "✅ Aprobado"}</text>
+  <text x="720" y="355" text-anchor="middle" fill="#718096" font-family="Arial, sans-serif" font-size="8">Output final</text>
+  
+  <!-- Arrows between JSON -->
+  <text x="190" y="345" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="14">→</text>
+  <text x="390" y="345" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="14">→</text>
+  <text x="600" y="345" fill="#ff6d5a" font-family="Arial, sans-serif" font-size="14">→</text>
+</svg>
